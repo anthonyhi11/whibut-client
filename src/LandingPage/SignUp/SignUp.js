@@ -7,7 +7,7 @@ export default class SignUp extends React.Component {
   handleAddUser = (e) => {
     e.preventDefault()
     console.log('Sign Up was clicked')
-    this.context.handleCancel();
+    this.context.handleSubmit();
     // const userName = e.target.name.value;
     // const password = e.target.password.value;
     // const passwordConfirm = e.target.passwordConfirm.value;

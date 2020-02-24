@@ -6,7 +6,7 @@ export default class LogIn extends React.Component {
   handleLogIn = (e) => {
     e.preventDefault()
     console.log('log in clicked')
-    this.context.handleCancel();
+    this.context.handleSubmit();
     // const userName = e.target.name.value;
     // const password = e.target.password.value;
     // const passwordConfirm = e.target.passwordConfirm.value;
@@ -22,7 +22,7 @@ export default class LogIn extends React.Component {
           <input type='text' id="name" name='name' placeholder='Username' />
           <label htmlFor='password'>Password</label>
           <input type="password" id="password" name='password' placeholder='Password' />
-          <button type='submit'>Log in</button>
+          <button type='submit'>Log in</button><button type='reset' onClick={this.context.handleCancel}>Cancel</button>
         </form>
       </div>
     )

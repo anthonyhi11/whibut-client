@@ -27,11 +27,16 @@ export default class LandingPage extends React.Component {
     })
   }
 
-  handleCancel = () => {
+  handleLandingCancel = () => {
     this.setState({
       loginActive: false,
       signupActive: false,
     })
+    
+  }
+
+  handleLandingSubmit = () => {
+    this.props.history.push('/main')
   }
 
  iframe = {
@@ -45,7 +50,8 @@ export default class LandingPage extends React.Component {
     const value = {
       loginActive: this.state.loginActive,
       signupActive: this.state.signupActive,
-      handleCancel: this.handleCancel,
+      handleCancel: this.handleLandingCancel,
+      handleSubmit: this.handleLandingSubmit
     }
 
     return (
