@@ -5,6 +5,7 @@ const WhibutContext = React.createContext({
   signupActive: false,
   handleLandingCancel: () => {},
   handleLandingSubmit: () => {},
+  handleFormCancel: () => {},
 })
 
 export default WhibutContext

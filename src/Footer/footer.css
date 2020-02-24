@@ -1,0 +1,22 @@
+.navbar {
+  
+  overflow: hidden;
+  position: fixed;
+  left: 10%;
+  bottom: 0;
+  width: 80%;
+  height: 8%;
+  display: flex;
+  justify-content: fill;
+  align-items: fill;
+}
+.footer-buttons {
+  padding: 15px;
+  margin:0px;
+  width:33%;
+  font-size: 15px;
+}
+
+#footer-left {
+  margin-left: 25%;
+}

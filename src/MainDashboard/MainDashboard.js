@@ -3,6 +3,7 @@ import WhibutContext from '../WhibutContext';
 import AddModal from './Modals/AddModal';
 import ViewModal from './Modals/ViewModal';
 import './MainDashboard.css'
+import Footer from '../Footer/Footer';
 
 export default class MainDashboard extends React.Component {
   constructor(props) {
@@ -51,10 +52,33 @@ export default class MainDashboard extends React.Component {
             </section>
             <section className='recents'>
               <h2>Recents</h2>
+              <div>
+                <h3>activity</h3>
+              <p>some content about it</p>
+              </div>
+              <div>
+                <h3>activity</h3>
+                <p>some content about it</p>
+              </div>
+              <div>
+                <h3>activity</h3>
+                <p>some content about it</p>
+              </div>
+              <div>
+                <h3>activity</h3>
+                <p>some content about it</p>
+              </div>
+              <div>
+                <h3>activity</h3>
+                <p>some content about it</p>
+              </div>
+              <div>
+                <h3>activity</h3>
+                <p>some content about it</p>
+              </div>
             </section>
           </main>
-          <footer className='navbar'>
-          </footer>
+          <Footer />
         </div>
       </WhibutContext.Provider>
     )

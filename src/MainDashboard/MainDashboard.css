@@ -7,7 +7,7 @@ header p {
   font-size: 18px;
 }
 
-/* .buttons {
+ /* .buttons {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -16,45 +16,29 @@ header p {
   margin-right: 20px;
   padding: 20px;
   height: 100px;
-}
+} 
 
-/* .button {
+.button {
   padding: 30px;
   font-size: 25px;
   width: 23%;
-} */ */
+}  */
 
 .recents {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  align-items: center;
 }
 
 .recents div {
   width: 70%;
   margin: 10px;
-  background-color: gray;
+  margin-left: 50%;
+  margin-right: 50%;
+  transform: translate(-50%,0);
+  background-color:white;
+  border: 1px black solid;
 }
 .recents h3, p {
   text-align: center;
-}
-
-.navbar {
-  background-color: gray;
-  overflow: hidden;
-  position: fixed;
-  left: 10%;
-  bottom: 0;
-  width: 80%;
-  height: 8%;
-  display: flex;
-  justify-content: space-evenly;
-}
-
-.footer-buttons {
-  padding: 10px;
-  margin:0px;
-  width:25%;
-  font-size: 15px;
 }
