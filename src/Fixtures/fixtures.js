@@ -1,42 +1,52 @@
-const fixtures = {
-  movies: [
-    {
-      title: 'parasite',
-      genre: "thriller"
+const Fixtures = {
+  "movies": [
+    { 
+      "activity": 'Movies',
+      "title": 'parasite',
+      "genre": "thriller"
     },
     {
-      title: 'Ad Astra',
-      genre: 'Sci-Fi'
+      "activity": 'Movies',
+      "title": 'Ad Astra',
+      "genre": 'Sci-Fi'
     }
   ],
-  books: [
+  "books": [
     {
-      title: "Call of the Wild",
-      author: 'Jack London'
+      "activity": 'Books',
+      "title": "Call of the Wild",
+      "author": 'Jack London'
     },
     {
-      title: 'Across the Sea of Ice',
-      author: 'William Sarabande'
+      'activity': 'Books',
+      'title': 'Across the Sea of Ice',
+      'author': 'William Sarabande'
     }
   ],
-  tv: [
-    {
-      title: 'Outsider',
-      genre: 'Horror'
+  "tv": [
+    { 
+      'activity': 'TV',
+      'title': 'Outsider',
+      'genre': 'Horror'
     },
     {
-      title: 'The Bachelor',
-      genre: 'Reality'
+      'activity': 'TV',
+      'title': 'The Bachelor',
+      'genre': 'Reality'
     }
   ],
-  restaurants: [
+  "restaurants": [
     {
-      name: "Popeye's",
-      type: 'Fast-food'
+      'activity': 'Restaurants',
+      'name': "Popeye's",
+      'type': 'Fast-food'
     },
     {
-      name: 'Texas de Brazil',
-      type: 'Steakhouse'
+      'activity': 'Restaurants',
+      'name': 'Texas de Brazil',
+      'type': 'Steakhouse'
     }
   ]
 }
+
+export default Fixtures;
