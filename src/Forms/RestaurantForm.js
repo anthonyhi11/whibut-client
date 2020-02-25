@@ -36,7 +36,7 @@ export default class RestaurantForm extends React.Component {
           <label htmlFor='type'>Type of Restaurant</label>
           <input type='text' id='type' name='type' placeholder='Fast Food'/>
           <label htmlFor='url'>Website</label>
-          <input type='text' id='url' name='url' placeholder='https://www.mcdonalds.com/' />
+          <input type='text' id='url' name='url' placeholder='Not Required' defaultValue='N/A' />
           <label htmlFor='rating'>Rating</label>
           <input type='number' id='rating' name='rating' min='1' max='10' placeholder='1' />
           <label htmlFor='comments'>Comments</label>
