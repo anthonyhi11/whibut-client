@@ -16,7 +16,7 @@ handleClick = () => {
       return <MovieActivity
                 title={movie.title}
                 genre={movie.genre}
-                url={movie.url}
+                actors={movie.actors}
                 rating={movie.rating}
                 key={i}
                 comments={movie.comments} 

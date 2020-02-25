@@ -12,6 +12,10 @@ export default class Footer extends React.Component {
     this.props.history.push('/main')
   }
 
+  handleSettings = () => {
+    this.props.history.push('/settings')
+  }
+
   static contextType = WhibutContext;
   render() {
     return ( 
@@ -19,7 +23,7 @@ export default class Footer extends React.Component {
       {(context) => (
       <footer className='navbar'>
         <button className='footer-buttons' id='footer-left' onClick={this.handleHome}>Home</button>  
-        <button className='footer-buttons'>Settings</button>
+        <button className='footer-buttons' onClick={this.handleSettings}>Settings</button>
         <button className='footer-buttons' onClick={this.handleLogout}>Logout</button>
       </footer>
       )}

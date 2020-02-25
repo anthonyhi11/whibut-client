@@ -4,7 +4,7 @@ const Fixtures = {
       "activity": 'Movies',
       "title": 'parasite',
       "genre": "thriller",
-      "url": "N/A",
+      "actors": "N/A",
       "rating": 10,
       "comments": "Wonderful film. Had us questioning the disparity between classes. Subtitled "
     },
@@ -12,7 +12,7 @@ const Fixtures = {
       "activity": 'Movies',
       "title": 'Ad Astra',
       "genre": 'Sci-Fi',
-      "url": "N/A",
+      "actors": "Brad Pitt",
       "rating": 6,
       "comments": "Started out with an interesting world in the future with an A-List leading man. The movie fizzled with bad character writing"
     },

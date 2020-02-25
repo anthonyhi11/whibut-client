@@ -22,15 +22,12 @@ export default class BookForm extends React.Component {
     'rating': rating,
     'comments': comments
     }
-    console.log(newBook);
     this.context.addBook(newBook);
     this.context.handleCancel();
   }
   static contextType = WhibutContext;
   render() {
     return (
-      <WhibutContext.Consumer>
-        {(context) => (
         <div className='modal'>
           <h2>Add a Book</h2>
           <form onSubmit={this.handleAddBook} id='form'>
@@ -48,8 +45,6 @@ export default class BookForm extends React.Component {
             <button type='reset' onClick={this.context.handleCancel}>Cancel</button>
           </form>
         </div>
-        )}
-      </WhibutContext.Consumer>
     )
   }
 }
