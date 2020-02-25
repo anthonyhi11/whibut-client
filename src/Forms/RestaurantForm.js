@@ -7,7 +7,7 @@ export default class RestaurantForm extends React.Component {
   static contextType = WhibutContext;
   render() {
     return (
-      <div class='modal'>
+      <div className='modal'>
         <h2>Add a Restaurant</h2>
         <form method="post" id='form'>
           <label htmlFor='name'>Name</label>

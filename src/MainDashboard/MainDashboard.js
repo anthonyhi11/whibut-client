@@ -20,36 +20,27 @@ export default class MainDashboard extends React.Component {
     })
   }
 
-  handleViewClick = () => {
-    this.setState({
-      isViewActive: true,
-    })
-  }
-
-  handleMainCancel = () => {
+  handleCancel = () => {
     this.setState({
       isAddActive: false,
-      isViewActive: false,
     })
   }
   static contextType = WhibutContext;
   render() {
     const value = {
-      handleCancel: this.handleMainCancel,
+      handleCancel: this.handleCancel,
     }
     return (
       <WhibutContext.Provider value={value}>
         <div>
           <header>
-            <h1 id='hero'>whibut</h1>
+            <h1 id='hero'>whibudt</h1>
             <p>Hey, User! What have you been up to?</p>
           </header>
           <main>
             <section className='buttons'>
               <button className='button' onClick={this.handleAddClick}>Add</button>
               {this.state.isAddActive && <AddModal />}
-              {/* <button className='button' onClick={this.handleViewClick}>View</button>
-              {this.state.isViewActive && <ViewModal />} */}
             </section>
             <section className='view-buttons'>
               <ViewButtons />

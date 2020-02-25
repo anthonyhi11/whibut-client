@@ -7,7 +7,7 @@ export default class BookForm extends React.Component {
   static contextType = WhibutContext;
   render() {
     return (
-      <div class='modal'>
+      <div className='modal'>
         <h2>Add a Book</h2>
         <form method="post" id='form'>
           <label htmlFor='title'>Title</label>

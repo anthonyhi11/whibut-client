@@ -7,7 +7,7 @@ export default class MovieForm extends React.Component {
   static contextType = WhibutContext;
   render() {
     return (
-      <div class='modal'>
+      <div className='modal'>
         <h2>Add Movie</h2>
         <form method="post" id='form'>
           <label htmlFor='title'>Title</label>

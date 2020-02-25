@@ -1,12 +1,38 @@
 import React from 'react';
+import AddModal from './MainDashboard/Modals/AddModal';
+import WhibutContext from './WhibutContext';
+import MovieActivity from './ActivityCards/MovieActivity';
 
 export default class MoviesDashboard extends React.Component {
 
+handleClick = () => {
+  this.context.handleAddClick();
+}
+  static contextType = WhibutContext
   render() {
+    const { movies } = this.props;
+    let results = movies.map((movie, i) => {
+      return <MovieActivity
+                title={movie.title}
+                genre={movie.genre}
+                url={movie.url}
+                rating={movie.rating}
+                key={i}
+                comments={movie.comments} 
+              />
+    })
     return (
       <div>
         <h1>whibut</h1>
         <h2>Movies</h2>
+        <section className='buttons'>
+          <button className='button' onClick={this.handleClick}>Add</button>
+          {this.context.isAddActive && <AddModal />}
+        </section>
+        <section className='results'>
+          {results}
+        </section>
+
       </div>
     )
   }
