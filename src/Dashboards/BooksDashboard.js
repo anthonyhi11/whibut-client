@@ -13,6 +13,7 @@ export default class BooksDashboard extends React.Component {
       const { books } = this.context;
       let results = books.map((book, i) => {
         return <BookActivity
+                  id={book.id}
                   title={book.title}
                   genre={book.type}
                   author={book.url}

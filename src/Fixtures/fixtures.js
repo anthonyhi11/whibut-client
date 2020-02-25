@@ -1,6 +1,6 @@
 const Fixtures = {
   "movies": [
-    { 
+    { 'id': 1,
       "activity": 'Movies',
       "title": 'parasite',
       "genre": "thriller",
@@ -8,7 +8,7 @@ const Fixtures = {
       "rating": 10,
       "comments": "Wonderful film. Had us questioning the disparity between classes. Subtitled "
     },
-    {
+    { 'id': 2,
       "activity": 'Movies',
       "title": 'Ad Astra',
       "genre": 'Sci-Fi',
@@ -36,7 +36,7 @@ const Fixtures = {
     }
   ],
   "tv": [
-    { 
+    { 'id': 1,
       'activity': 'TV',
       'title': 'The Outsider',
       'genre': 'Horror',
@@ -44,7 +44,7 @@ const Fixtures = {
       "rating": 8,
       "comments": "Stephen King keeps trying to keep me scared. A mix of crime and supernatural keeps you on your feet and checking your locks before bed."
     },
-    {
+    { 'id': 2,
       'activity': 'TV',
       'title': 'The Bachelor',
       'genre': 'Reality',
@@ -55,7 +55,7 @@ const Fixtures = {
     }
   ],
   "restaurants": [
-    {
+    { 'id': 1,
       'activity': 'Restaurants',
       'name': "Popeye's",
       'type': 'Fast-food',

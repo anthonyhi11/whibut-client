@@ -19,7 +19,7 @@ export default class MainDashboard extends React.Component {
 
         <div>
           <header>
-            <h1 id='hero'>whibudt</h1>
+            <h1 id='hero'>whibut</h1>
             <p>Hey, User! What have you been up to?</p>
           </header>
           <main>

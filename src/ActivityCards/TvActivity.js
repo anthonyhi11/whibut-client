@@ -1,12 +1,25 @@
 import React from 'react';
+import './Activity.css';
+import WhibutContext from '../WhibutContext';
 
-export default function TvActivity(props) {
-  return (
-    <div>
-      <h3>{props.title}</h3>
-      <p>{props.genre}</p>
-      <p>{props.rating}</p>
-      <p>{props.comments}</p>
-    </div>
-  )
+export default class TvActivity extends React.Component {
+
+  handleDelete = (e) => {
+    e.preventDefault();
+    const tvId = this.props.id;
+    this.context.deleteTv(tvId)
+  }
+  
+  static contextType = WhibutContext;
+  render() {
+    return (
+      <div>
+        <h3>{this.props.title}</h3>
+        <p>{this.props.genre}</p>
+        <p>{this.props.rating}</p>
+        <p>{this.props.comments}</p>
+        <button className='deletebutton' onClick={this.handleDelete}>Delete</button>
+      </div>
+    )
+  }
 }

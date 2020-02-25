@@ -13,6 +13,7 @@ export default class RestaurantsDashboard extends React.Component {
       const { restaurants } = this.context;
       let results = restaurants.map((rest, i) => {
         return <RestaurantActivity
+                  id={rest.id}
                   name={rest.name}
                   type={rest.type}
                   rest={rest.url}

@@ -18,11 +18,12 @@ header p {
 } 
 
 .button {
-  padding: 35px;
+  padding: 20px;
   font-size: 25px;
-  width: 20%;
+  width: 30%;
   border-radius: 20px;
-  
+  background-color: white;
+  border: black 1px solid;
 } 
 
 .results {
@@ -30,6 +31,7 @@ header p {
   flex-direction: column;
   justify-content: space-evenly;
   margin-top: 20px;
+  margin-bottom: 100px;
 }
 
 .results div {

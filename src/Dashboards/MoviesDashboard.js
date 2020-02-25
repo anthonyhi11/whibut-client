@@ -19,6 +19,7 @@ handleClick = () => {
                 actors={movie.actors}
                 rating={movie.rating}
                 key={i}
+                id={movie.id}
                 comments={movie.comments} 
               />
     })

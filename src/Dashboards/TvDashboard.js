@@ -14,6 +14,7 @@ export default class TvDashboard extends React.Component {
       const { tv } = this.context;
       let results = tv.map((show, i) => {
         return <TvActivity
+                  id={show.id}
                   title={show.title}
                   genre={show.genre}
                   url={show.url}

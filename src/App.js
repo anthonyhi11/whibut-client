@@ -68,6 +68,30 @@ componentDidMount() {
     })
   }
 
+  deleteMovie = (movieId) => {
+    this.setState({
+      movies: this.state.movies.filter(movie => movie.id !== movieId)
+    })
+  }
+
+  deleteTv = (tvId) => {
+    this.setState({
+      tv: this.state.tv.filter(show => show.id !== tvId)
+    })
+  }
+
+  deleteBook = (bookId) => {
+    this.setState({
+      books: this.state.books.filter(book => book.id !== bookId)
+    })
+  }
+
+  deleteRest = (restId) => {
+    this.setState({
+      restaurants: this.state.restaurants.filter(rest => rest.id !== restId)
+    })
+  }
+
   static contextType = WhibutContext;
   render() {
     const value = {
@@ -81,7 +105,11 @@ componentDidMount() {
       books: this.state.books,
       movies: this.state.movies,
       restaurants: this.state.restaurants,
-      tv: this.state.tv
+      tv: this.state.tv,
+      deleteMovie: this.deleteMovie,
+      deleteTv: this.deleteTv,
+      deleteBook: this.deleteBook,
+      deleteRest: this.deleteRest,
     }
     return (
       <WhibutContext.Provider value={value}>
