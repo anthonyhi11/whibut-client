@@ -55,7 +55,7 @@ export default class AddModal extends React.Component {
     }
     return (
       <WhibutContext.Provider value={value}>
-        <div class='modal'>
+        <div className='modal'>
           <p>Please select dashboard to add to:</p>
           <button onClick={this.showMovie}>Movies</button>
           {this.state.movieModal && <MovieForm />}

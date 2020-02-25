@@ -1,9 +1,10 @@
 import React from 'react';
 import WhibutContext from '../WhibutContext';
 import AddModal from './Modals/AddModal';
-import ViewModal from './Modals/ViewModal';
+import ViewButtons from './Modals/ViewButtons';
 import './MainDashboard.css'
 import Footer from '../Footer/Footer';
+
 
 export default class MainDashboard extends React.Component {
   constructor(props) {
@@ -47,35 +48,11 @@ export default class MainDashboard extends React.Component {
             <section className='buttons'>
               <button className='button' onClick={this.handleAddClick}>Add</button>
               {this.state.isAddActive && <AddModal />}
-              <button className='button' onClick={this.handleViewClick}>View</button>
-              {this.state.isViewActive && <ViewModal />}
+              {/* <button className='button' onClick={this.handleViewClick}>View</button>
+              {this.state.isViewActive && <ViewModal />} */}
             </section>
-            <section className='recents'>
-              <h2>Recents</h2>
-              <div>
-                <h3>activity</h3>
-              <p>some content about it</p>
-              </div>
-              <div>
-                <h3>activity</h3>
-                <p>some content about it</p>
-              </div>
-              <div>
-                <h3>activity</h3>
-                <p>some content about it</p>
-              </div>
-              <div>
-                <h3>activity</h3>
-                <p>some content about it</p>
-              </div>
-              <div>
-                <h3>activity</h3>
-                <p>some content about it</p>
-              </div>
-              <div>
-                <h3>activity</h3>
-                <p>some content about it</p>
-              </div>
+            <section className='view-buttons'>
+              <ViewButtons />
             </section>
           </main>
           <Footer />

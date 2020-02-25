@@ -2,9 +2,11 @@ import React from 'react';
 import LandingPage from './LandingPage/LandingPage';
 import {Route, Switch} from 'react-router-dom';
 import MainDashboard from './MainDashboard/MainDashboard';
-import ActivityDashboard from './ActivityDashboard';
+import MoviesDashboard from './MoviesDashboard';
 import Fixtures from './Fixtures/fixtures'
-
+import TvDashboard from './TvDashboard';
+import RestaurantsDashboard from './RestaurantsDashboard';
+import BooksDashboard from './BooksDashboard';
 
 
 class App extends React.Component {
@@ -34,29 +36,29 @@ class App extends React.Component {
           <Route 
             path='/dashboard/movies'
             render={(routeProps) =>
-              <ActivityDashboard 
-                activity={this.state.movies}
+              <MoviesDashboard 
+                movies={this.state.movies}
               />}
             />
             <Route 
             path='/dashboard/tv'
             render={(routeProps) =>
-              <ActivityDashboard 
-                activity={this.state.tv}
+              <TvDashboard 
+                tv={this.state.tv}
               />}
             />
             <Route 
             path='/dashboard/books'
             render={(routeProps) =>
-              <ActivityDashboard 
-                activity={this.state.books}
+              <BooksDashboard 
+                books={this.state.books}
               />}
             />
             <Route 
             path='/dashboard/restaurants'
             render={(routeProps) =>
-              <ActivityDashboard 
-                activity={this.state.restaurants}
+              <RestaurantsDashboard 
+                restaurants={this.state.restaurants}
               />}
             />
         </Switch>
