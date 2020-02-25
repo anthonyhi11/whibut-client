@@ -7,31 +7,16 @@ import Footer from '../../Footer/Footer';
 
 
 export default class MainDashboard extends React.Component {
-  constructor(props) {
-    super(props)
-    this.state = {
-      isViewActive: false,
-      isAddActive: false,
-    }
-  }
+  
   handleAddClick = () => {
-    this.setState({
-      isAddActive: true,
-    })
+    this.context.handleAddClick();
   }
 
-  handleCancel = () => {
-    this.setState({
-      isAddActive: false,
-    })
-  }
   static contextType = WhibutContext;
   render() {
-    const value = {
-      handleCancel: this.handleCancel,
-    }
+
     return (
-      <WhibutContext.Provider value={value}>
+
         <div>
           <header>
             <h1 id='hero'>whibudt</h1>
@@ -40,7 +25,7 @@ export default class MainDashboard extends React.Component {
           <main>
             <section className='buttons'>
               <button className='button' onClick={this.handleAddClick}>Add</button>
-              {this.state.isAddActive && <AddModal />}
+              {this.context.isAddActive && <AddModal />}
             </section>
             <section className='view-buttons'>
               <ViewButtons />
@@ -48,7 +33,6 @@ export default class MainDashboard extends React.Component {
           </main>
           <Footer history={this.props.history}/>
         </div>
-      </WhibutContext.Provider>
     )
   }
 
