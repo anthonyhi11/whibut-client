@@ -1,10 +1,10 @@
 import React from 'react';
-import WhibutContext from '../../WhibutContext';
+import WhibutContext from '../../../WhibutContext';
 import './modal.css';
-import MovieForm from '../../Forms/MovieForm';
-import TvForm from '../../Forms/TvForm';
-import BookForm from '../../Forms/BookForm';
-import RestaurantForm from '../../Forms/RestaurantForm';
+import MovieForm from '../../../Forms/MovieForm';
+import TvForm from '../../../Forms/TvForm';
+import BookForm from '../../../Forms/BookForm'
+import RestaurantForm from '../../../Forms/RestaurantForm';
 
 export default class AddModal extends React.Component {
   constructor(props) {

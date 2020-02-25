@@ -1,9 +1,9 @@
 import React from 'react';
-import WhibutContext from '../WhibutContext';
+import WhibutContext from '../../WhibutContext';
 import AddModal from './Modals/AddModal';
 import ViewButtons from './Modals/ViewButtons';
 import './MainDashboard.css'
-import Footer from '../Footer/Footer';
+import Footer from '../../Footer/Footer';
 
 
 export default class MainDashboard extends React.Component {

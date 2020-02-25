@@ -1,5 +1,5 @@
 import React from 'react';
-import WhibutContext from '../../WhibutContext';
+import WhibutContext from '../../../WhibutContext';
 import './modal.css';
 import { Link } from 'react-router-dom';
 

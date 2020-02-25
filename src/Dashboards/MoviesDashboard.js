@@ -1,7 +1,7 @@
 import React from 'react';
 import AddModal from './MainDashboard/Modals/AddModal';
-import WhibutContext from './WhibutContext';
-import MovieActivity from './ActivityCards/MovieActivity';
+import WhibutContext from '../WhibutContext';
+import MovieActivity from '../ActivityCards/MovieActivity';
 
 export default class MoviesDashboard extends React.Component {
 

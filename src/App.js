@@ -1,12 +1,12 @@
 import React from 'react';
 import LandingPage from './LandingPage/LandingPage';
 import {Route, Switch} from 'react-router-dom';
-import MainDashboard from './MainDashboard/MainDashboard';
-import MoviesDashboard from './MoviesDashboard';
+import MainDashboard from './Dashboards/MainDashboard/MainDashboard';
+import MoviesDashboard from './Dashboards/MoviesDashboard';
 import Fixtures from './Fixtures/fixtures'
-import TvDashboard from './TvDashboard';
-import RestaurantsDashboard from './RestaurantsDashboard';
-import BooksDashboard from './BooksDashboard';
+import TvDashboard from './Dashboards/TvDashboard';
+import RestaurantsDashboard from './Dashboards/RestaurantsDashboard';
+import BooksDashboard from './Dashboards/BooksDashboard'
 import WhibutContext from './WhibutContext';
 
 
