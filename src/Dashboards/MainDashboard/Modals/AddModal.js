@@ -55,13 +55,13 @@ export default class AddModal extends React.Component {
         <div className='modal'>
           <p>Please select dashboard to add to:</p>
           <button onClick={this.showMovie}>Movies</button>
-          {this.state.movieModal && <MovieForm cancel={this.handleFormCancel}/>}
+          {this.state.movieModal && <MovieForm cancel={this.handleFormCancel} history={this.props.history}/>}
           <button onClick={this.showTv}>TV</button>
-          {this.state.tvModal && <TvForm cancel={this.handleFormCancel} />}
+          {this.state.tvModal && <TvForm cancel={this.handleFormCancel} history={this.props.history} />}
           <button onClick={this.showRestaurant}>Restaurants</button>
-          {this.state.restaurantModal && <RestaurantForm cancel={this.handleFormCancel}/>}
+          {this.state.restaurantModal && <RestaurantForm cancel={this.handleFormCancel} history={this.props.history}/>}
           <button onClick={this.showBook}>Books</button>
-          {this.state.bookModal && <BookForm cancel={this.handleFormCancel}/>}
+          {this.state.bookModal && <BookForm cancel={this.handleFormCancel} history={this.props.history}/>}
           <button id='cancel' onClick={this.context.handleCancel}>Cancel</button>
         </div>
     

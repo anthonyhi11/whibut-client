@@ -15,7 +15,7 @@ export default class MovieForm extends React.Component {
     let id = uuid();
     const newMovie = {
     'id': id,
-    'activity': 'Movies',
+    'activity': 'movies',
     'title': title,
     'actors': actors,
     'genre': genre,
@@ -24,6 +24,7 @@ export default class MovieForm extends React.Component {
     }
     this.context.addMovie(newMovie);
     this.context.handleCancel();
+    this.props.history.push(`/dashboard/${newMovie.activity}`)
   }
 
   static contextType = WhibutContext;
@@ -33,13 +34,13 @@ export default class MovieForm extends React.Component {
         <h2>Add Movie</h2>
         <form onSubmit={this.handleAddMovie} id='form'>
           <label htmlFor='title'>Title</label>
-          <input type='text' id='title' name='title' placeholder='Ex. Parasite' />
+          <input type='text' id='title' name='title' placeholder='Ex. Parasite' required />
           <label htmlFor='genre'>Genre</label>
-          <input type='text' id='genre' name='genre' placeholder='Suspense'/>
+          <input type='text' id='genre' name='genre' placeholder='Suspense' required />
           <label htmlFor='actors'>Actors</label>
           <input type='text' id='actors' name='actors' placeholder='Sairose Ronan' />
-          <label htmlFor='rating'>Rating</label>
-          <input type='number' id='rating' name='rating' min='1' max='10' placeholder='1' />
+          <label htmlFor='rating'>Rating (1-10)</label>
+          <input type='number' id='rating' name='rating' min='1' max='10' placeholder='1' required />
           <label htmlFor='comments'>Comments</label>
           <textarea id='comments' name='comments' placeholder="What do you want to remember"></textarea>
           <button type='submit'>Submit</button>

@@ -15,7 +15,7 @@ export default class RestaurantForm extends React.Component {
     let id = uuid();
     const newRest = {
     'id': id,
-    'activity': 'Restaurants',
+    'activity': 'restaurants',
     'name': name,
     'type': type,
     'url': website,
@@ -24,6 +24,7 @@ export default class RestaurantForm extends React.Component {
     }
     this.context.addRest(newRest);
     this.context.handleCancel();
+    this.props.history.push(`/dashboard/${newRest.activity}`)
   }
   static contextType = WhibutContext;
   render() {
@@ -32,13 +33,13 @@ export default class RestaurantForm extends React.Component {
         <h2>Add a Restaurant</h2>
         <form onSubmit={this.handleAddRest} id='form'>
           <label htmlFor='name'>Name</label>
-          <input type='text' id='name' name='name' placeholder='Ex. McDonalds' />
+          <input type='text' id='name' name='name' placeholder='Ex. McDonalds' required/>
           <label htmlFor='type'>Type of Restaurant</label>
-          <input type='text' id='type' name='type' placeholder='Fast Food'/>
+          <input type='text' id='type' name='type' placeholder='Fast Food' required />
           <label htmlFor='url'>Website</label>
           <input type='text' id='url' name='url' placeholder='Not Required' defaultValue='N/A' />
-          <label htmlFor='rating'>Rating</label>
-          <input type='number' id='rating' name='rating' min='1' max='10' placeholder='1' />
+          <label htmlFor='rating'>Rating (1-10)</label>
+          <input type='number' id='rating' name='rating' min='1' max='10' placeholder='1' required />
           <label htmlFor='comments'>Comments</label>
           <textarea id='comments' name='comments' placeholder="What do you want to remember"></textarea>
           <button type='submit'>Submit</button>

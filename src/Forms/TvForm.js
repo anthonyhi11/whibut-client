@@ -15,7 +15,7 @@ export default class TvForm extends React.Component {
     let id = uuid();
     const newTv = {
     'id': id,
-    'activity': 'TV Shows',
+    'activity': 'tv',
     'title': title,
     'network': network,
     'genre': genre,
@@ -24,6 +24,7 @@ export default class TvForm extends React.Component {
     }
     this.context.addTv(newTv);
     this.context.handleCancel();
+    this.props.history.push(`/dashboard/${newTv.activity}`)
   }
 
   static contextType = WhibutContext;
@@ -33,13 +34,13 @@ export default class TvForm extends React.Component {
         <h2>Add a TV Show</h2>
         <form onSubmit={this.handleAddTv} id='form'>
           <label htmlFor='title'>Title</label>
-          <input type='text' id='title' name='title' placeholder='Ex. Friends' />
+          <input type='text' id='title' name='title' placeholder='Ex. Friends' required />
           <label htmlFor='genre'>Genre</label>
-          <input type='text' id='genre' name='genre' placeholder='Sitcom'/>
+          <input type='text' id='genre' name='genre' placeholder='Sitcom' required/>
           <label htmlFor='network'>Network</label>
-          <input type='text' id='network' name='network' placeholder='NBC' />
-          <label htmlFor='rating'>Your Rating</label>
-          <input type='number' id='rating' name='rating' min='1' max='10' placeholder='1' />
+          <input type='text' id='network' name='network' placeholder='NBC'/>
+          <label htmlFor='rating'>Your Rating (1-10)</label>
+          <input type='number' id='rating' name='rating' min='1' max='10' placeholder='1' required />
           <label htmlFor='comments'>Comments</label>
           <textarea id='comments' name='comments' placeholder="What do you want to remember"></textarea>
           <button type='submit'>Submit</button>

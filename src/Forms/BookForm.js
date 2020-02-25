@@ -15,7 +15,7 @@ export default class BookForm extends React.Component {
     let id = uuid();
     const newBook = {
     'id': id,
-    'activity': 'Books',
+    'activity': 'books',
     'title': title,
     'author': author,
     'genre': genre,
@@ -24,6 +24,7 @@ export default class BookForm extends React.Component {
     }
     this.context.addBook(newBook);
     this.context.handleCancel();
+    this.props.history.push(`/dashboard/${newBook.activity}`)
   }
   static contextType = WhibutContext;
   render() {
@@ -32,13 +33,13 @@ export default class BookForm extends React.Component {
           <h2>Add a Book</h2>
           <form onSubmit={this.handleAddBook} id='form'>
             <label htmlFor='title'>Title</label>
-            <input type='text' id='title' name='title' placeholder='ex. White Fang' />
+            <input type='text' id='title' name='title' placeholder='ex. White Fang' required />
             <label htmlFor='genre'>Genre</label>
-            <input type='text' id='genre' name='genre' placeholder='Suspense'/>
+            <input type='text' id='genre' name='genre' placeholder='Suspense' required/>
             <label htmlFor='author'>Author</label>
-            <input type='text' id='author' name='author' placeholder='Jack London' />
-            <label htmlFor='rating'>Rating</label>
-            <input type='number' id='rating' name='rating' min='1' max='10' placeholder='1' />
+            <input type='text' id='author' name='author' placeholder='Jack London' required />
+            <label htmlFor='rating'>Rating (1-10)</label>
+            <input type='number' id='rating' name='rating' min='1' max='10' placeholder='1' required/>
             <label htmlFor='comments'>Comments</label>
             <textarea id='comments' name='comments' placeholder="What do you want to remember"></textarea>
             <button type='submit'>Submit</button>

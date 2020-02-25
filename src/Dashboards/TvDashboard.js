@@ -1,7 +1,7 @@
 import React from 'react';
 import WhibutContext from '../WhibutContext';
 import TvActivity from '../ActivityCards/TvActivity';
-import AddModal from './MainDashboard/Modals/AddModal';
+import TvForm from '../Forms/TvForm';
 import Footer from '../Footer/Footer';
 
 export default class TvDashboard extends React.Component {
@@ -29,7 +29,7 @@ export default class TvDashboard extends React.Component {
           <h2>TV Shows</h2>
           <section className='buttons'>
             <button className='button' onClick={this.handleClick}>Add</button>
-            {this.context.isAddActive && <AddModal />}
+            {this.context.isAddActive && <TvForm history={this.props.history}/>}
           </section>
           <section className='results'>
             {results}

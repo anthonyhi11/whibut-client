@@ -1,8 +1,8 @@
 import React from 'react';
 import BookActivity from '../ActivityCards/BookActivity'
-import AddModal from './MainDashboard/Modals/AddModal'
 import WhibutContext from '../WhibutContext'
 import Footer from '../Footer/Footer'
+import BookForm from '../Forms/BookForm';
 
 export default class BooksDashboard extends React.Component {
   handleClick = () => {
@@ -28,7 +28,7 @@ export default class BooksDashboard extends React.Component {
           <h2>Books</h2>
           <section className='buttons'>
             <button className='button' onClick={this.handleClick}>Add</button>
-            {this.context.isAddActive && <AddModal />}
+            {this.context.isAddActive && <BookForm history={this.props.history}/>}
           </section>
           <section className='results'>
             {results}
