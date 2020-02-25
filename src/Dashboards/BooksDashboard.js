@@ -9,7 +9,7 @@ export default class BooksDashboard extends React.Component {
   }
     static contextType = WhibutContext
     render() {
-      const { books } = this.props;
+      const { books } = this.context;
       let results = books.map((book, i) => {
         return <BookActivity
                   title={book.title}

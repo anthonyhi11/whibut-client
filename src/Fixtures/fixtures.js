@@ -18,7 +18,7 @@ const Fixtures = {
     },
   ],
   "books": [
-    {
+    { "id": 1,
       "activity": 'Books',
       "title": "Call of the Wild",
       "author": 'Jack London',
@@ -26,7 +26,7 @@ const Fixtures = {
       "rating": 8,
       "comments": "Read this when I was younger. Really enjoyed the rugged setting of the wild west in a time where bad men could get away and a dog could win"
     },
-    {
+    { 'id': 2,
       'activity': 'Books',
       'title': 'Across the Sea of Ice',
       'author': 'William Sarabande',

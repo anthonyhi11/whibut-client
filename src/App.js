@@ -14,14 +14,22 @@ class App extends React.Component {
 
   constructor(props) {
     super(props) 
-    this.state ={
-      movies: Fixtures.movies,
-      books: Fixtures.books,
-      tv: Fixtures.tv,
-      restaurants: Fixtures.restaurants,
+    this.state = {
+      movies: [],
+      books: [],
+      tv: [],
+      restaurants: [],
       isAddActive: false
     }
   }
+componentDidMount() {
+  this.setState({
+    movies: Fixtures.movies,
+    books: Fixtures.books,
+    tv: Fixtures.tv,
+    restaurants: Fixtures.restaurants,
+  })
+}
 
   handleAddClick = () => {
     this.setState({
@@ -35,12 +43,20 @@ class App extends React.Component {
     })
   }
 
+  addBook = (newBook) => {
+    this.setState({
+      books: [...this.state.books, newBook]
+    })
+  }
+
   static contextType = WhibutContext;
   render() {
     const value = {
       handleAddClick: this.handleAddClick,
       isAddActive: this.state.isAddActive,
-      handleCancel: this.handleCancel
+      handleCancel: this.handleCancel,
+      addBook: this.addBook,
+      books: this.state.books,
     }
     return (
       <WhibutContext.Provider value={value}>
@@ -70,10 +86,7 @@ class App extends React.Component {
               />
               <Route 
               path='/dashboard/books'
-              render={(routeProps) =>
-                <BooksDashboard 
-                  books={this.state.books}
-                />}
+              component={BooksDashboard}
               />
               <Route 
               path='/dashboard/restaurants'

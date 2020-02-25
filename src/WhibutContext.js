@@ -1,6 +1,10 @@
 import React from 'react';
 
 const WhibutContext = React.createContext({
+  books: [],
+  movies: [],
+  restaurants: [],
+  tv: [],
   loginActive: false,
   signupActive: false,
   isAddActive: false,
@@ -9,7 +13,7 @@ const WhibutContext = React.createContext({
   handleFormCancel: () => {},
   handleAddClick: () => {},
   handleCancel: () => {},
-  
+  addBook: () => {},
 })
 
 export default WhibutContext

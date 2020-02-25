@@ -50,24 +50,21 @@ export default class AddModal extends React.Component {
   }
   static contextType = WhibutContext;
   render() {
-    const value = {
-      handleCancel: this.handleFormCancel
-    }
     return (
-      <WhibutContext.Provider value={value}>
+      
         <div className='modal'>
           <p>Please select dashboard to add to:</p>
           <button onClick={this.showMovie}>Movies</button>
-          {this.state.movieModal && <MovieForm />}
+          {this.state.movieModal && <MovieForm cancel={this.handleFormCancel}/>}
           <button onClick={this.showTv}>TV</button>
-          {this.state.tvModal && <TvForm />}
+          {this.state.tvModal && <TvForm cancel={this.handleFormCancel} />}
           <button onClick={this.showRestaurant}>Restaurants</button>
-          {this.state.restaurantModal && <RestaurantForm />}
+          {this.state.restaurantModal && <RestaurantForm cancel={this.handleFormCancel}/>}
           <button onClick={this.showBook}>Books</button>
-          {this.state.bookModal && <BookForm />}
+          {this.state.bookModal && <BookForm cancel={this.handleFormCancel}/>}
           <button id='cancel' onClick={this.context.handleCancel}>Cancel</button>
         </div>
-      </WhibutContext.Provider>
+    
     )
   }
 }
