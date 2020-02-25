@@ -46,7 +46,7 @@ export default class MainDashboard extends React.Component {
               <ViewButtons />
             </section>
           </main>
-          <Footer />
+          <Footer history={this.props.history}/>
         </div>
       </WhibutContext.Provider>
     )

@@ -57,6 +57,9 @@ componentDidMount() {
       handleCancel: this.handleCancel,
       addBook: this.addBook,
       books: this.state.books,
+      movies: this.state.movies,
+      restaurants: this.state.restaurants,
+      tv: this.state.tv
     }
     return (
       <WhibutContext.Provider value={value}>
@@ -72,17 +75,11 @@ componentDidMount() {
             />
             <Route 
               path='/dashboard/movies'
-              render={(routeProps) =>
-                <MoviesDashboard 
-                  movies={this.state.movies}
-                />}
+              component={MoviesDashboard}
               />
               <Route 
               path='/dashboard/tv'
-              render={(routeProps) =>
-                <TvDashboard 
-                  tv={this.state.tv}
-                />}
+              component={TvDashboard}
               />
               <Route 
               path='/dashboard/books'
@@ -90,10 +87,7 @@ componentDidMount() {
               />
               <Route 
               path='/dashboard/restaurants'
-              render={(routeProps) =>
-                <RestaurantsDashboard 
-                  restaurants={this.state.restaurants}
-                />}
+              component={RestaurantsDashboard}
               />
           </Switch>
         </main>

@@ -1,7 +1,8 @@
 import React from 'react';
 import WhibutContext from '../WhibutContext';
 import TvActivity from '../ActivityCards/TvActivity';
-import AddModal from './MainDashboard/Modals/AddModal'
+import AddModal from './MainDashboard/Modals/AddModal';
+import Footer from '../Footer/Footer';
 
 export default class TvDashboard extends React.Component {
 
@@ -10,7 +11,7 @@ export default class TvDashboard extends React.Component {
   }
     static contextType = WhibutContext
     render() {
-      const { tv } = this.props;
+      const { tv } = this.context;
       let results = tv.map((show, i) => {
         return <TvActivity
                   title={show.title}
@@ -32,7 +33,7 @@ export default class TvDashboard extends React.Component {
           <section className='results'>
             {results}
           </section>
-  
+          <Footer history={this.props.history}/>
         </div>
       )
     }

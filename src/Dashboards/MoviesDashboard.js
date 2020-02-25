@@ -2,6 +2,7 @@ import React from 'react';
 import AddModal from './MainDashboard/Modals/AddModal';
 import WhibutContext from '../WhibutContext';
 import MovieActivity from '../ActivityCards/MovieActivity';
+import Footer from '../Footer/Footer';
 
 export default class MoviesDashboard extends React.Component {
 
@@ -10,7 +11,7 @@ handleClick = () => {
 }
   static contextType = WhibutContext
   render() {
-    const { movies } = this.props;
+    const { movies } = this.context;
     let results = movies.map((movie, i) => {
       return <MovieActivity
                 title={movie.title}
@@ -32,7 +33,7 @@ handleClick = () => {
         <section className='results'>
           {results}
         </section>
-
+        <Footer history={this.props.history}/>
       </div>
     )
   }

@@ -2,6 +2,7 @@ import React from 'react';
 import BookActivity from '../ActivityCards/BookActivity'
 import AddModal from './MainDashboard/Modals/AddModal'
 import WhibutContext from '../WhibutContext'
+import Footer from '../Footer/Footer'
 
 export default class BooksDashboard extends React.Component {
   handleClick = () => {
@@ -31,7 +32,7 @@ export default class BooksDashboard extends React.Component {
           <section className='results'>
             {results}
           </section>
-  
+        <Footer history={this.props.history}/>
         </div>
       )
     }
