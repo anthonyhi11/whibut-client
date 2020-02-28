@@ -32,7 +32,7 @@ const Fixtures = {
       'author': 'William Sarabande',
       "genre": "Historical Fiction",
       "rating": 7,
-      "comments": "I've been looking for a historical fiction set in prehistoric times when men had yet to find America. This book follows Torka, a young hunter and his band as they weather the long, brutal winters and murderous bands they encounter on their search for better hunting grounds and survival"
+      "comments": "Ive been looking for a historical fiction set in prehistoric times when men had yet to find America. This book follows Torka, a young hunter and his band as they weather the long, brutal winters and murderous bands they encounter on their search for better hunting grounds and survival"
     }
   ],
   "tv": [

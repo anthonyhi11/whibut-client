@@ -15,7 +15,6 @@ export default class MovieActivity extends React.Component {
   return (
     <div>
       <h3>{this.props.title}</h3>
-      <p>{this.props.actors}</p>
       <p>{this.props.genre}</p>
       <p>{this.props.rating}</p>
       <p>{this.props.comments}</p>

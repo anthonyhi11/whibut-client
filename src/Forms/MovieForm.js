@@ -8,7 +8,6 @@ export default class MovieForm extends React.Component {
     e.preventDefault();
     const title = e.target.title.value;
     const genre = e.target.genre.value;
-    const actors = e.target.actors.value;
     const rating = e.target.rating.value;
     const comments = e.target.comments.value;
 
@@ -17,7 +16,6 @@ export default class MovieForm extends React.Component {
     'id': id,
     'activity': 'movies',
     'title': title,
-    'actors': actors,
     'genre': genre,
     'rating': rating,
     'comments': comments
@@ -37,8 +35,6 @@ export default class MovieForm extends React.Component {
           <input type='text' id='title' name='title' placeholder='Ex. Parasite' required />
           <label htmlFor='genre'>Genre</label>
           <input type='text' id='genre' name='genre' placeholder='Suspense' required />
-          <label htmlFor='actors'>Actors</label>
-          <input type='text' id='actors' name='actors' placeholder='Sairose Ronan' />
           <label htmlFor='rating'>Rating (1-10)</label>
           <input type='number' id='rating' name='rating' min='1' max='10' placeholder='1' required />
           <label htmlFor='comments'>Comments</label>
