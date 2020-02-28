@@ -3,12 +3,12 @@ import LandingPage from './LandingPage/LandingPage';
 import {Route, Switch} from 'react-router-dom';
 import MainDashboard from './Dashboards/MainDashboard/MainDashboard';
 import MoviesDashboard from './Dashboards/MoviesDashboard';
-import Fixtures from './Fixtures/fixtures'
 import TvDashboard from './Dashboards/TvDashboard';
 import RestaurantsDashboard from './Dashboards/RestaurantsDashboard';
 import BooksDashboard from './Dashboards/BooksDashboard'
 import WhibutContext from './WhibutContext';
 import Settings from './Settings';
+import PrivateRoute from './services/private-route'
 
 
 class App extends React.Component {
@@ -23,14 +23,29 @@ class App extends React.Component {
       isAddActive: false
     }
   }
-componentDidMount() {
-  this.setState({
-    movies: Fixtures.movies,
-    books: Fixtures.books,
-    tv: Fixtures.tv,
-    restaurants: Fixtures.restaurants,
-  })
-}
+
+  getMovies = (movies) => {
+    this.setState({
+     movies: movies,
+    })
+  }
+
+  getBooks = (books) => {
+    this.setState({
+      books: books
+    })
+  }
+
+  getTv = (shows) => {
+    this.setState({
+      tv: shows
+    })
+  }
+  getRestaurants = (restaurants) => {
+    this.setState({
+      restaurants: restaurants
+    })
+  }
 
   handleAddClick = () => {
     this.setState({
@@ -110,6 +125,10 @@ componentDidMount() {
       deleteTv: this.deleteTv,
       deleteBook: this.deleteBook,
       deleteRest: this.deleteRest,
+      getMovies: this.getMovies,
+      getRestaurants: this.getRestaurants,
+      getBooks: this.getBooks,
+      getTv: this.getTv,
     }
     return (
       <WhibutContext.Provider value={value}>
@@ -119,27 +138,27 @@ componentDidMount() {
               exact path='/'
               component={LandingPage}
             />
-            <Route
-            path = '/main'
-            component={MainDashboard}
+            <PrivateRoute
+              path='/main'
+              component={MainDashboard}
             />
-            <Route 
+            <PrivateRoute 
               path='/dashboard/movies'
               component={MoviesDashboard}
               />
-              <Route 
+              <PrivateRoute 
               path='/dashboard/tv'
               component={TvDashboard}
               />
-              <Route 
+              <PrivateRoute 
               path='/dashboard/books'
               component={BooksDashboard}
               />
-              <Route 
+              <PrivateRoute 
               path='/dashboard/restaurants'
               component={RestaurantsDashboard}
               />
-              <Route 
+              <PrivateRoute 
                 path='/settings'
                 component={Settings}
               />

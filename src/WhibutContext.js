@@ -21,6 +21,10 @@ const WhibutContext = React.createContext({
   deleteTv: () => {},
   deleteRest: () => {},
   deleteBook: () => {},
+  getMovies: () => {},
+  getBooks: () => {},
+  getTv: () => {},
+  getRestaurants: () => {},
 })
 
 export default WhibutContext

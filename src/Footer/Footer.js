@@ -1,10 +1,12 @@
 import React from 'react';
 import './footer.css';
 import WhibutContext from '../WhibutContext';
+import TokenService from '../services/token-service'
 
 export default class Footer extends React.Component {
 
   handleLogout = () => {
+    TokenService.clearAuthToken();
     this.props.history.push('/');
   }
 

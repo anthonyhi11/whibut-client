@@ -1,17 +1,24 @@
 import React from 'react';
 import WhibutContext from '../../WhibutContext';
+import LogInSignUpService from '../../services/login-signup-service';
+import TokenService from '../../services/token-service'
 
 export default class LogIn extends React.Component {
 
   handleLogIn = (e) => {
     e.preventDefault()
     console.log('log in clicked')
-    this.context.handleSubmit();
-    // const userName = e.target.name.value;
-    // const password = e.target.password.value;
-    // const passwordConfirm = e.target.passwordConfirm.value;
-    //fetch request to SIGN UP should LOG IN 
-  }
+
+    const loginAttempt = {
+      username: e.target.name.value,
+      password: e.target.password.value
+    }
+    LogInSignUpService.loginUser(loginAttempt)
+      .then(res => {
+        TokenService.saveAuthToken(res.authToken)
+        this.context.handleSubmit(); //routes you to the main dashboard
+      })
+  }//add error handling
   static contextType = WhibutContext;
   render() {
     return (
