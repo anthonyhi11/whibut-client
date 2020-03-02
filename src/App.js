@@ -21,6 +21,8 @@ class App extends React.Component {
       tv: [],
       restaurants: [],
       isAddActive: false,
+      loginActive: false,
+      signupActive: false,
     }
   }
 
@@ -52,10 +54,22 @@ class App extends React.Component {
       isAddActive: true
     })
   }
+  handleLoginClick = () => {
+    this.setState({
+      loginActive: true
+    })
+  }
+  handleSignupClick = () => {
+    this.setState({
+      signupActive: true
+    })
+  }
 
   handleCancel = () => {
     this.setState({
-      isAddActive: false
+      isAddActive: false,
+      loginActive: false,
+      signupActive: false,
     })
   }
 
@@ -106,12 +120,19 @@ class App extends React.Component {
       restaurants: this.state.restaurants.filter(rest => rest.id !== restId)
     })
   }
+  handleSubmit = () => {
+    this.props.history.push('/main')
+  }
 
   static contextType = WhibutContext;
   render() {
     const value = {
       handleAddClick: this.handleAddClick,
+      handleSignupClick: this.handleSignupClick,
+      handleLoginClick: this.handleLoginClick,
       isAddActive: this.state.isAddActive,
+      loginActive: this.state.loginActive,
+      signupActive: this.state.signupActive,
       handleCancel: this.handleCancel,
       addBook: this.addBook,
       addMovie: this.addMovie,
@@ -129,6 +150,7 @@ class App extends React.Component {
       getRestaurants: this.getRestaurants,
       getBooks: this.getBooks,
       getTv: this.getTv,
+      handleSubmit: this.handleSubmit
     }
     return (
       <WhibutContext.Provider value={value}>

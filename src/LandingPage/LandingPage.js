@@ -11,54 +11,25 @@ export default class LandingPage extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      loginActive: false,
-      signupActive: false,
       errorActive: false,
       error: null
     }
   }
 
-  handleSignUpClick = () => {
-    this.setState({
-      signupActive: true
-    })
-  }
-
-  handleLogInClick = () => {
-    this.setState({
-      loginActive: true
-    })
-  }
-
-  handleLandingCancel = () => {
-    this.setState({
-      loginActive: false,
-      signupActive: false,
-    })
-    
-  }
-
-  handleLandingSubmit = () => {
+  handleSubmit = () => {
     this.props.history.push('/main')
   }
 
- iframe = {
-   src: 'https://www.youtube.com/embed/5qap5aO4i9A',
-   width: '560',
-   height: '315',
+//  iframe = {
+//    src: 'https://www.youtube.com/embed/5qap5aO4i9A',
+//    width: '560',
+//    height: '315',
+//  }
 
- }
  static contextType = WhibutContext;
   render() {
-    const value = {
-      loginActive: this.state.loginActive,
-      signupActive: this.state.signupActive,
-      handleCancel: this.handleLandingCancel,
-      handleSubmit: this.handleLandingSubmit
-    }
-
     return (
-      <WhibutContext.Provider value={value}>
+      // <WhibutContext.Provider value={value}>
         <div>
           <header>
             <h1 className='hero'>whibut</h1>
@@ -67,14 +38,14 @@ export default class LandingPage extends React.Component {
             <Iframe src={this.iframe.src} height={this.iframe.height} width={this.iframe.width} />
           </section> */}
           <section className='buttons'>
-            <button onClick={this.handleSignUpClick}>Sign Up</button>
-              {this.state.signupActive && <SignUp />}
-            <button onClick={this.handleLogInClick}>Log In</button>
-              {this.state.loginActive && <LogIn />}
+            <button onClick={this.context.handleSignupClick}>Sign Up</button>
+              {this.context.signupActive && <SignUp handleSubmit={this.handleSubmit}/>}
+            <button onClick={this.context.handleLoginClick}>Log In</button>
+              {this.context.loginActive && <LogIn handleSubmit={this.handleSubmit}/>}
           </section>
           {this.state.errorActive && <Error />}
         </div>  
-      </WhibutContext.Provider>
+      // </WhibutContext.Provider>
     )
   }
 }

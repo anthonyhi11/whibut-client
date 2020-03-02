@@ -12,6 +12,8 @@ const WhibutContext = React.createContext({
   handleLandingSubmit: () => {},
   handleFormCancel: () => {},
   handleAddClick: () => {},
+  handleLoginClick: () => {},
+  handleSignupClick: () => {},
   handleCancel: () => {},
   addBook: () => {},
   addMovie: () => {},
@@ -25,6 +27,7 @@ const WhibutContext = React.createContext({
   getBooks: () => {},
   getTv: () => {},
   getRestaurants: () => {},
+  handleSubmit: () => {},
 })
 
 export default WhibutContext

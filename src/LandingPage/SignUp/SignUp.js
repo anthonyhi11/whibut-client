@@ -30,7 +30,7 @@ export default class SignUp extends React.Component {
         LogInSignUpService.loginUser(loginAttempt)
         .then(res => {
           TokenService.saveAuthToken(res.authToken)
-          this.context.handleSubmit(); //routes you to the main dashboard
+          this.props.handleSubmit(); //routes you to the main dashboard
         })
       })
   }

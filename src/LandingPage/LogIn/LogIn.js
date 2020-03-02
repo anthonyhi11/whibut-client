@@ -5,6 +5,7 @@ import TokenService from '../../services/token-service'
 
 export default class LogIn extends React.Component {
 
+  state = { error: null }
   handleLogIn = (e) => {
     e.preventDefault()
     const loginAttempt = {
@@ -13,16 +14,24 @@ export default class LogIn extends React.Component {
     }
     LogInSignUpService.loginUser(loginAttempt)
       .then(res => {
+        console.log(res.authToken)
         TokenService.saveAuthToken(res.authToken)
-        this.context.handleSubmit(); //routes you to the main dashboard
+        this.props.handleSubmit(); //routes you to the main dashboard
+      })
+      .catch(res => {
+        this.setState({ error: res.error })
       })
   }//add error handling
   static contextType = WhibutContext;
   render() {
+    const { error } = this.state
     return (
       <div className='modal'>
         <form onSubmit={e => this.handleLogIn(e)} id='form'>
           <h2>Log in!</h2>
+          <div role='alert'>
+            {error && <p className='red'>{error}</p>}
+          </div>
           <label htmlFor='name'>Username</label>
           <input type='text' id="name" name='name' placeholder='Username' />
           <label htmlFor='password'>Password</label>
