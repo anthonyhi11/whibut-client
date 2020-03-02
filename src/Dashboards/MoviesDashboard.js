@@ -2,13 +2,21 @@ import React from 'react';
 import MovieForm from '../Forms/MovieForm';
 import WhibutContext from '../WhibutContext';
 import MovieActivity from '../ActivityCards/MovieActivity';
-import Footer from '../Footer/Footer';
+import Navbar from '../Navbar/Navbar';
+import MoviesApiService from '../services/movies-api-service'
 
 export default class MoviesDashboard extends React.Component {
 
 handleClick = () => {
   this.context.handleAddClick();
-  this.props.history.push('/dashboard/movies')
+}
+
+componentDidMount() {
+  MoviesApiService.getMovies()
+    .then(movies => {
+      this.context.getMovies(movies)
+      this.props.history.push('/dashboard/movies')
+    })
 }
   static contextType = WhibutContext
   render() {
@@ -35,7 +43,7 @@ handleClick = () => {
         <section className='results'>
           {results}
         </section>
-        <Footer history={this.props.history}/>
+        <Navbar history={this.props.history}/>
       </div>
     )
   }

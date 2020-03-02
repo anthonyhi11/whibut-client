@@ -1,6 +1,6 @@
 import React from 'react';
-import WhibutContext from '../WhibutContext'
-import uuid from 'uuid/v4'
+import WhibutContext from '../WhibutContext';
+import MoviesApiService from '../services/movies-api-service';
 
 export default class MovieForm extends React.Component {
 
@@ -11,18 +11,19 @@ export default class MovieForm extends React.Component {
     const rating = e.target.rating.value;
     const comments = e.target.comments.value;
 
-    let id = uuid();
     const newMovie = {
-    'id': id,
     'activity': 'movies',
     'title': title,
     'genre': genre,
     'rating': rating,
     'comments': comments
     }
-    this.context.addMovie(newMovie);
-    this.context.handleCancel();
-    this.props.history.push(`/dashboard/${newMovie.activity}`)
+    MoviesApiService.addNewMovie(newMovie)
+      .then(movie => {
+        this.context.addMovie(movie);
+        this.context.handleCancel();
+        this.props.history.push(`/dashboard/${movie.activity}`)
+      })
   }
 
   static contextType = WhibutContext;

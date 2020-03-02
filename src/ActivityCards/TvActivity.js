@@ -1,12 +1,14 @@
 import React from 'react';
 import './Activity.css';
 import WhibutContext from '../WhibutContext';
+import TvApiService from '../services/tv-api-service';
 
 export default class TvActivity extends React.Component {
 
   handleDelete = (e) => {
     e.preventDefault();
     const tvId = this.props.id;
+    TvApiService.deleteTv(tvId)
     this.context.deleteTv(tvId)
   }
   

@@ -20,7 +20,7 @@ class App extends React.Component {
       books: [],
       tv: [],
       restaurants: [],
-      isAddActive: false
+      isAddActive: false,
     }
   }
 

@@ -2,13 +2,20 @@ import React from 'react';
 import WhibutContext from '../WhibutContext';
 import TvActivity from '../ActivityCards/TvActivity';
 import TvForm from '../Forms/TvForm';
-import Footer from '../Footer/Footer';
+import Navbar from '../Navbar/Navbar';
+import TvApiService from '../services/tv-api-service';
 
 export default class TvDashboard extends React.Component {
 
   handleClick = () => {
     this.context.handleAddClick();
   }
+    componentDidMount() {
+      TvApiService.getTv()
+        .then(tv => {
+          this.context.getTv(tv)
+        })
+    }
     static contextType = WhibutContext
     render() {
       const { tv } = this.context;
@@ -34,7 +41,7 @@ export default class TvDashboard extends React.Component {
           <section className='results'>
             {results}
           </section>
-          <Footer history={this.props.history}/>
+          <Navbar history={this.props.history}/>
         </div>
       )
     }

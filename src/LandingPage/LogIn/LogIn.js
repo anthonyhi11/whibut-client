@@ -7,8 +7,6 @@ export default class LogIn extends React.Component {
 
   handleLogIn = (e) => {
     e.preventDefault()
-    console.log('log in clicked')
-
     const loginAttempt = {
       username: e.target.name.value,
       password: e.target.password.value
@@ -31,6 +29,7 @@ export default class LogIn extends React.Component {
           <input type="password" id="password" name='password' placeholder='Password' />
           <button type='submit'>Log in</button><button type='reset' onClick={this.context.handleCancel}>Cancel</button>
         </form>
+  
       </div>
     )
   }

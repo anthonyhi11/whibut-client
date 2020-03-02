@@ -1,9 +1,9 @@
 import React from 'react';
-import './footer.css';
+import './Navbar.css';
 import WhibutContext from '../WhibutContext';
 import TokenService from '../services/token-service'
 
-export default class Footer extends React.Component {
+export default class Navbar extends React.Component {
 
   handleLogout = () => {
     TokenService.clearAuthToken();
@@ -23,11 +23,11 @@ export default class Footer extends React.Component {
     return ( 
     <WhibutContext.Consumer>
       {(context) => (
-      <footer className='navbar'>
-        <button className='footer-buttons' id='footer-left' onClick={this.handleHome}>Home</button>  
-        <button className='footer-buttons' onClick={this.handleSettings}>Settings</button>
-        <button className='footer-buttons' onClick={this.handleLogout}>Logout</button>
-      </footer>
+      <Navbar className='navbar'>
+        <button className='Navbar-buttons' id='Navbar-left' onClick={this.handleHome}>Home</button>  
+        <button className='Navbar-buttons' onClick={this.handleSettings}>Settings</button>
+        <button className='Navbar-buttons' onClick={this.handleLogout}>Logout</button>
+      </Navbar>
       )}
     </WhibutContext.Consumer>
     )

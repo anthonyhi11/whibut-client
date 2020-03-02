@@ -1,12 +1,14 @@
 import React from 'react';
 import './Activity.css';
 import WhibutContext from '../WhibutContext';
+import BooksApiService from '../services/books-api-service'
 
 export default class BookActivity extends React.Component {
 
 handleDelete = (e) => {
   e.preventDefault();
   const bookId = this.props.id;
+  BooksApiService.deleteBook(bookId)
   this.context.deleteBook(bookId)
 }
 

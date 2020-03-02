@@ -1,6 +1,6 @@
 import React from 'react';
 import WhibutContext from '../WhibutContext'
-import uuid from 'uuid/v4';
+import TvApiService from '../services/tv-api-service';
 
 export default class TvForm extends React.Component {
 
@@ -12,9 +12,8 @@ export default class TvForm extends React.Component {
     const rating = e.target.rating.value;
     const comments = e.target.comments.value;
 
-    let id = uuid();
+
     const newTv = {
-    'id': id,
     'activity': 'tv',
     'title': title,
     'network': network,
@@ -22,9 +21,13 @@ export default class TvForm extends React.Component {
     'rating': rating,
     'comments': comments
     }
-    this.context.addTv(newTv);
-    this.context.handleCancel();
-    this.props.history.push(`/dashboard/${newTv.activity}`)
+    TvApiService.addTv(newTv)
+      .then(tv => {
+        this.context.addTv(newTv);
+        this.context.handleCancel();
+        this.props.history.push(`/dashboard/${newTv.activity}`)
+
+      })
   }
 
   static contextType = WhibutContext;

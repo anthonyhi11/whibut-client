@@ -1,12 +1,14 @@
 import React from 'react';
 import './Activity.css';
 import WhibutContext from '../WhibutContext';
+import RestaurantsApiService from '../services/restaurants-api-service';
 
 export default class RestaurantActivity extends React.Component {
   
   handleDelete = (e) => {
     e.preventDefault();
     const restId = this.props.id;
+    RestaurantsApiService.deleteRest(restId)
     this.context.deleteRest(restId);
   }
 

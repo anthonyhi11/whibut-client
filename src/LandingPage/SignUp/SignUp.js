@@ -41,6 +41,7 @@ export default class SignUp extends React.Component {
       <div className='modal'>
         <form onSubmit={e => this.handleAddUser(e)} id='form'>
           <h2>Sign Up!</h2>
+          <p>Password must be longer than 8 characters and contain: Upper case, lower case, number, and special character</p>
           <label htmlFor='name'>Username</label>
           <input type='text' id="name" name='name' placeholder='Choose Username' />
           <label htmlFor='password'>Password</label>

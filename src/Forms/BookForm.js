@@ -1,6 +1,7 @@
 import React from 'react';
 import WhibutContext from '../WhibutContext';
-import uuid from 'uuid/v4';
+import BooksApiService from '../services/books-api-service';
+
 
 export default class BookForm extends React.Component {
 
@@ -12,9 +13,8 @@ export default class BookForm extends React.Component {
     const rating = e.target.rating.value;
     const comments = e.target.comments.value;
 
-    let id = uuid();
+
     const newBook = {
-    'id': id,
     'activity': 'books',
     'title': title,
     'author': author,
@@ -22,7 +22,10 @@ export default class BookForm extends React.Component {
     'rating': rating,
     'comments': comments
     }
-    this.context.addBook(newBook);
+    BooksApiService.addBook(newBook)
+      .then(book => {
+        this.context.addBook(book)
+      })
     this.context.handleCancel();
     this.props.history.push(`/dashboard/${newBook.activity}`)
   }

@@ -1,6 +1,6 @@
 import React from 'react';
 import WhibutContext from '../WhibutContext';
-import uuid from 'uuid/v4';
+import RestaurantsApiService from '../services/restaurants-api-service';
 
 export default class RestaurantForm extends React.Component {
 
@@ -12,19 +12,21 @@ export default class RestaurantForm extends React.Component {
     const rating = e.target.rating.value;
     const comments = e.target.comments.value;
 
-    let id = uuid();
     const newRest = {
-    'id': id,
     'activity': 'restaurants',
-    'name': name,
-    'type': type,
-    'url': website,
+    'restaurant_name': name,
+    'restaurant_type': type,
+    'website': website,
     'rating': rating,
     'comments': comments
     }
-    this.context.addRest(newRest);
-    this.context.handleCancel();
-    this.props.history.push(`/dashboard/${newRest.activity}`)
+
+    RestaurantsApiService.addRest(newRest)
+      .then(rest => {
+        this.context.addRest(rest); //add to context
+        this.context.handleCancel(); //gets rid of form
+        this.props.history.push(`/dashboard/${rest.activity}`) //takes you to restaurant dash
+      })
   }
   static contextType = WhibutContext;
   render() {

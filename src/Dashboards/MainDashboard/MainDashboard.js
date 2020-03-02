@@ -3,7 +3,7 @@ import WhibutContext from '../../WhibutContext';
 import AddModal from './Modals/AddModal';
 import ViewButtons from './Modals/ViewButtons';
 import './MainDashboard.css'
-import Footer from '../../Footer/Footer';
+import Navbar from '../../Navbar/Navbar';
 
 
 export default class MainDashboard extends React.Component {
@@ -31,7 +31,7 @@ export default class MainDashboard extends React.Component {
               <ViewButtons />
             </section>
           </main>
-          <Footer history={this.props.history}/>
+          <Navbar history={this.props.history}/>
         </div>
     )
   }

@@ -1,9 +1,10 @@
 import React from 'react';
-import Iframe from './Iframe/Iframe';
+// import Iframe from './Iframe/Iframe';
 import LogIn from './LogIn/LogIn';
 import SignUp from './SignUp/SignUp'
 import './landingpage.css'
 import WhibutContext from '../WhibutContext';
+import Error from '../error';
 
 export default class LandingPage extends React.Component {
   
@@ -12,6 +13,8 @@ export default class LandingPage extends React.Component {
     this.state = {
       loginActive: false,
       signupActive: false,
+      errorActive: false,
+      error: null
     }
   }
 
@@ -60,15 +63,16 @@ export default class LandingPage extends React.Component {
           <header>
             <h1 className='hero'>whibut</h1>
           </header>
-          <section className='video'>
+          {/* <section className='video'>
             <Iframe src={this.iframe.src} height={this.iframe.height} width={this.iframe.width} />
-          </section>
+          </section> */}
           <section className='buttons'>
             <button onClick={this.handleSignUpClick}>Sign Up</button>
               {this.state.signupActive && <SignUp />}
             <button onClick={this.handleLogInClick}>Log In</button>
               {this.state.loginActive && <LogIn />}
           </section>
+          {this.state.errorActive && <Error />}
         </div>  
       </WhibutContext.Provider>
     )

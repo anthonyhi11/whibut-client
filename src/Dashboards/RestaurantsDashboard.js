@@ -2,11 +2,18 @@ import React from 'react';
 import RestaurantActivity from '../ActivityCards/RestaurantActivity';
 import RestaurantForm from '../Forms/RestaurantForm';
 import WhibutContext from '../WhibutContext'
-import Footer from '../Footer/Footer';
+import Navbar from '../Navbar/Navbar';
+import RestaurantsApiService from '../services/restaurants-api-service';
 
 export default class RestaurantsDashboard extends React.Component {
   handleClick = () => {
     this.context.handleAddClick();
+  }
+  componentDidMount() {
+    RestaurantsApiService.getRest()
+      .then(rest => {
+        this.context.getRestaurants(rest)
+      })
   }
     static contextType = WhibutContext
     render() {
@@ -14,9 +21,9 @@ export default class RestaurantsDashboard extends React.Component {
       let results = restaurants.map((rest, i) => {
         return <RestaurantActivity
                   id={rest.id}
-                  name={rest.name}
-                  type={rest.type}
-                  rest={rest.url}
+                  name={rest.restaurant_name}
+                  type={rest.restaurant_type}
+                  rest={rest.website}
                   rating={rest.rating}
                   key={i}
                   comments={rest.comments} 
@@ -33,7 +40,7 @@ export default class RestaurantsDashboard extends React.Component {
           <section className='results'>
             {results}
           </section>
-          <Footer history={this.props.history}/>
+          <Navbar history={this.props.history}/>
         </div>
       )
     }

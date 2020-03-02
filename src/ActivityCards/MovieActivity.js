@@ -1,12 +1,14 @@
 import React from 'react';
 import WhibutContext from '../WhibutContext'
 import './Activity.css';
+import MoviesApiService from '../services/movies-api-service'
 
 export default class MovieActivity extends React.Component {
 
   handleDelete = (e) => {
     e.preventDefault();
     const movieId = this.props.id;
+    MoviesApiService.deleteMovie(movieId)
     this.context.deleteMovie(movieId)
   }
 
