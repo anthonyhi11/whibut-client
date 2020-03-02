@@ -6,6 +6,8 @@ import './landingpage.css'
 import WhibutContext from '../WhibutContext';
 import Error from '../error';
 
+
+
 export default class LandingPage extends React.Component {
   
   constructor(props) {

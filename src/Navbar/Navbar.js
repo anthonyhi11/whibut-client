@@ -23,11 +23,11 @@ export default class Navbar extends React.Component {
     return ( 
     <WhibutContext.Consumer>
       {(context) => (
-      <Navbar className='navbar'>
+      <nav className='navbar'>
         <button className='Navbar-buttons' id='Navbar-left' onClick={this.handleHome}>Home</button>  
         <button className='Navbar-buttons' onClick={this.handleSettings}>Settings</button>
         <button className='Navbar-buttons' onClick={this.handleLogout}>Logout</button>
-      </Navbar>
+      </nav>
       )}
     </WhibutContext.Consumer>
     )

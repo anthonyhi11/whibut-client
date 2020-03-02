@@ -14,8 +14,9 @@ export default class LogIn extends React.Component {
     }
     LogInSignUpService.loginUser(loginAttempt)
       .then(res => {
-        console.log(res.authToken)
+
         TokenService.saveAuthToken(res.authToken)
+        this.context.handleCancel();
         this.props.handleSubmit(); //routes you to the main dashboard
       })
       .catch(res => {
