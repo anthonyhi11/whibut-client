@@ -49,7 +49,6 @@ const Fixtures = {
       "network": "ABC",
       "rating": 5,
       "comments": "Only worth watching for a few episodes as the show drags on and barely kept afloat by the meddlesome producers"
-
     }
   ],
   "restaurants": [
