@@ -1,0 +1,36 @@
+ /* .viewbuttons {
+  position: relative;
+  left: 50%;
+  right: 50%;
+  top: 250px;
+  transform: translate(-50%, 0)
+} */
+.buttons-container {
+  display: flex;
+  width: 450px;
+  flex-wrap: wrap;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  top: 300px;
+  transform: translate(-46%, 0)
+}
+
+.view {
+  width: 195px;
+  height: 63px;
+  background-color: #69C7BF;
+  border-radius: 9px;
+  font-weight: 800;
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 21px;
+  margin: 7px;
+  transition: .5s;
+}
+
+.view:hover {
+  cursor: pointer;
+  background-color:rgb(82, 156, 150);
+  transition: .8s;
+}

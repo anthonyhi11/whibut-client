@@ -35,7 +35,7 @@
   width: 175px;
   height: 45px;
   top: 50%;
-  left: 27%;
+  left: 22%;
   transform: translate(0, -15%);
 }
 .navbar-home:hover {
@@ -57,10 +57,13 @@
   font-size: 20px;
   line-height: 23px;
   color:#FFFFFF;
+  transition: .4s; 
 }
 
 .logout-button:hover {
   cursor: pointer;
+  color: rgb(82, 156, 150);
+  transition: 1s;
 }
 
 .settings-button:hover {

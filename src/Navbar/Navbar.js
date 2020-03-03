@@ -26,7 +26,7 @@ export default class Navbar extends React.Component {
       <nav className='navbar'>
         <img src='../../images/whibyt-mark1.png' className='navbar-home navbar-buttons'  alt='navbar home button' onClick={this.handleHome}></img>  
         <div className='navbar-container'>
-          <img src='../../images/settings.png' className='navbar-buttons settings-button' onClick={this.handleSettings} />
+          <img src='../../images/settings.png' className='navbar-buttons settings-button' onClick={this.handleSettings} alt='settings button' />
           <p className='navbar-buttons logout-button' onClick={this.handleLogout}>Logout</p>
         </div>
       </nav>
