@@ -44,7 +44,7 @@ export default class LandingPage extends React.Component {
           {/* the buttons were wrapped in section at one point but that threw off styling*/}
             <button onClick={this.context.handleSignupClick} className='signup-button'>Sign Up</button>
               {this.context.signupActive && <SignUp handleSubmit={this.handleSubmit}/>}
-            <p onClick={this.context.handleLoginClick} className='login-button'>Login</p>
+            <p onClick={this.context.handleLoginClick} className='login-button'>Log in</p>
               {this.context.loginActive && <LogIn handleSubmit={this.handleSubmit}/>}
 
           {this.state.errorActive && <Error />}

@@ -108,6 +108,7 @@
 .login-error {
   color: red;
   text-align: center;
+  margin-top: 50px;
 }
 .error-form {
   display: flex;

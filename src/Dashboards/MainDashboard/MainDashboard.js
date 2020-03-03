@@ -16,22 +16,24 @@ export default class MainDashboard extends React.Component {
   render() {
 
     return (
-
-        <div>
-          <header>
-            <h1 id='hero'>whibut</h1>
-            <p>Hey, User! What have you been up to?</p>
-          </header>
-          <main>
-            <section className='buttons'>
-              <button className='button' onClick={this.handleAddClick}>Add</button>
-              {this.context.isAddActive && <AddModal history={this.props.history}/>}
-            </section>
-            <section className='view-buttons'>
-              <ViewButtons />
-            </section>
-          </main>
-          <Navbar history={this.props.history}/>
+      <div>
+        <Navbar history={this.props.history}/>
+          <div className='main-dashboard'> 
+          <div className='main-dashboard-content'> 
+            <header>
+              <h1>Hey! What have you been up to?</h1>
+            </header>
+            <main>
+           
+                <button className='add-button' onClick={this.handleAddClick}>+</button>
+                {this.context.isAddActive && <AddModal history={this.props.history}/>}
+   
+              <section className='view-buttons'>
+                <ViewButtons />
+              </section>
+            </main>
+            </div>
+          </div>
         </div>
     )
   }

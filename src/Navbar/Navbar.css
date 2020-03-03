@@ -1,4 +1,4 @@
-.navbar {
+/* .navbar {
   z-index: 5;
   position: fixed;
   left: 25%;
@@ -14,10 +14,63 @@
   margin:.2px;
   width: 35%;
   font-size: 15px;
-  z-index: 3;
+  z-index: 3; */
   /* border: 1px solid black; */
-}
+
 
 /* #Navbar-left {
   margin-left: 25%;
 } */
+
+.navbar {
+  background-color: #69C7BF;
+  height: 160px;
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  z-index: 1000;
+}
+.navbar-home {
+  position: absolute;
+  width: 175px;
+  height: 45px;
+  top: 50%;
+  left: 27%;
+  transform: translate(0, -15%);
+}
+.navbar-home:hover {
+  cursor: pointer;
+}
+
+.navbar-container {
+  display: flex;
+  position: absolute;
+  top: 40%;
+  right: 12%;
+  flex-direction: row;
+}
+
+.logout-button {
+  font-family: 'Work Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 23px;
+  color:#FFFFFF;
+}
+
+.logout-button:hover {
+  cursor: pointer;
+}
+
+.settings-button:hover {
+  cursor: pointer;
+}
+
+.settings-button {
+  width: 22px;
+  height: 22px;
+  position: absolute;
+  right: 170%;
+  top: 33%;
+}
