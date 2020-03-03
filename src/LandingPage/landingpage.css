@@ -1,0 +1,74 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Work Sans', sans-serif;
+  font-style: normal;
+}
+
+
+
+
+.hero-img {
+  position: absolute;
+  width: 293px;
+  height: 73px;
+  left: 50%;
+  right: 50%;
+  transform: translate(-50%, 0%);
+  top: 20%;
+}
+
+#placeholder-img {
+  position: absolute;
+  width: 235px;
+  height: 232px;
+  left: 50%;
+  right: 50%;
+  transform: translate(-50%, 0%);
+  top: 38%
+}
+
+.signup-button {
+  position: absolute;
+  width: 200px;
+  height: 50px;
+  left: 50%;
+  right: 50%;
+  transform: translate(-50%, 0%);
+  top: 80%;
+  background: #69C7BF;
+  box-shadow: 0px 4px 20px
+    rgba(26, 26, 26, 0.2);
+  border-radius: 50px;
+  font-family: 'Work Sans', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  color: #FFFFFF;
+}
+.signup-button:hover {
+  cursor: pointer;
+  background: rgb(97, 187, 179);
+}
+
+.login-button {
+  z-index: -1;
+  position: absolute;
+  width: 50px;
+  height: 20px;
+  left: 50%;
+  right: 50%;
+  transform: translate(-50%, 0%);
+  top: 86%;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 21px;
+  text-align: center;
+  text-decoration: none;
+  color: #69C7BF;
+}
+.login-button:hover {
+  cursor: pointer;
+  color: rgb(85, 165, 158);
+}

@@ -1,7 +1,8 @@
 import React from 'react';
 import WhibutContext from '../../WhibutContext';
 import LogInSignUpService from '../../services/login-signup-service';
-import TokenService from '../../services/token-service'
+import TokenService from '../../services/token-service';
+import './login.css';
 
 export default class LogIn extends React.Component {
 
@@ -22,22 +23,23 @@ export default class LogIn extends React.Component {
       .catch(res => {
         this.setState({ error: res.error })
       })
-  }//add error handling
+  }
   static contextType = WhibutContext;
   render() {
     const { error } = this.state
     return (
-      <div className='modal'>
-        <form onSubmit={e => this.handleLogIn(e)} id='form'>
-          <h2>Log in!</h2>
-          <div role='alert'>
-            {error && <p className='red'>{error}</p>}
+      <div className='login-modal'>
+       <div role='alert'>
+            {error && <p className='login-error'>{error}</p>}
           </div>
+        <form className={error ? 'error-form': 'login-form'}onSubmit={e => this.handleLogIn(e)}>
           <label htmlFor='name'>Username</label>
           <input type='text' id="name" name='name' placeholder='Username' />
+  
           <label htmlFor='password'>Password</label>
           <input type="password" id="password" name='password' placeholder='Password' />
-          <button type='submit'>Log in</button><button type='reset' onClick={this.context.handleCancel}>Cancel</button>
+      
+          <button className='login-button-large' type='submit'>Log in</button><p className='cancel-login' onClick={this.context.handleCancel}>Cancel</p>
         </form>
   
       </div>

@@ -8,6 +8,7 @@ import Error from '../error';
 
 
 
+
 export default class LandingPage extends React.Component {
   
   constructor(props) {
@@ -34,17 +35,18 @@ export default class LandingPage extends React.Component {
       // <WhibutContext.Provider value={value}>
         <div>
           <header>
-            <h1 className='hero'>whibut</h1>
+            <a href='/'><img src='./images/whibyt-mark1.png' className='hero-img' alt='whibut logo'></img></a> 
           </header>
           {/* <section className='video'>
             <Iframe src={this.iframe.src} height={this.iframe.height} width={this.iframe.width} />
           </section> */}
-          <section className='buttons'>
-            <button onClick={this.context.handleSignupClick}>Sign Up</button>
+          <img id='placeholder-img' src='./images/powerrangers.png' alt='placeholder before video'></img>
+          {/* the buttons were wrapped in section at one point but that threw off styling*/}
+            <button onClick={this.context.handleSignupClick} className='signup-button'>Sign Up</button>
               {this.context.signupActive && <SignUp handleSubmit={this.handleSubmit}/>}
-            <button onClick={this.context.handleLoginClick}>Log In</button>
+            <p onClick={this.context.handleLoginClick} className='login-button'>Login</p>
               {this.context.loginActive && <LogIn handleSubmit={this.handleSubmit}/>}
-          </section>
+
           {this.state.errorActive && <Error />}
         </div>  
       // </WhibutContext.Provider>
