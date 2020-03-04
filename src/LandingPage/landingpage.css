@@ -57,13 +57,13 @@
 .login-button {
   z-index: -1;
   position: absolute;
-  width: 50px;
+  width: 60px;
   height: 20px;
   left: 50%;
   right: 50%;
   transform: translate(-50%, 0%);
   top: 86%;
-  font-size: 15px;
+  font-size: 18px;
   font-weight: 600;
   line-height: 21px;
   text-align: center;

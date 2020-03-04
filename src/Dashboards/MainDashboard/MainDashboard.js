@@ -21,7 +21,7 @@ export default class MainDashboard extends React.Component {
           <div className='main-dashboard'> 
           <div className='main-dashboard-content'> 
             <header>
-              <h1>Hey! What have you been up to?</h1>
+              <h1>So...What have you been up to?</h1>
             </header>
             <main>
               <button className='add-button' onClick={this.handleAddClick}>+</button>
