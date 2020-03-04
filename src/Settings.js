@@ -3,6 +3,7 @@ import Navbar from './Navbar/Navbar'
 import UsersService from './services/user-api-service';
 import LogInSignUpService from './services/login-signup-service';
 import Error from './error';
+import './settings.css';
 
 export default class Settings extends React.Component {
 
@@ -33,20 +34,24 @@ export default class Settings extends React.Component {
   render() {
     return (
       <div>
-        <h1>whibut</h1>
-        <form onSubmit={e => this.handleMakeChanges(e)} id='form'>
-            <h2>Make Changes to User Profile</h2>
+        <Navbar history={this.props.history}/>
+        <div className='main-settings'>
+          <div className='main-settings-content'>
+          <h1>Settings</h1>
+          <p className='settings-instructions'>All fields are required, you can use your existing username and/or password.</p>
+          <form onSubmit={e => this.handleMakeChanges(e)} className='settings-form'>
             <label htmlFor='name'>Username</label>
             <input type='text' id="name" name='name' placeholder='Choose Username' />
             <label htmlFor='password'>Password</label>
             <input type="password" id="password" name='password' placeholder='New Password' />
             <label htmlFor='passwordConfirm'>Confirm Password</label>
             <input type="password" id="passwordConfirm" name='passwordConfirm' placeholder='Confirm Password' />
-            <button type='submit'>Make Changes</button>
+            <button className='settings-submit-button' type='submit'>Make Changes</button>
           </form>
           {this.state.errorActive && <Error />}
-          <Navbar history={this.props.history}/>
+          </div>
         </div>
+      </div>
     )
   }
 }
