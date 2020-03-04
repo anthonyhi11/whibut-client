@@ -3,10 +3,9 @@
   width: 500px;
   height: 555px;
   left: 50%;
-  right: 50%;
-  transform: translate(-50%, 0%);
+  transform: translate(-50%);
   top: -105%;
-  z-index: 10000;
+  z-index: 5;
   background: #FFFFFF;
   box-shadow: 0px 0px 50px 
     rgba(0,0,0,0.2);
@@ -15,7 +14,7 @@
 
 .add-form-form {
   display: flex;
-  position: relative;
+  position: absolute;
   top: 3%;
   flex-direction: column;
   align-items: space-evenly;
@@ -23,7 +22,6 @@
   height: 555px;
   width: 455px;
   left: 50%;
-  right: 50%;
   transform: translate(-50%, 0%);
   z-index: 3;
   padding-top: 10px;

@@ -4,7 +4,7 @@ import WhibutContext from '../WhibutContext';
 import MovieActivity from '../ActivityCards/MovieActivity';
 import Navbar from '../Navbar/Navbar';
 import MoviesApiService from '../services/movies-api-service'
-
+import './activitydash.css';
 export default class MoviesDashboard extends React.Component {
 
 handleClick = () => {
@@ -34,16 +34,20 @@ componentDidMount() {
     })
     return (
       <div>
-        <h1>whibut</h1>
-        <h2>Movies</h2>
-        <section className='buttons'>
-          <button className='button' onClick={this.handleClick}>Add</button>
-          {this.context.isAddActive && <MovieForm history={this.props.history}/>}
-        </section>
-        <section className='results'>
-          {results}
-        </section>
         <Navbar history={this.props.history}/>
+        <div className='activity-dash'>
+          <div className='activity-dash-content'>
+          <h1>Movies</h1>
+            <button className='activity-add-button' onClick={this.handleClick}>+</button>
+            <p className='add-text' onClick={this.handleClick}>Add Movie</p>
+            <div className='randomdiv'>
+              {this.context.isAddActive && <MovieForm history={this.props.history}/>}
+            </div>
+          <section className='activity-results'>
+            {results}
+          </section>
+          </div>
+        </div>
       </div>
     )
   }

@@ -1,0 +1,71 @@
+.activity-dash {
+  width: 60%;
+  height: 100%;
+  background-color: white;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%)
+}
+
+.activity-dash-content {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  top: 28%;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+}
+
+.activity-dash-content h1 {
+  font-weight: 600;
+  position: relative;
+  left: 9%;
+  top: -10px;
+  font-size: 30px;
+  line-height: 35px;
+  color: #094A59;
+}
+.add-text {
+  position: absolute;
+  left: 14%;
+  top: 9%;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 15px;
+  color: #5c5d5e;
+}
+.add-text:hover {
+  cursor: pointer;
+  color: black;
+}
+
+.activity-add-button{
+  position: absolute;
+  left: 10%;
+  top: 10%;
+  width: 25px;
+  height: 25px;
+  border: 1px solid #69C7BF;
+  border-radius: 50%;
+  box-sizing: border-box;
+  background-color: white;
+  color: #69C7BF;
+  font-size: 17px;
+  text-align: center;
+}
+
+.activity-add-button:hover {
+  background-color: #69C7BF;
+  color: #FFFFFF;
+  cursor: pointer;
+  transition: .5s;
+}
+
+.randomdiv {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  top: 0px;
+  z-index: 3;
+}

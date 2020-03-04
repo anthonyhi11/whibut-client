@@ -16,13 +16,13 @@ handleDelete = (e) => {
   render()
     {
     return (
-      <div>
-        <h3>{this.props.title}</h3>
-        <p>{this.props.author}</p>
-        <p>{this.props.genre}</p>
-        <p>{this.props.rating}</p>
-        <p>{this.props.comments}</p>
-        <button className='deletebutton' onClick={this.handleDelete}>Delete</button>
+      <div className='activity-div'>
+        <h3 className='activity-title'>{this.props.title}</h3>
+        <p className='activity-author'>by {this.props.author}</p>
+        <p className='activity-genre'>{this.props.genre}</p>
+        <p className={this.props.rating > 7 ? 'activity-rating-good': 'activity-rating-ok' && this.props.rating < 5 ? 'activity-rating-bad' : 'activity-rating-ok' }>{this.props.rating}</p>
+        <p className='activity-comments'>{this.props.comments}</p>
+        <button className='activity-deletebutton' onClick={this.handleDelete}>Delete</button>
       </div>
     )
   }

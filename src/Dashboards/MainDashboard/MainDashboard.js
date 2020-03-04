@@ -23,14 +23,11 @@ export default class MainDashboard extends React.Component {
             <header>
               <h1>So...What have you been up to?</h1>
             </header>
-            <main>
               <button className='add-button' onClick={this.handleAddClick}>+</button>
                 {this.context.isAddActive && <AddModal history={this.props.history}/>}
-              
               <section>
                 <ViewButtons history={this.props.history}/>
               </section>
-            </main>
             </div>
           </div>
         </div>

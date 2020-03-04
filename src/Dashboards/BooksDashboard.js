@@ -39,16 +39,20 @@ export default class BooksDashboard extends React.Component {
       let content = this.renderBooks();
       return (
         <div>
-          <h1>whibut</h1>
-          <h2>Books</h2>
-          <section className='buttons'>
-            <button className='button' onClick={this.handleClick}>Add</button>
-            {this.context.isAddActive && <BookForm history={this.props.history}/>}
-          </section>
-          <section className='results'>
-            {content}
-          </section>
-        <Navbar history={this.props.history}/>
+          <Navbar history={this.props.history}/>
+          <div className='activity-dash'>
+            <div className='activity-dash-content'>
+              <h1>Books</h1>
+                <button className='activity-add-button' onClick={this.handleClick}>+</button>
+                <p className='add-text' onClick={this.handleClick}>Add Book</p>
+                <div className='randomdiv'>
+                  {this.context.isAddActive && <BookForm history={this.props.history}/>}
+                </div>
+              <section className='activity-results'>
+                {content}
+              </section>
+            </div>
+          </div>
         </div>
       )
     }
