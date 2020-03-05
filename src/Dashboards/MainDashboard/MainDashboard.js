@@ -4,6 +4,7 @@ import AddModal from './Modals/AddModal';
 import ViewButtons from './Modals/ViewButtons';
 import './MainDashboard.css'
 import Navbar from '../../Navbar/Navbar';
+import Footer from'../../Navbar/Footer';
 
 
 export default class MainDashboard extends React.Component {
@@ -18,6 +19,7 @@ export default class MainDashboard extends React.Component {
     return (
       <div>
         <Navbar history={this.props.history}/>
+        <Footer history={this.props.history} />
           <div className='main-dashboard'> 
           <div className='main-dashboard-content'> 
             <header>

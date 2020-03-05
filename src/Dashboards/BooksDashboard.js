@@ -4,6 +4,7 @@ import WhibutContext from '../WhibutContext'
 import Navbar from '../Navbar/Navbar'
 import BookForm from '../Forms/BookForm';
 import BooksApiService from '../services/books-api-service';
+import Footer from '../Navbar/Footer';
 
 export default class BooksDashboard extends React.Component {
   componentDidMount() {
@@ -40,6 +41,7 @@ export default class BooksDashboard extends React.Component {
       return (
         <div>
           <Navbar history={this.props.history}/>
+          <Footer history={this.props.history}/>
           <div className='activity-dash'>
             <div className='activity-dash-content'>
               <h1>Books</h1>

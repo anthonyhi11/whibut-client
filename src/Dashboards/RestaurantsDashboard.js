@@ -4,6 +4,7 @@ import RestaurantForm from '../Forms/RestaurantForm';
 import WhibutContext from '../WhibutContext'
 import Navbar from '../Navbar/Navbar';
 import RestaurantsApiService from '../services/restaurants-api-service';
+import Footer from '../Navbar/Footer';
 
 export default class RestaurantsDashboard extends React.Component {
   handleClick = () => {
@@ -32,6 +33,7 @@ export default class RestaurantsDashboard extends React.Component {
       return (
         <div>
           <Navbar history={this.props.history}/>
+          <Footer history={this.props.history}/>
           <div className='activity-dash'>
             <div className='activity-dash-content'>
               <h1>Restaurants</h1>

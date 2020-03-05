@@ -4,6 +4,7 @@ import TvActivity from '../ActivityCards/TvActivity';
 import TvForm from '../Forms/TvForm';
 import Navbar from '../Navbar/Navbar';
 import TvApiService from '../services/tv-api-service';
+import Footer from '../Navbar/Footer';
 
 export default class TvDashboard extends React.Component {
 
@@ -33,6 +34,7 @@ export default class TvDashboard extends React.Component {
       return (
         <div>
           <Navbar history={this.props.history}/>
+          <Footer history={this.props.history}/>
           <div className='activity-dash'>
             <div className='activity-dash-content'>
               <h1>TV Shows</h1>

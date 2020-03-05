@@ -4,6 +4,7 @@ import UsersService from './services/user-api-service';
 import LogInSignUpService from './services/login-signup-service';
 import Error from './error';
 import './settings.css';
+import Footer from './Navbar/Footer';
 
 export default class Settings extends React.Component {
 
@@ -35,6 +36,7 @@ export default class Settings extends React.Component {
     return (
       <div>
         <Navbar history={this.props.history}/>
+        <Footer history={this.props.history}/>
         <div className='main-settings'>
           <div className='main-settings-content'>
           <h1>Settings</h1>

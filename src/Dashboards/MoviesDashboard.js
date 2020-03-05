@@ -5,6 +5,8 @@ import MovieActivity from '../ActivityCards/MovieActivity';
 import Navbar from '../Navbar/Navbar';
 import MoviesApiService from '../services/movies-api-service'
 import './activitydash.css';
+import Footer from '../Navbar/Footer';
+
 export default class MoviesDashboard extends React.Component {
 
 handleClick = () => {
@@ -35,6 +37,7 @@ componentDidMount() {
     return (
       <div>
         <Navbar history={this.props.history}/>
+        <Footer history={this.props.history}/>
         <div className='activity-dash'>
           <div className='activity-dash-content'>
           <h1>Movies</h1>
