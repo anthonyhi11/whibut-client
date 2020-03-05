@@ -24,14 +24,14 @@
   line-height: 35px;
   color: #094A59;
   top: 5%;
-  left: 8%;
+  left: 5%;
 }
 .settings-instructions {
   position: absolute;
   font-weight: 300;
   top: 12%;
   font-size: 13px;
-  left: 8.5%;
+  left: 5.5%;
   width: 300px;
 }
 
@@ -52,9 +52,12 @@
   border-radius: 6px;
   width: 375px;
   height: 45px;
-  margin-left: 50%;
-  transform: translate(-50%);
+  margin-left: 35px;
   padding: 10px;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 15px;
+  color: #5C5D5E;
 }
 
 .settings-form label {
