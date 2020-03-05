@@ -24,7 +24,6 @@ export default class ViewButtons extends React.Component {
   render() {
     return (
       <div className='viewbuttons'>
-        {/* <p>Please select dashboard to view:</p> */}
         <div className='buttons-container'>
         <button onClick={this.handleMovieClick} className='view'>Movies</button>
         <button onClick={this.handleTvClick} className='view'>TV</button>

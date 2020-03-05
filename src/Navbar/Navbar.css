@@ -1,57 +1,122 @@
-.navbar {
-  background-color: #69C7BF;
-  height: 160px;
-  width: 100%;
-  position: fixed;
-  top: 0px;
-  z-index: 5;
-}
-.navbar-home {
-  position: absolute;
-  width: 175px;
-  height: 45px;
-  top: 50%;
-  left: 18%;
-  transform: translate(0, -15%);
-}
-.navbar-home:hover {
-  cursor: pointer;
+@media only screen and (max-width: 599px) {
+  .navbar {
+    background-color: #69C7BF;
+    height: 160px;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    z-index: 5;
+  }
+  .navbar-home {
+    position: absolute;
+    width: 175px;
+    height: 45px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -15%);
+  }
+  .navbar-home:hover {
+    cursor: pointer;
+  }
+
+  .navbar-container {
+    display: flex;
+    position: absolute;
+    top: 40%;
+    right: 12%;
+    flex-direction: row;
+  }
+
+  .logout-button {
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 23px;
+    color:#FFFFFF;
+    transition: .4s; 
+    position: relative;
+    right: 85%;
+    display: none;
+  }
+
+  .logout-button:hover {
+    cursor: pointer;
+    color: rgb(82, 156, 150);
+    transition: 1s;
+  }
+
+  .settings-button:hover {
+    cursor: pointer;
+  }
+
+  .settings-button {
+    display: none;
+    width: 22px;
+    height: 22px;
+    position: absolute;
+    right: 250%;
+    top: 33%;
+  }
 }
 
-.navbar-container {
-  display: flex;
-  position: absolute;
-  top: 40%;
-  right: 12%;
-  flex-direction: row;
-}
 
-.logout-button {
-  font-family: 'Work Sans';
-  font-style: normal;
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 23px;
-  color:#FFFFFF;
-  transition: .4s; 
-  position: relative;
-  right: 85%;
-}
+@media only screen and (min-width: 600px) {
+  .navbar {
+    background-color: #69C7BF;
+    height: 160px;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    z-index: 5;
+  }
+  .navbar-home {
+    position: absolute;
+    width: 175px;
+    height: 45px;
+    top: 50%;
+    left: 18%;
+    transform: translate(0, -15%);
+  }
+  .navbar-home:hover {
+    cursor: pointer;
+  }
 
-.logout-button:hover {
-  cursor: pointer;
-  color: rgb(82, 156, 150);
-  transition: 1s;
-}
+  .navbar-container {
+    display: flex;
+    position: absolute;
+    top: 40%;
+    right: 12%;
+    flex-direction: row;
+  }
 
-.settings-button:hover {
-  cursor: pointer;
-}
+  .logout-button {
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 23px;
+    color:#FFFFFF;
+    transition: .4s; 
+    position: relative;
+    right: 85%;
+  }
 
-.settings-button {
-  width: 22px;
-  height: 22px;
-  position: absolute;
-  right: 250%;
-  top: 33%;
+  .logout-button:hover {
+    cursor: pointer;
+    color: rgb(82, 156, 150);
+    transition: 1s;
+  }
+
+  .settings-button:hover {
+    cursor: pointer;
+  }
+
+  .settings-button {
+    width: 22px;
+    height: 22px;
+    position: absolute;
+    right: 250%;
+    top: 33%;
+  }
 }
