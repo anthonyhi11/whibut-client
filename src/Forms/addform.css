@@ -27,7 +27,7 @@
     width: 350px;
     left: 50%;
     transform: translate(-50%, 0%);
-    z-index: 3;
+    z-index: 5;
     padding-top: 10px;
     margin-top: -10px;
   }
