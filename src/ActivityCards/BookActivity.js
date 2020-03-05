@@ -17,12 +17,14 @@ handleDelete = (e) => {
     {
     return (
       <div className='activity-div'>
-        <h3 className='activity-title'>{this.props.title}</h3>
-        <p className='activity-author'>by {this.props.author}</p>
-        <p className='activity-genre'>{this.props.genre}</p>
+        <div className='activity-flex-container'>
+          <h3 className='activity-title'>{this.props.title}</h3>
+          <p className='activity-author'>by {this.props.author}</p>
+          <p className='activity-genre'>{this.props.genre}</p>
+          <p className='activity-comments'>{this.props.comments}</p>
+          <button className='activity-deletebutton' onClick={this.handleDelete}>Delete</button>
+        </div>
         <p className={this.props.rating > 7 ? 'activity-rating-good': 'activity-rating-ok' && this.props.rating < 5 ? 'activity-rating-bad' : 'activity-rating-ok' }>{this.props.rating}</p>
-        <p className='activity-comments'>{this.props.comments}</p>
-        <button className='activity-deletebutton' onClick={this.handleDelete}>Delete</button>
       </div>
     )
   }
