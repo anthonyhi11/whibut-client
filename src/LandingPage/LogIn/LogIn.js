@@ -30,6 +30,8 @@ export default class LogIn extends React.Component {
       <div className='modal'>
         <form onSubmit={e => this.handleLogIn(e)} id='form'>
           <h2>Log in!</h2>
+          <p>demo username: demouser</p>
+          <p>demo password: AAaa11!!</p>
           <div role='alert'>
             {error && <p className='red'>{error}</p>}
           </div>
