@@ -151,4 +151,10 @@
     color:rgb(82, 156, 150);
     transition: 1s;
   }
+  .video {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    top: 35%;
+  }
 }

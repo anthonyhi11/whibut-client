@@ -40,7 +40,10 @@ export default class LandingPage extends React.Component {
           {/* <section className='video'>
             <Iframe src={this.iframe.src} height={this.iframe.height} width={this.iframe.width} />
           </section> */}
-          <img id='placeholder-img' src='./images/powerrangers.png' alt='placeholder before video'></img>
+          <video  height='300px' width='450px' controls className='video' >
+            <source src='./images/whibut.mp4' type='video/mp4'/>
+          </video>
+          {/* <img id='placeholder-img' src='./images/powerrangers.png' alt='placeholder before video'></img> */}
           {/* the buttons were wrapped in section at one point but that threw off styling*/}
             <button onClick={this.context.handleSignupClick} className='signup-button'>Sign Up</button>
               {this.context.signupActive && <SignUp handleSubmit={this.handleSubmit}/>}
