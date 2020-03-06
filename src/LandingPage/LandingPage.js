@@ -39,6 +39,9 @@ export default class LandingPage extends React.Component {
           {/* <section className='video'>
             <Iframe src={this.iframe.src} height={this.iframe.height} width={this.iframe.width} />
           </section> */}
+          <video  height='300px' width='450px' controls className='video' >
+            <source src='./images/whibut.mp4' type='video/mp4'/>
+          </video>
           <section className='buttons'>
             <button onClick={this.context.handleSignupClick}>Sign Up</button>
               {this.context.signupActive && <SignUp handleSubmit={this.handleSubmit}/>}
