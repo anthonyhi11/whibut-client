@@ -136,7 +136,6 @@
     top: 80px;
     flex-wrap: wrap;
     width: 720px;
-    justify-content: space-evenly;
   }
   .activity-flex-container {
     display: flex;

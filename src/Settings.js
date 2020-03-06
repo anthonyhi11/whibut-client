@@ -48,7 +48,7 @@ export default class Settings extends React.Component {
             <input type="password" id="password" name='password' placeholder='New Password' />
             <label htmlFor='passwordConfirm'>Confirm Password</label>
             <input type="password" id="passwordConfirm" name='passwordConfirm' placeholder='Confirm Password' />
-            <button className='settings-submit-button' type='submit'>Make Changes</button>
+            <button className='settings-submit-button' type='submit'>Update</button>
           </form>
           {this.state.errorActive && <Error />}
           </div>
