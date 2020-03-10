@@ -3,11 +3,13 @@ import './signUp.css';
 import WhibutContext from '../../WhibutContext';
 import LogInSignUpService from '../../services/login-signup-service';
 import TokenService from '../../services/token-service'
+
 export default class SignUp extends React.Component {
+
+  state = { error: null }
 
   handleAddUser = (e) => {
     e.preventDefault()
-    console.log('Sign Up was clicked')
     const userName = e.target.name.value;
     const password = e.target.password.value;
     const passwordConfirm = e.target.passwordConfirm.value;
@@ -32,23 +34,30 @@ export default class SignUp extends React.Component {
           TokenService.saveAuthToken(res.authToken)
           this.props.handleSubmit(); //routes you to the main dashboard
         })
+        })
+        .catch(res => {
+          this.setState({ error: res.error.message }) 
       })
   }
 
   static contextType = WhibutContext;
   render() {
+    const { error } = this.state;
+
     return (
-      <div className='modal'>
-        <form onSubmit={e => this.handleAddUser(e)} id='form'>
-          <h2>Sign Up!</h2>
-          <p>Password must be longer than 8 characters and contain: Upper case, lower case, number, and special character</p>
+      <div className={error ? 'error-signup-modal': 'signup-modal'}>
+        <div role='alert'>
+            {error && <p className='sign-up-error'>{error}</p>}
+          </div>
+        <p className='signup-instructions'>Password must be longer than 8 characters and contain: Upper case, lower case, number, and special character</p>
+        <form onSubmit={e => this.handleAddUser(e)} id='signup-form'>
           <label htmlFor='name'>Username</label>
           <input type='text' id="name" name='name' placeholder='Choose Username' />
           <label htmlFor='password'>Password</label>
           <input type="password" id="password" name='password' placeholder='New Password' />
           <label htmlFor='password-confirm'>Confirm Password</label>
           <input type="password" id="passwordConfirm" name='passwordConfirm' placeholder='Confirm Password' />
-          <button type='submit'>Sign Up</button> <button type='reset' onClick={this.context.handleCancel}>Cancel</button>
+          <button type='submit' className='signup-button'>Sign Up</button> <p className='cancel' onClick={this.context.handleCancel}>Cancel</p>
         </form>
       </div>
     )

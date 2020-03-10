@@ -9,6 +9,7 @@ import BooksDashboard from './Dashboards/BooksDashboard'
 import WhibutContext from './WhibutContext';
 import Settings from './Settings';
 import PrivateRoute from './services/private-route'
+import './app.css'
 
 
 class App extends React.Component {
@@ -154,7 +155,8 @@ class App extends React.Component {
     }
     return (
       <WhibutContext.Provider value={value}>
-        <main className='App'>
+        {/*className={this.state.signupActive ? 'darken' : 'normal'} */}
+        <main className='app'>
           <Switch>
             <Route 
               exact path='/'

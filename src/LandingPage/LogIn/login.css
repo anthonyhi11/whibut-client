@@ -1,12 +1,13 @@
-
 @media only screen and (max-width: 599px) {
-  .signup-modal {
+
+  .login-modal {
     position: absolute;
     width: 325px;
-    height: 500px;
+    height: 350px;
     left: 50%;
+    right: 50%;
     transform: translate(-50%, 0%);
-    top: 20%;
+    top: 33%;
     z-index: 100;
     background: #FFFFFF;
     box-shadow: 0px 0px 50px 
@@ -14,30 +15,17 @@
     border-radius: 7px;
   }
 
-  .signup-instructions {
-    position: absolute;
-    text-align: center;
-    width: 300px;
-    font-weight: 300;
-    font-size: 13px;
-    line-height: 15px;
-    color: #5C5D5E;
-    transform: translate(-50%, 0%);
-    left: 50%;
-    top: 6%;
-  }
-
-  .signup-modal #signup-form {
+  .login-form {
     display: flex;
     position: absolute;
-    top: 20%;
+    top: 10%;
     flex-direction: column;
-    height: 480px;
+    height: 350px;
     width: 325px;
     z-index: -1;
   }
 
-  .signup-modal #signup-form input {
+  .login-form input {
     width: 250px;
     height: 35px;
     margin-top: 5px;
@@ -53,7 +41,7 @@
     padding-left: 10px;
   }
 
-  .signup-modal #signup-form label {
+  .login-form label {
     font-weight: 600;
     font-size: 15px;
     line-height: 18px;
@@ -64,69 +52,73 @@
     margin-top: 10px;
   }
 
-  .signup-modal #signup-form .signup-button {
+  .login-button-large {
     position: absolute;
-    top: 61%;
+    width: 200px;
+    height: 50px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    top: 63%;
+    background: #69C7BF;
+    box-shadow: 0px 4px 20px
+      rgba(26, 26, 26, 0.2);
+    border-radius: 50px;
+    font-family: 'Work Sans', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    color: #FFFFFF;
+    transition: .5s;
   }
 
-  .cancel {
-    z-index:1;
+  .login-button-large:hover {
+    cursor: pointer;
+    background-color:rgb(82, 156, 150);
+    transition: 1s;
+  }
+
+  .cancel-login {
+    z-index: -1;
     position: absolute;
     width: 50px;
     height: 20px;
-    top: 73%;
     left: 50%;
     transform: translate(-50%, 0%);
+    top: 79%;
     font-size: 14px;
     font-weight: 600;
     line-height: 21px;
     text-align: center;
     text-decoration: none;
     color: #69C7BF;
+    transition: 1s;
   }
 
-  .cancel:hover {
+  .cancel-login:hover {
     cursor: pointer;
+    color:rgb(82, 156, 150);
+    transition: 1s;
   }
 
   /* ERROR HANDLING */
 
-  .error-signup-modal {
-    position: absolute;
-    width: 325px;
-    height: 500px;
-    left: 50%;
-    transform: translate(-50%, 0%);
-    top: 20%;
-    z-index: 100;
-    background: #FFFFFF;
-    box-shadow: 0px 0px 50px 
-      rgba(0,0,0,0.2);
-    border-radius: 7px;
-  }
-
-  .sign-up-error {
-    text-align: center;
+  .login-error {
     color: red;
-    font-size: 15px;
-    margin-top: 50px;
+    text-align: center;
+    margin-top: 20px;
   }
-
-  .error-signup-modal .signup-instructions {
-    display: none;
-  }
-
-  .error-signup-modal #signup-form {
+  .error-form {
     display: flex;
     position: absolute;
-    top: 20%;
+    top: 10%;
     flex-direction: column;
-    height: 480px;
+    height: 350px;
     width: 325px;
     z-index: -1;
   }
-
-  .error-signup-modal #signup-form input {
+  .error-form input {
     width: 250px;
     height: 35px;
     margin-top: 5px;
@@ -143,7 +135,7 @@
     border: 1px solid red;
   }
 
-  .error-signup-modal #signup-form label {
+  .error-form label {
     font-weight: 600;
     font-size: 15px;
     line-height: 18px;
@@ -152,24 +144,18 @@
     margin-left: 35px;
     margin-bottom: 10px;
     margin-top: 10px;
-  }
-
-  .error-signup-modal #signup-form .signup-button {
-    position: absolute;
-    top: 61%;
   }
 }
 
 @media only screen and (min-width: 600px) {
-  
-  .signup-modal {
+  .login-modal {
     position: absolute;
     width: 450px;
-    height: 530px;
+    height: 480px;
     left: 50%;
     right: 50%;
     transform: translate(-50%, 0%);
-    top: 24%;
+    top: 30%;
     z-index: 100;
     background: #FFFFFF;
     box-shadow: 0px 0px 50px 
@@ -177,24 +163,10 @@
     border-radius: 7px;
   }
 
-  .signup-instructions {
-    position: absolute;
-    text-align: center;
-    width: 300px;
-    font-weight: 300;
-    font-size: 13px;
-    line-height: 15px;
-    color: #5C5D5E;
-    transform: translate(-50%, 0%);
-    left: 50%;
-    right: 50%;
-    top: 3%;
-  }
-
-  .signup-modal #signup-form {
+  .login-form {
     display: flex;
     position: absolute;
-    top: 11%;
+    top: 0%;
     flex-direction: column;
     align-items: space-evenly;
     justify-content: space-evenly;
@@ -203,11 +175,11 @@
     z-index: -1;
   }
 
-  .signup-modal #signup-form input {
+  .login-form input {
     width: 375px;
     height: 45px;
-    margin-top: -15px;
-    margin-bottom: -15px;
+    margin-top: -55px;
+    margin-bottom: -35px;
     position: relative;
     left: 50%;
     right: 50%;
@@ -222,7 +194,7 @@
     padding-left: 10px;
   }
 
-  .signup-modal #signup-form label {
+  .login-form label {
     font-weight: 600;
     font-size: 15px;
     line-height: 18px;
@@ -230,17 +202,39 @@
     height: 18px;
     position: relative;
     left: 50px;
-    margin-bottom: -50px;
-    margin-top: -30px;
+    margin-bottom: -150px;
+    margin-top: -150px;
   }
 
-  .signup-modal #signup-form .signup-button {
-    position: relative;
-    top: 0px;
-    margin-top: -25px;
+  .login-button-large {
+    position: absolute;
+    width: 200px;
+    height: 50px;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, 0%);
+    top: 72%;
+    background: #69C7BF;
+    box-shadow: 0px 4px 20px
+      rgba(26, 26, 26, 0.2);
+    border-radius: 50px;
+    font-family: 'Work Sans', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    color: #FFFFFF;
+    transition: .5s;
   }
 
-  .cancel {
+  .login-button-large:hover {
+    cursor: pointer;
+    background-color:rgb(82, 156, 150);
+    transition: 1s;
+  }
+
+  .cancel-login {
     z-index: -1;
     position: absolute;
     width: 50px;
@@ -248,51 +242,33 @@
     left: 50%;
     right: 50%;
     transform: translate(-50%, 0%);
-    bottom: 6%;
+    bottom: 7.5%;
     font-size: 14px;
     font-weight: 600;
     line-height: 21px;
     text-align: center;
     text-decoration: none;
     color: #69C7BF;
+    transition: 1s;
   }
 
-  .cancel:hover {
+  .cancel-login:hover {
     cursor: pointer;
+    color:rgb(82, 156, 150);
+    transition: 1s;
   }
 
   /* ERROR HANDLING */
 
-  .error-signup-modal {
-    position: absolute;
-    width: 450px;
-    height: 530px;
-    left: 50%;
-    right: 50%;
-    transform: translate(-50%, 0%);
-    top: 24%;
-    z-index: 100;
-    background: #FFFFFF;
-    box-shadow: 0px 0px 50px 
-      rgba(0,0,0,0.2);
-    border-radius: 7px;
-  }
-
-  .sign-up-error {
-    text-align: center;
+  .login-error {
     color: red;
-    font-size: 15px;
+    text-align: center;
     margin-top: 50px;
   }
-
-  .error-signup-modal .signup-instructions {
-    display: none;
-  }
-
-  .error-signup-modal #signup-form {
+  .error-form {
     display: flex;
     position: absolute;
-    top: 11%;
+    top: 0%;
     flex-direction: column;
     align-items: space-evenly;
     justify-content: space-evenly;
@@ -300,27 +276,26 @@
     width: 450px;
     z-index: -1;
   }
-
-  .error-signup-modal #signup-form input {
+  .error-form input {
     width: 375px;
     height: 45px;
-    margin-top: -15px;
-    margin-bottom: -15px;
+    margin-top: -55px;
+    margin-bottom: -35px;
     position: relative;
     left: 50%;
     right: 50%;
     transform: translate(-50%, 0%);
     padding: 2px;
-    border: 1px solid red;
     border-radius: 6px;
     font-weight: 300;
     font-size: 13px;
     line-height: 15px;
     color: #5C5D5E;
     padding-left: 10px;
+    border: 1px solid red;
   }
 
-  .error-signup-modal #signup-form label {
+  .error-form label {
     font-weight: 600;
     font-size: 15px;
     line-height: 18px;
@@ -328,13 +303,7 @@
     height: 18px;
     position: relative;
     left: 50px;
-    margin-bottom: -50px;
-    margin-top: -30px;
-  }
-
-  .error-signup-modal #signup-form .signup-button {
-    position: relative;
-    top: 0px;
-    margin-top: -25px;
+    margin-bottom: -150px;
+    margin-top: -150px;
   }
 }

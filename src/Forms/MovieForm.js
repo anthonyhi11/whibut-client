@@ -1,9 +1,13 @@
 import React from 'react';
 import WhibutContext from '../WhibutContext';
 import MoviesApiService from '../services/movies-api-service';
+import './movieform.css'
 
 export default class MovieForm extends React.Component {
 
+  state = { 
+    error: null
+  }
   handleAddMovie = (e) => {
     e.preventDefault();
     const title = e.target.title.value;
@@ -24,14 +28,16 @@ export default class MovieForm extends React.Component {
         this.context.handleCancel();
         this.props.history.push(`/dashboard/${movie.activity}`)
       })
+      .catch(res => {
+        this.setState({ error: res.error.message })
+      })
   }
 
   static contextType = WhibutContext;
   render() {
     return (
-      <div className='modal'>
-        <h2>Add Movie</h2>
-        <form onSubmit={this.handleAddMovie} id='form'>
+      <div className='add-movie-modal'>
+        <form onSubmit={this.handleAddMovie} className='addMovie-form'>
           <label htmlFor='title'>Title</label>
           <input type='text' id='title' name='title' placeholder='Ex. Parasite' required />
           <label htmlFor='genre'>Genre</label>
@@ -40,8 +46,8 @@ export default class MovieForm extends React.Component {
           <input type='number' id='rating' name='rating' min='1' max='10' placeholder='1' required />
           <label htmlFor='comments'>Comments</label>
           <textarea id='comments' name='comments' placeholder="What do you want to remember"></textarea>
-          <button type='submit'>Submit</button>
-          <button type='reset' onClick={this.context.handleCancel}>Cancel</button>
+          <button className='submitmovie-button'type='submit'>Submit</button>
+          <p type='reset' className='cancel-movie' onClick={this.context.handleCancel}>Cancel</p>
         </form>
       </div>
     )

@@ -1,0 +1,143 @@
+
+
+@media only screen and (max-width: 600px) {
+  .addmodal {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    width: 350px;
+    height: 250px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 50px
+      rgba(0,0,0,0.2);
+    border-radius: 7px;
+    z-index: 1;
+    top: 20%;
+  }
+
+  .add-instructions {
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 15px;
+    text-align: center;
+    color: #5C5D5E;
+    margin-top: 35px;
+  }
+
+  .addmodal-button-container {
+    display: flex;
+    width: 300px;
+    flex-wrap: wrap;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, 0);
+    top: 15px;
+  }
+
+  .addmodal-buttons {
+    width: 135px;
+    height: 44px;
+    background-color: #FFFFFF;
+    border-radius: 9px;
+    font-weight: 600;
+    border: 1px solid #69C7BF;
+    color: #094A59;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: center;
+    margin: 7px;
+    transition: .5s;
+  }
+
+  .addmodal-buttons:hover {
+    cursor: pointer;
+    background-color: #69C7BF;
+    transition: .5s;
+    color: #FFFFFF;
+  }
+
+  .cancel-add {
+    color: #69C7BF;
+    text-align: center;
+    margin-top: 45px;
+    transition: .3s;
+  }
+
+  .cancel-add:hover {
+    cursor: pointer;
+    color: black;
+    transition: .5s;
+  }
+}
+
+@media only screen and (min-width: 601px) {
+  .addmodal {
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, 0%);
+    width: 450px;
+    height: 310px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 50px
+      rgba(0,0,0,0.2);
+    border-radius: 7px;
+    z-index: 1;
+  }
+  
+  .add-instructions {
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 15px;
+    text-align: center;
+    color: #5C5D5E;
+    margin-top: 75px;
+  }
+  
+  .addmodal-button-container {
+    display: flex;
+    width: 300px;
+    flex-wrap: wrap;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, 0);
+    top: 15px;
+  }
+  
+  .addmodal-buttons {
+    width: 135px;
+    height: 44px;
+    background-color: #FFFFFF;
+    border-radius: 9px;
+    font-weight: 600;
+    border: 1px solid #69C7BF;
+    color: #094A59;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: center;
+    margin: 7px;
+    transition: .5s;
+  }
+  
+  .addmodal-buttons:hover {
+    cursor: pointer;
+    background-color: #69C7BF;
+    transition: .5s;
+    color: #FFFFFF;
+  }
+  
+  .cancel-add {
+    color: #69C7BF;
+    text-align: center;
+    margin-top: 45px;
+    transition: .3s;
+  }
+  
+  .cancel-add:hover {
+    cursor: pointer;
+    color: black;
+    transition: .5s;
+  }
+}

@@ -1,7 +1,7 @@
 import React from 'react';
 import WhibutContext from '../WhibutContext';
 import BooksApiService from '../services/books-api-service';
-
+import './addform.css';
 
 export default class BookForm extends React.Component {
 
@@ -32,9 +32,8 @@ export default class BookForm extends React.Component {
   static contextType = WhibutContext;
   render() {
     return (
-        <div className='modal'>
-          <h2>Add a Book</h2>
-          <form onSubmit={this.handleAddBook} id='form'>
+        <div className='add-form-modal'>
+          <form onSubmit={this.handleAddBook} className='add-form-form'>
             <label htmlFor='title'>Title</label>
             <input type='text' id='title' name='title' placeholder='ex. White Fang' required />
             <label htmlFor='genre'>Genre</label>
@@ -45,8 +44,8 @@ export default class BookForm extends React.Component {
             <input type='number' id='rating' name='rating' min='1' max='10' placeholder='1' required/>
             <label htmlFor='comments'>Comments</label>
             <textarea id='comments' name='comments' placeholder="What do you want to remember"></textarea>
-            <button type='submit'>Submit</button>
-            <button type='reset' onClick={this.context.handleCancel}>Cancel</button>
+            <button className='add-form-button'type='submit'>Add</button>
+            <p className='cancel-add-form' onClick={this.context.handleCancel}>Cancel</p>
           </form>
         </div>
     )

@@ -4,6 +4,7 @@ import RestaurantForm from '../Forms/RestaurantForm';
 import WhibutContext from '../WhibutContext'
 import Navbar from '../Navbar/Navbar';
 import RestaurantsApiService from '../services/restaurants-api-service';
+import Footer from '../Navbar/Footer';
 
 export default class RestaurantsDashboard extends React.Component {
   handleClick = () => {
@@ -31,16 +32,21 @@ export default class RestaurantsDashboard extends React.Component {
       })
       return (
         <div>
-          <h1>whibut</h1>
-          <h2>Restaurants</h2>
-          <section className='buttons'>
-            <button className='button' onClick={this.handleClick}>Add</button>
-            {this.context.isAddActive && <RestaurantForm history={this.props.history}/>}
-          </section>
-          <section className='results'>
-            {results}
-          </section>
           <Navbar history={this.props.history}/>
+          <Footer history={this.props.history}/>
+          <div className='activity-dash'>
+            <div className='activity-dash-content'>
+              <h1>Restaurants</h1>
+              <button className='activity-add-button' onClick={this.handleClick}>+</button>
+              <p className='add-text' onClick={this.handleClick}>Add Restaurant</p>
+              <div className='randomdiv'>
+                {this.context.isAddActive && <RestaurantForm history={this.props.history}/>}
+              </div>
+              <section className='activity-results'>
+                {results}
+              </section>
+            </div>
+          </div>
         </div>
       )
     }

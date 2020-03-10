@@ -4,6 +4,7 @@ import TvActivity from '../ActivityCards/TvActivity';
 import TvForm from '../Forms/TvForm';
 import Navbar from '../Navbar/Navbar';
 import TvApiService from '../services/tv-api-service';
+import Footer from '../Navbar/Footer';
 
 export default class TvDashboard extends React.Component {
 
@@ -32,16 +33,21 @@ export default class TvDashboard extends React.Component {
       })
       return (
         <div>
-          <h1>whibut</h1>
-          <h2>TV Shows</h2>
-          <section className='buttons'>
-            <button className='button' onClick={this.handleClick}>Add</button>
-            {this.context.isAddActive && <TvForm history={this.props.history}/>}
-          </section>
-          <section className='results'>
-            {results}
-          </section>
           <Navbar history={this.props.history}/>
+          <Footer history={this.props.history}/>
+          <div className='activity-dash'>
+            <div className='activity-dash-content'>
+              <h1>TV Shows</h1>
+              <button className='activity-add-button' onClick={this.handleClick}>+</button>
+              <p className='add-text' onClick={this.handleClick}>Add TV Show</p>
+              <div className='randomdiv'>
+                {this.context.isAddActive && <TvForm history={this.props.history}/>}
+              </div>
+              <section className='activity-results'>
+                {results}
+              </section>
+            </div>
+          </div>
         </div>
       )
     }

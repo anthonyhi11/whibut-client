@@ -8,6 +8,7 @@ import Error from '../error';
 
 
 
+
 export default class LandingPage extends React.Component {
   
   constructor(props) {
@@ -31,26 +32,20 @@ export default class LandingPage extends React.Component {
  static contextType = WhibutContext;
   render() {
     return (
-      // <WhibutContext.Provider value={value}>
         <div>
           <header>
-            <h1 className='hero'>whibut</h1>
+            <a href='/'><img src='./images/whibyt-mark1.png' className='hero-img' alt='whibut logo'></img></a> 
           </header>
-          {/* <section className='video'>
-            <Iframe src={this.iframe.src} height={this.iframe.height} width={this.iframe.width} />
-          </section> */}
           <video  height='300px' width='450px' controls className='video' >
             <source src='./images/whibut.mp4' type='video/mp4'/>
           </video>
-          <section className='buttons'>
-            <button onClick={this.context.handleSignupClick}>Sign Up</button>
+            <button onClick={this.context.handleSignupClick} className='signup-button'>Sign Up</button>
               {this.context.signupActive && <SignUp handleSubmit={this.handleSubmit}/>}
-            <button onClick={this.context.handleLoginClick}>Log In</button>
+            <p onClick={this.context.handleLoginClick} className='login-button'>Log in</p>
               {this.context.loginActive && <LogIn handleSubmit={this.handleSubmit}/>}
-          </section>
+
           {this.state.errorActive && <Error />}
         </div>  
-      // </WhibutContext.Provider>
     )
   }
 }

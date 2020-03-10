@@ -1,20 +1,34 @@
 import React from 'react';
 import WhibutContext from '../../../WhibutContext';
-import './modal.css';
-import { Link } from 'react-router-dom';
+
+import './viewbuttons.css'
 
 export default class ViewButtons extends React.Component {
+
+  handleMovieClick = () => {
+    this.props.history.push('/dashboard/movies')
+  }
+
+  handleTvClick = () => {
+    this.props.history.push('/dashboard/tv')
+  }
+  handleBooksClick = () => {
+    this.props.history.push('/dashboard/books')
+  }
+  handleRestClick = () => {
+    this.props.history.push('/dashboard/restaurants')
+  }
+
   
   static contextType = WhibutContext;
   render() {
     return (
       <div className='viewbuttons'>
-        <p>Please select dashboard to view:</p>
         <div className='buttons-container'>
-        <Link to='/dashboard/movies'><div className='view'>Movies</div></Link>
-        <Link to='/dashboard/tv'><div className='view'>TV</div></Link>
-        <Link to='/dashboard/restaurants'><div className='view'>Restaurants</div></Link>
-        <Link to='/dashboard/books'><div className='view'>Books</div></Link>
+        <button onClick={this.handleMovieClick} className='view'>Movies</button>
+        <button onClick={this.handleTvClick} className='view'>TV</button>
+        <button onClick={this.handleRestClick} className='view'>Restaurants</button>
+        <button onClick={this.handleBooksClick} className='view'>Books</button>
         </div>
       </div>
     )

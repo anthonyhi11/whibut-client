@@ -24,9 +24,11 @@ export default class Navbar extends React.Component {
     <WhibutContext.Consumer>
       {(context) => (
       <nav className='navbar'>
-        <button className='Navbar-buttons' id='Navbar-left' onClick={this.handleHome}>Home</button>  
-        <button className='Navbar-buttons' onClick={this.handleSettings}>Settings</button>
-        <button className='Navbar-buttons' onClick={this.handleLogout}>Logout</button>
+        <img src='../../images/whibyt-mark1.png' className='navbar-home navbar-buttons'  alt='navbar home button' onClick={this.handleHome}></img>  
+        <div className='navbar-container'>
+          <img src='../../images/settings.png' className='navbar-buttons settings-button' onClick={this.handleSettings} alt='settings button' />
+          <p className='navbar-buttons logout-button' onClick={this.handleLogout}>Logout</p>
+        </div>
       </nav>
       )}
     </WhibutContext.Consumer>
