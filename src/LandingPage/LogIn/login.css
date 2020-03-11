@@ -15,6 +15,12 @@
     border-radius: 7px;
   }
 
+  .demo-creds {
+    text-align: center;
+    font-size: 13px;
+    margin: 10px;
+  }
+
   .login-form {
     display: flex;
     position: absolute;
@@ -109,6 +115,10 @@
     text-align: center;
     margin-top: 20px;
   }
+
+  .error-creds {
+    display:none;
+  }
   .error-form {
     display: flex;
     position: absolute;
@@ -161,6 +171,11 @@
     box-shadow: 0px 0px 50px 
       rgba(0,0,0,0.2);
     border-radius: 7px;
+  }
+  .demo-creds {
+    text-align: center;
+    font-size: 13px;
+    margin: 10px;
   }
 
   .login-form {
@@ -264,6 +279,9 @@
     color: red;
     text-align: center;
     margin-top: 50px;
+  }
+  .error-creds {
+    display: none;
   }
   .error-form {
     display: flex;
