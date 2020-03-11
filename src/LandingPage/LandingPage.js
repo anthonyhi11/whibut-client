@@ -33,11 +33,12 @@ export default class LandingPage extends React.Component {
           <video  height='300px' width='450px' controls className='video' >
             <source src='./images/whibut.mp4' type='video/mp4'/>
           </video>
+          <div className='signinbuttons'>
             <button onClick={this.context.handleSignupClick} className='signup-button'>Sign Up</button>
               {this.context.signupActive && <SignUp handleSubmit={this.handleSubmit}/>}
             <p onClick={this.context.handleLoginClick} className='login-button'>Log in</p>
               {this.context.loginActive && <LogIn handleSubmit={this.handleSubmit}/>}
-
+          </div>
           {this.state.errorActive && <Error />}
         </div>  
     )
