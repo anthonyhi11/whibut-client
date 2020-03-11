@@ -23,12 +23,6 @@ export default class LandingPage extends React.Component {
     this.props.history.push('/main')
   }
 
-//  iframe = {
-//    src: 'https://www.youtube.com/embed/5qap5aO4i9A',
-//    width: '560',
-//    height: '315',
-//  }
-
  static contextType = WhibutContext;
   render() {
     return (

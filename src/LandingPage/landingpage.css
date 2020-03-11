@@ -6,6 +6,14 @@
 
 @media only screen and (max-width: 599px) {
 
+  .video {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    top: 25%;
+    width: 350px;
+  }
+
   .hero-img {
     position: absolute;
     width: 243px;
