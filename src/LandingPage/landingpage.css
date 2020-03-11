@@ -5,42 +5,39 @@
 }
 
 @media only screen and (max-width: 599px) {
-
-  .video {
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%);
-    top: 25%;
-    width: 350px;
+  html {
+    height: 100%;
   }
-
+  body { 
+    height: 100%;
+  }
+  #root {
+    height: 100%;
+  }
+  .app {
+    height: 100%;
+  }
+  .landing-page-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+    align-items: center;
+  }
   .hero-img {
-    position: absolute;
     width: 243px;
     height: 63px;
-    left: 50%;
-    right: 50%;
-    transform: translate(-50%, 0%);
-    top: 15%;
+    margin-top: 60px;
   }
-
-  #placeholder-img {
-    position: absolute;
-    width: 205px;
-    height: 202px;
-    left: 50%;
-    right: 50%;
-    transform: translate(-50%, 0%);
-    top: 30%
+  .video {
+    width: 85%;
+    height: 25%;
+    margin-bottom: 0px;
   }
 
   .signup-button {
-    position: absolute;
     width: 200px;
     height: 50px;
-    left: 50%;
-    transform: translate(-50%, 0%);
-    top: 68%;
     background: #69C7BF;
     box-shadow: 0px 4px 20px
       rgba(26, 26, 26, 0.2);
@@ -53,7 +50,10 @@
     text-align: center;
     color: #FFFFFF;
     transition: .5s;
+    margin-bottom: -100px;
+    margin-top: -60px;
   }
+
   .signup-button:hover {
     cursor: pointer;
     background-color:rgb(82, 156, 150);
@@ -62,12 +62,8 @@
 
   .login-button {
     z-index: -1;
-    position: absolute;
     width: 60px;
     height: 20px;
-    left: 50%;
-    transform: translate(-50%, 0%);
-    top: 75.5%;
     font-size: 18px;
     font-weight: 600;
     line-height: 21px;
@@ -75,6 +71,7 @@
     text-decoration: none;
     color: #69C7BF;
     transition: .5s;
+    margin-bottom: 100px;
   }
   .login-button:hover {
     cursor: pointer;
