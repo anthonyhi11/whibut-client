@@ -32,7 +32,7 @@ export default class LandingPage extends React.Component {
  static contextType = WhibutContext;
   render() {
     return (
-        <div>
+        <div className='landing-page-main'>
           <header>
             <a href='/'><img src='./images/whibyt-mark1.png' className='hero-img' alt='whibut logo'></img></a> 
           </header>
