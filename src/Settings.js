@@ -34,11 +34,10 @@ export default class Settings extends React.Component {
   }
   render() {
     return (
-      <div>
+      <div className='settings-container'>
         <Navbar history={this.props.history}/>
         <Footer history={this.props.history}/>
         <div className='main-settings'>
-          <div className='main-settings-content'>
           <h1>Settings</h1>
           <p className='settings-instructions'>All fields are required, you can use your existing username and/or password.</p>
           <form onSubmit={e => this.handleMakeChanges(e)} className='settings-form'>
@@ -51,7 +50,6 @@ export default class Settings extends React.Component {
             <button className='settings-submit-button' type='submit'>Update</button>
           </form>
           {this.state.errorActive && <Error />}
-          </div>
         </div>
       </div>
     )

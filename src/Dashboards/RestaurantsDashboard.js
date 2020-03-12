@@ -31,20 +31,20 @@ export default class RestaurantsDashboard extends React.Component {
                 />
       })
       return (
-        <div>
+        <div className='activity-dash-container'>
           <Navbar history={this.props.history}/>
           <Footer history={this.props.history}/>
           <div className='activity-dash'>
-            <div className='activity-dash-content'>
+            <div className='activity-add-div'>
               <h1>Restaurants</h1>
               <button className='activity-add-button' onClick={this.handleClick}>+</button>
               <p className='add-text' onClick={this.handleClick}>Add Restaurant</p>
-              <div className='randomdiv'>
-                {this.context.isAddActive && <RestaurantForm history={this.props.history}/>}
-              </div>
-              <section className='activity-results'>
-                {results}
-              </section>
+            </div>
+            <div className='randomdiv'>
+              {this.context.isAddActive && <RestaurantForm history={this.props.history}/>}
+            </div>
+            <div className='activity-results'>
+              {results}
             </div>
           </div>
         </div>

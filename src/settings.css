@@ -5,40 +5,38 @@
     height: 100%;
     background-color: white;
   }
+
+  .settings-container {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+  }
   .main-settings {
     background-color: white;
     width: 100%;
     height: 100%;
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%);
+    display: flex;
+    flex-direction: column;
+
   }
 
-  .main-settings-content {
-    position: absolute;
-    transform: translate(-50%, 0%);
-    left: 50%;
-    top: 25%;
-    width: 100%;
-    height: 100%;
-  }
-
-  .main-settings-content h1 {
-    position: absolute;
+  .main-settings h1 {
     font-weight: 600;
     font-size: 30px;
     line-height: 35px;
     color: #094A59;
-    top: 5%;
-    left: 5%;
+    margin-top: 150px;
+    margin-left: 20px;
   }
   .settings-instructions {
-    position: absolute;
     font-weight: 300;
-    top: 12%;
     font-size: 13px;
-    left: 5.5%;
     width: 300px;
+    text-align: center;
+    margin-left: 50%;
+    transform: translate(-50%);
+    margin-top: 20px;
   }
 
   .settings-form {
@@ -46,10 +44,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    position: absolute;
-    top: 20%;
-    left: 0%;
     width: 100%;
+    margin-top: 10px;
   }
 
   .settings-form input {
@@ -86,10 +82,6 @@
     font-weight: 600;
     text-align: center;
     margin-top: 20px;
-    position: absolute;
-    left: 50%;
-    top: 105%;
-    transform: translate(-50%);
     color: white;
     transition: .7s;
   }
