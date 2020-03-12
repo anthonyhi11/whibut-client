@@ -31,9 +31,11 @@ export default class LogIn extends React.Component {
       <div className='login-modal'>
        <div role='alert'>
             {error && <p className='login-error'>{error}</p>}
-            <p className={error ? 'error-creds': 'demo-creds'}>demo username: demouser</p>
-            <p className={error ? 'error-creds': 'demo-creds'}>demo password: AAaa11!!</p>
           </div>
+          <div className='demo-creds-div'>
+              <p className={error ? 'error-creds': 'demo-creds'}>demo username: demouser</p>
+              <p className={error ? 'error-creds': 'demo-creds'}>demo password: AAaa11!!</p>
+            </div>
         <form className={error ? 'error-form': 'login-form'}onSubmit={e => this.handleLogIn(e)}>
           <label htmlFor='name'>Username</label>
           <input type='text' id="name" name='name' placeholder='Username' />
