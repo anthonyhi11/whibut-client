@@ -2,18 +2,19 @@
   .navbar {
     background-color: #69C7BF;
     height: 160px;
-    width: 100%;
-    position: fixed;
+    width: inherit;
+    position: absolute;
     top: 0px;
     z-index: 5;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
   }
   .navbar-home {
     position: absolute;
     width: 175px;
     height: 45px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -15%);
   }
   .navbar-home:hover {
     cursor: pointer;

@@ -1,36 +1,54 @@
 @media only screen and (max-width: 600px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
   html {
     width: 100%;
     height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .root {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .app {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
   }
   body {
     width: 100%;
     height: 100%;
+    margin: 0;
+    padding: 0;
     background-color: rgba(229, 229, 229, 0.22);
+  }
+
+  .main-dashboard-container {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+
   }
 
   .main-dashboard {
     background-color: white;
-    width: 70%;
+    width: 100%;
     height: 100%;
-    position: absolute;
-    top: 15%;
-    left: 50%;
-    transform: translate(-50%, 0%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 
-  .main-dashboard-content {
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%, 0%);
-    top: 16%;
-    background-color: white;
-  }
   .main-dashboard h1 {
-    position: absolute;
-    left: 50%;
-    right: 50%;
-    transform: translate(-50%, 0%);
     font-weight: 600;
     font-size: 24px;
     line-height: 28px;
@@ -40,13 +58,9 @@
   }
 
   .add-button {
-    position: absolute;
-    left: 50%;
-    right: 50%;
-    top: 80%;
-    transform: translate(-50%, 0%);
     width: 75px;
     height: 75px;
+    margin-top: 50px;
     background: #FFFFFF;
     border: 2.2px solid #69C7BF;
     box-sizing: border-box;
