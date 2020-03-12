@@ -54,8 +54,8 @@ export default class BooksDashboard extends React.Component {
             <div className='activity-results'>
                 {content}
             </div>
+            <div className='bottom-div'></div>
           </div>
-          <div className='bottom-div'></div>
         </div>
       )
     }
