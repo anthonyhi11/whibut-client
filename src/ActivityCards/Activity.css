@@ -1,15 +1,5 @@
-/* .deletebutton {
-  margin-bottom: 10px; 
-} */
 
 @media only screen and (max-width: 600px) {
-
-  /* .activity-flex-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: space-evenly;
-  } */
 
   .activity-div {
     border: 1px solid #69C7BF;
@@ -120,19 +110,7 @@
     margin-top: 5px;
   }
 }
-@media only screen and (min-width: 601px) {
-  .activity-results {
-    display: flex;
-    position: relative;
-    top: 80px;
-    flex-wrap: wrap;
-    width: 720px;
-  }
-  .activity-flex-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-  }
+@media only screen and (min-width: 1000px) {
 
   .activity-div {
     border: 1px solid #69C7BF;
@@ -143,8 +121,6 @@
     height: auto;
     min-height: 202px;
     z-index: 1;
-    position: relative;
-    left: 10%;
     margin: 10px;
   }
 

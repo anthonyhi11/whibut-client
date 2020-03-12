@@ -111,14 +111,14 @@
   }
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 1000px) {
   .add-movie-modal {
     position: absolute;
     width: 500px;
     height: 525px;
     left: 50%;
     transform: translate(-50%, 0%);
-    top: -105%;
+    top: 25%;
     z-index: 3;
     background: #FFFFFF;
     box-shadow: 0px 0px 50px 

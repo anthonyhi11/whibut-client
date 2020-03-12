@@ -32,16 +32,18 @@
 }
 
 
-@media only screen and (min-width: 601px) {
+@media only screen and (min-width: 900px) {
   .buttons-container {
     display: flex;
     width: 450px;
     flex-wrap: wrap;
-    position: relative;
-    left: 50%;
-    right: 50%;
-    top: 300px;
-    transform: translate(-47.5%, 0)
+    justify-content: center;
+    margin-top: -50px;
+  }
+
+  .viewbuttons {
+    width: 450px;
+    margin-top: 50px;
   }
 
   .view {
