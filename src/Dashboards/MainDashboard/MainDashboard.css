@@ -1,4 +1,7 @@
 @media only screen and (max-width: 600px) {
+  * {
+    margin: 0px;
+  }
   html {
     width: 100%;
     height: 100%;
