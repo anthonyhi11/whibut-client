@@ -3,22 +3,13 @@
 } */
 
 @media only screen and (max-width: 600px) {
-  .activity-results {
-    display: flex;
-    position: absolute;
-    top: 20%;
-    flex-wrap: wrap;
-    width: 100%;
-    justify-content: space-evenly;
-    margin-bottom: 45px;
-    z-index: -3;
-  }
-  .activity-flex-container {
+
+  /* .activity-flex-container {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: space-evenly;
-  }
+  } */
 
   .activity-div {
     border: 1px solid #69C7BF;
