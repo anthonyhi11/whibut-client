@@ -32,20 +32,22 @@ export default class TvDashboard extends React.Component {
                 />
       })
       return (
-        <div>
+        <div className='activity-dash-container'>
           <Navbar history={this.props.history}/>
           <Footer history={this.props.history}/>
           <div className='activity-dash'>
-            <div className='activity-dash-content'>
+            <div className='activity-add-div' onClick={this.handleClick}>
               <h1>TV Shows</h1>
               <button className='activity-add-button' onClick={this.handleClick}>+</button>
               <p className='add-text' onClick={this.handleClick}>Add TV Show</p>
-              <div className='randomdiv'>
-                {this.context.isAddActive && <TvForm history={this.props.history}/>}
-              </div>
-              <section className='activity-results'>
-                {results}
-              </section>
+            </div>
+            <div className='randomdiv'>
+              {this.context.isAddActive && <TvForm history={this.props.history}/>}
+            </div>
+            <div className='activity-results'>
+              {results}
+            </div>
+            <div className='bottom-div'>
             </div>
           </div>
         </div>

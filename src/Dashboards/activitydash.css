@@ -12,7 +12,7 @@
     justify-content: space-evenly;
     z-index: -3;
     margin-top: 20px;
-    margin-bottom: 80px;
+    margin-bottom: 10px;
   }
 
   .activity-dash-container {
@@ -34,7 +34,8 @@
   .activity-add-div {
     display: flex;
     width: 300px;
-    margin-top: 200px;
+    position: static;
+    margin-top: 200px; /* change to 200px */
     align-items: center;
     justify-content: flex-start;
   }
@@ -51,6 +52,7 @@
     font-size: 13px;
     line-height: 15px;
     color: #5c5d5e;
+    z-index: 10;
     margin-left: 8px;
     margin-bottom: -6px;
   }
@@ -71,6 +73,7 @@
     padding-bottom: 2px;
     padding-right: 0.5px;
     margin-left: 25px;
+    z-index: 10;
     margin-bottom: -6px;
   }
 
@@ -87,6 +90,11 @@
     transform: translate(-50%);
     top: 0px;
     z-index: 3;
+  }
+
+  .bottom-div {
+    min-height: 55px;
+    width: 100px;
   }
 }
 
