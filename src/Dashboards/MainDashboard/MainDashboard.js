@@ -17,18 +17,16 @@ export default class MainDashboard extends React.Component {
   render() {
 
     return (
-      <div>
+      <div class='main-dashboard-container'>
         <Navbar history={this.props.history}/>
         <Footer history={this.props.history} />
-          <div className='main-dashboard'> 
-          <div className='main-dashboard-content'> 
+          <div className='main-dashboard'>  
             <header>
               <h1>So...What have you been up to?</h1>
             </header>
               <button className='add-button' onClick={this.handleAddClick}>+</button>
                 {this.context.isAddActive && <AddModal history={this.props.history}/>}
                 <ViewButtons history={this.props.history}/>
-            </div>
           </div>
         </div>
     )

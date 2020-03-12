@@ -4,11 +4,11 @@
   }
   .add-form-modal {
     position: absolute;
-    width: 350px;
-    height: 525px;
+    width: 340px;
+    height: 515px;
     left: 50%;
     transform: translate(-50%);
-    top: -90%;
+    top: -75%;
     z-index: 5;
     background: #FFFFFF;
     box-shadow: 0px 0px 50px 
