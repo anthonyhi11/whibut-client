@@ -3,12 +3,7 @@
     display: flex;
     width: 450px;
     flex-wrap: wrap;
-    position: relative;
     justify-content: center;
-    left: 50%;
-    right: 50%;
-    top: 270px;
-    transform: translate(-49%, 0)
   }
 
   .view {
@@ -31,8 +26,8 @@
   }
 
   .viewbuttons {
-    width: 0px;
-    margin-right: 10px;
+    width: 450px;
+    margin-top: 50px;
   }
 }
 
