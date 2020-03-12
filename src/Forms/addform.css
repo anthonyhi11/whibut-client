@@ -5,10 +5,10 @@
   .add-form-modal {
     position: absolute;
     width: 340px;
-    height: 515px;
+    height: 405px;
     left: 50%;
     transform: translate(-50%);
-    top: -75%;
+    top: 25%;
     z-index: 5;
     background: #FFFFFF;
     box-shadow: 0px 0px 50px 
@@ -23,18 +23,17 @@
     flex-direction: column;
     align-items: space-evenly;
     justify-content: space-evenly;
-    height: 555px;
+    height: 405px;
     width: 350px;
     left: 50%;
     transform: translate(-50%, 0%);
     z-index: 5;
     padding-top: 10px;
-    margin-top: -10px;
   }
 
   .add-form-form input {
     width: 285px;
-    height: 35px;
+    height: 30px;
     margin-left: 50%;
     transform: translate(-50%);
     padding: 2px;
@@ -51,7 +50,7 @@
 
   .add-form-form textarea{
     width: 285px;
-    height: 60px;
+    height: 40px;
     border: 1px solid #E5E5E5;
     border-radius: 6px;
     margin-left: 50%;
@@ -74,8 +73,6 @@
     height: 18px;
     position: relative;
     left: 50px;
-    margin-top: -10px;
-    margin-bottom: -10px;
   }
 
   .cancel-add-form {
@@ -84,8 +81,7 @@
     margin-left: 50%;
     transform: translate(-50%);
     transition: .3s;
-    margin-bottom: 1px;
-    margin-top: -15px;
+    margin-bottom: -10px;
   }
 
   .cancel-add-form:hover {
@@ -95,20 +91,20 @@
   }
 
   .add-form-button {
-    width: 200px;
-    height: 50px;
+    width: 100px;
+    height: 30px;
     background: #69C7BF;
     box-shadow: 0px 4px 20px rgba(26, 26, 26, 0.2);
     border-radius: 50px;
     margin-left: 50%;
     transform: translate(-50%);
     text-align: center;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 600;
     line-height: 21px;
     color: #FFFFFF;
     transition: .5s;
-    margin-bottom: -10px;
+    margin-bottom: -20px;
   }
 
   .add-form-button:hover {

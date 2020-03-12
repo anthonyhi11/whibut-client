@@ -1,21 +1,21 @@
 @media only screen and (max-width: 600px) {
   .buttons-container {
     display: flex;
-    width: 450px;
+    width: 400px;
     flex-wrap: wrap;
     justify-content: center;
   }
 
   .view {
-    width: 140px;
-    height: 63px;
+    width: 120px;
+    height: 53px;
     background-color: #69C7BF;
     border-radius: 9px;
     font-weight: 800;
     color: #ffffff;
     font-size: 18px;
     line-height: 21px;
-    margin: 9px;
+    margin: 7px;
     transition: .5s;
   }
 
@@ -26,7 +26,7 @@
   }
 
   .viewbuttons {
-    width: 450px;
+    width: 400px;
     margin-top: 50px;
   }
 }

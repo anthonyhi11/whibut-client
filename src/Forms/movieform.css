@@ -3,10 +3,10 @@
   .add-movie-modal {
     position: absolute;
     width: 340px;
-    height: 525px;
+    height: 405px;
     left: 50%;
     transform: translate(-50%, 0%);
-    top: -80%;
+    top: 25%;
     z-index: 3;
     background: #FFFFFF;
     box-shadow: 0px 0px 50px 
@@ -21,7 +21,7 @@
     flex-direction: column;
     align-items: space-evenly;
     justify-content: space-evenly;
-    height: 550px;
+    height: 405px;
     width: 350px;
     left: 50%;
     transform: translate(-50%, 0%);
@@ -31,7 +31,7 @@
 
   .addMovie-form input {
     width: 285px;
-    height: 35px;
+    height: 30px;
     margin-left: 50%;
     transform: translate(-50%);
     padding: 2px;
@@ -46,7 +46,7 @@
 
   .addMovie-form textarea {
     width: 285px;
-    height: 60px;
+    height: 40px;
     border: 1px solid #E5E5E5;
     border-radius: 6px;
     margin-left: 50%;
@@ -72,15 +72,15 @@
   }
 
   .submitmovie-button {
-  width: 200px;
-  height: 50px;
+  width: 100px;
+  height: 30px;
   background: #69C7BF;
   box-shadow: 0px 4px 20px rgba(26, 26, 26, 0.2);
   border-radius: 50px;
   margin-left: 50%;
   transform: translate(-50%);
   text-align: center;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 600;
   line-height: 21px;
   color: #FFFFFF;
@@ -99,9 +99,9 @@
     text-align: center;
     margin-left: 50%;
     transform: translate(-50%);
-    margin-top: -10px;
+    margin-top: 0px;
     transition: .3s;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
   }
 
   .cancel-movie:hover {

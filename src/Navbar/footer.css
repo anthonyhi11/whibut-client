@@ -4,7 +4,7 @@
     position: absolute;
     bottom: 0;
     width: inherit;
-    height: 70px;
+    height: 55px;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -15,7 +15,7 @@
     height: 100%;
     font-size: 16px;
     margin: -1px;
-    border-top: 1px solid #094A59;;
+    border-top: 2px solid #094A59;;
     border-right: 1px solid #094A59;
     background-color: #FFFFFF;
     color: #094A59;

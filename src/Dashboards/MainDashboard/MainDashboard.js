@@ -17,7 +17,7 @@ export default class MainDashboard extends React.Component {
   render() {
 
     return (
-      <div class='main-dashboard-container'>
+      <div className='main-dashboard-container'>
         <Navbar history={this.props.history}/>
         <Footer history={this.props.history} />
           <div className='main-dashboard'>  
