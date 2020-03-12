@@ -27,12 +27,21 @@
   .hero-img {
     width: 243px;
     height: 63px;
-    margin-top: 60px;
+    margin-top: 20px;
   }
   .video {
     width: 85%;
     height: 25%;
     margin-bottom: 0px;
+  }
+  .signinbuttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -30px;
+    margin-bottom: 160px;
+    height: 100px;
+    justify-content: space-around;
   }
 
   .signup-button {
@@ -50,8 +59,6 @@
     text-align: center;
     color: #FFFFFF;
     transition: .5s;
-    margin-bottom: -100px;
-    margin-top: -60px;
   }
 
   .signup-button:hover {
@@ -61,7 +68,7 @@
   }
 
   .login-button {
-    z-index: -1;
+    z-index: 1;
     width: 60px;
     height: 20px;
     font-size: 18px;
@@ -71,7 +78,6 @@
     text-decoration: none;
     color: #69C7BF;
     transition: .5s;
-    margin-bottom: 100px;
   }
   .login-button:hover {
     cursor: pointer;

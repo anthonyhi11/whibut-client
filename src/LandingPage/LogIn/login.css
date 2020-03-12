@@ -5,20 +5,26 @@
     width: 325px;
     height: 350px;
     left: 50%;
-    right: 50%;
     transform: translate(-50%, 0%);
-    top: 33%;
+    top: 25%;
     z-index: 100;
     background: #FFFFFF;
     box-shadow: 0px 0px 50px 
       rgba(0,0,0,0.2);
     border-radius: 7px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .demo-creds-div { 
+    margin-bottom: 50px;
   }
 
   .demo-creds {
     text-align: center;
     font-size: 13px;
-    margin: 10px;
+    margin: 0px;
+    margin-bottom: 0px;
   }
 
   .login-form {
