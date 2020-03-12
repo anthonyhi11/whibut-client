@@ -51,6 +51,7 @@ componentDidMount() {
             {results}
           </div>
         </div>
+        <div className='bottom-div'></div>
       </div>
     )
   }

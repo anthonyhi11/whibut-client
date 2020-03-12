@@ -93,7 +93,7 @@
   }
 
   .bottom-div {
-    min-height: 55px;
+    min-height: 100px;
     width: 100px;
   }
 }
@@ -191,5 +191,8 @@
     transform: translate(-50%);
     top: 0px;
     z-index: 3;
+  }
+  .bottom-div {
+    display: none;
   }
 }

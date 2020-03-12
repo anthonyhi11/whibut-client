@@ -47,6 +47,7 @@ export default class RestaurantsDashboard extends React.Component {
               {results}
             </div>
           </div>
+          <div className='bottom-div'></div>
         </div>
       )
     }
