@@ -1,4 +1,73 @@
-@media only screen and (max-width: 600px) {
+
+@media only screen and (min-width: 1000px) {
+  .buttons-container {
+    display: flex;
+    width: 450px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: -50px;
+  }
+
+  .viewbuttons {
+    width: 450px;
+    margin-top: 50px;
+  }
+
+  .view {
+    width: 195px;
+    height: 63px;
+    background-color: #69C7BF;
+    border-radius: 9px;
+    font-weight: 800;
+    color: #ffffff;
+    font-size: 18px;
+    line-height: 21px;
+    margin: 9px;
+    transition: .5s;
+  }
+
+  .view:hover {
+    cursor: pointer;
+    background-color:rgb(82, 156, 150);
+    transition: .8s;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .buttons-container {
+    display: flex;
+    width: 450px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: -50px;
+  }
+
+  .viewbuttons {
+    width: 450px;
+    margin-top: 50px;
+  }
+
+  .view {
+    width: 195px;
+    height: 63px;
+    background-color: #69C7BF;
+    border-radius: 9px;
+    font-weight: 800;
+    color: #ffffff;
+    font-size: 18px;
+    line-height: 21px;
+    margin: 9px;
+    transition: .5s;
+  }
+
+  .view:hover {
+    cursor: pointer;
+    background-color:rgb(82, 156, 150);
+    transition: .8s;
+  }
+}
+
+@media only screen and (max-width: 768px) {
   .buttons-container {
     display: flex;
     width: 400px;
@@ -31,31 +100,24 @@
   }
 }
 
-
-@media only screen and (min-width: 900px) {
+@media only screen and (max-width: 600px) {
   .buttons-container {
     display: flex;
-    width: 450px;
+    width: 400px;
     flex-wrap: wrap;
     justify-content: center;
-    margin-top: -50px;
-  }
-
-  .viewbuttons {
-    width: 450px;
-    margin-top: 50px;
   }
 
   .view {
-    width: 195px;
-    height: 63px;
+    width: 120px;
+    height: 53px;
     background-color: #69C7BF;
     border-radius: 9px;
     font-weight: 800;
     color: #ffffff;
-    font-size: 18px;
+    font-size: 15px;
     line-height: 21px;
-    margin: 9px;
+    margin: 7px;
     transition: .5s;
   }
 
@@ -63,5 +125,10 @@
     cursor: pointer;
     background-color:rgb(82, 156, 150);
     transition: .8s;
+  }
+
+  .viewbuttons {
+    width: 400px;
+    margin-top: 50px;
   }
 }
