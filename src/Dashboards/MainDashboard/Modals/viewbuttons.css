@@ -76,15 +76,15 @@
   }
 
   .view {
-    width: 120px;
-    height: 53px;
+    width: 160px;
+    height: 60px;
     background-color: #69C7BF;
     border-radius: 9px;
     font-weight: 800;
     color: #ffffff;
     font-size: 15px;
     line-height: 21px;
-    margin: 7px;
+    margin: 9px;
     transition: .5s;
   }
 
@@ -96,7 +96,7 @@
 
   .viewbuttons {
     width: 400px;
-    margin-top: 50px;
+    margin-top: 100px;
   }
 }
 
@@ -129,6 +129,6 @@
 
   .viewbuttons {
     width: 400px;
-    margin-top: 50px;
+    margin-top: 100px;
   }
 }

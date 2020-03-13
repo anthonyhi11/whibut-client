@@ -1,6 +1,213 @@
+@media only screen and (min-width: 1000px) {
 
-@media only screen and (max-width: 600px) {
+  .activity-div {
+    border: 1px solid #69C7BF;
+    border-radius: 6px;
+    background: white;
+    padding: 20px;
+    width: 340px;
+    height: auto;
+    min-height: 202px;
+    z-index: 1;
+    margin: 10px;
+  }
 
+  .activity-title {
+    font-size: 20px;
+    line-height: 19px;
+    font-weight: 600;
+    color: #094A59;
+    margin-top: 5px;
+  }
+
+  .activity-genre {
+    height: auto;
+    width: fit-content;
+    min-width: 60px;
+    padding: 5px 12px;
+    background-color: #5C5D5E;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 12px;
+    color: white;
+    text-align: center;
+    
+  }
+
+  .activity-rating-good {
+    position: absolute;
+    right: 5%;
+    top: 8%;
+    margin: 0;
+    color:#69C7BF;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 19px;
+  }
+
+  .activity-rating-ok {
+    position: absolute;
+    right: 5%;
+    top: 8%;
+    margin: 0;
+    color: #F8B653;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 19px;
+  }
+
+
+  .activity-rating-bad {
+    position: absolute;
+    right: 5%;
+    top: 8%;
+    margin: 0;
+    color:red;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 19px;
+  }
+
+  .activity-comments {
+    font-weight: 300;
+    font-size: 13px;
+    width: 300px;
+    line-height: 17px;
+    color: #5C5D5E;
+  }
+  .activity-deletebutton {
+    z-index: 2;
+    border: solid 1px #69C7BF;
+    border-radius: 50px;
+    width: 60px;
+    font-weight: 300;
+    transition: .5s;
+    font-size: 12px;
+    margin-top: 5px;
+  }
+
+  .activity-deletebutton:hover {
+    cursor: pointer;
+    background-color: #B80F0A;
+    transition: 1s;
+    color: white; 
+    font-weight: 600;
+    border: solid 1px #B80F0A;
+  }
+
+  .activity-author {
+    font-size: 12px;
+    color: #094A59;
+    margin-top: -10px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .activity-div {
+    border: 1px solid #69C7BF;
+    border-radius: 6px;
+    background: white;
+    padding: 20px;
+    width: 340px;
+    height: auto;
+    min-height: 202px;
+    z-index: 1;
+    margin: 10px;
+  }
+
+  .activity-title {
+    font-size: 20px;
+    line-height: 19px;
+    font-weight: 600;
+    color: #094A59;
+    margin-top: 5px;
+  }
+
+  .activity-genre {
+    height: auto;
+    width: fit-content;
+    min-width: 60px;
+    padding: 5px 12px;
+    background-color: #5C5D5E;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 12px;
+    color: white;
+    text-align: center;
+    
+  }
+
+  .activity-rating-good {
+    position: absolute;
+    right: 5%;
+    top: 8%;
+    margin: 0;
+    color:#69C7BF;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 19px;
+  }
+
+  .activity-rating-ok {
+    position: absolute;
+    right: 5%;
+    top: 8%;
+    margin: 0;
+    color: #F8B653;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 19px;
+  }
+
+
+  .activity-rating-bad {
+    position: absolute;
+    right: 5%;
+    top: 8%;
+    margin: 0;
+    color:red;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 19px;
+  }
+
+  .activity-comments {
+    font-weight: 300;
+    font-size: 13px;
+    width: 300px;
+    line-height: 17px;
+    color: #5C5D5E;
+  }
+  .activity-deletebutton {
+    z-index: 2;
+    border: solid 1px #69C7BF;
+    border-radius: 50px;
+    width: 60px;
+    font-weight: 300;
+    transition: .5s;
+    font-size: 12px;
+    margin-top: 5px;
+  }
+
+  .activity-deletebutton:hover {
+    cursor: pointer;
+    background-color: #B80F0A;
+    transition: 1s;
+    color: white; 
+    font-weight: 600;
+    border: solid 1px #B80F0A;
+  }
+
+  .activity-author {
+    font-size: 12px;
+    color: #094A59;
+    margin-top: -10px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
   .activity-div {
     border: 1px solid #69C7BF;
     border-radius: 6px;
@@ -110,7 +317,7 @@
     margin-top: 5px;
   }
 }
-@media only screen and (min-width: 1000px) {
+@media only screen and (max-width: 600px) {
 
   .activity-div {
     border: 1px solid #69C7BF;
@@ -119,8 +326,12 @@
     padding: 20px;
     width: 340px;
     height: auto;
-    min-height: 202px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    min-height: 222px;
     z-index: 1;
+    position: relative;
     margin: 10px;
   }
 
@@ -129,7 +340,8 @@
     line-height: 19px;
     font-weight: 600;
     color: #094A59;
-    margin-top: 5px;
+    margin-top: 0px;
+
   }
 
   .activity-genre {
@@ -144,6 +356,7 @@
     line-height: 12px;
     color: white;
     text-align: center;
+    margin-top: 10px;
     
   }
 
@@ -187,6 +400,7 @@
     width: 300px;
     line-height: 17px;
     color: #5C5D5E;
+    margin-top: 10px;
   }
   .activity-deletebutton {
     z-index: 2;
@@ -196,7 +410,7 @@
     font-weight: 300;
     transition: .5s;
     font-size: 12px;
-    margin-top: 5px;
+    margin-top: 10px;
   }
 
   .activity-deletebutton:hover {
@@ -211,6 +425,6 @@
   .activity-author {
     font-size: 12px;
     color: #094A59;
-    margin-top: -10px;
+    margin-top: 5px;
   }
 }
