@@ -8,6 +8,7 @@
     width: 340px;
     height: auto;
     min-height: 202px;
+    position: relative;
     z-index: 1;
     margin: 10px;
   }
@@ -111,6 +112,7 @@
     padding: 20px;
     width: 340px;
     height: auto;
+    position: relative;
     min-height: 202px;
     z-index: 1;
     margin: 10px;
