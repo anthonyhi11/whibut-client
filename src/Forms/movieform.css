@@ -7,7 +7,7 @@
     left: 50%;
     transform: translate(-50%, 0%);
     top: 25%;
-    z-index: 3;
+    z-index: 5;
     background: #FFFFFF;
     box-shadow: 0px 0px 50px 
       rgba(0,0,0,0.2);
@@ -25,7 +25,7 @@
     width: 350px;
     left: 50%;
     transform: translate(-50%, 0%);
-    z-index: 3;
+    z-index: 5;
     padding-top: 10px;
   }
 

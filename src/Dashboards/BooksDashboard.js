@@ -6,7 +6,6 @@ import BookForm from '../Forms/BookForm';
 import BooksApiService from '../services/books-api-service';
 import Footer from '../Navbar/Footer';
 
-
 export default class BooksDashboard extends React.Component {
   componentDidMount() {
     BooksApiService.getBooks()
@@ -46,8 +45,8 @@ export default class BooksDashboard extends React.Component {
           <div className='activity-dash'>
             <div className='activity-add-div'>
               <h1>Books</h1>
-              <button className='activity-add-button' onClick={this.handleClick}>+</button>
-              <p className='add-text' onClick={this.handleClick}>Add Book</p>
+              {/* <button className='activity-add-button' onClick={this.handleClick}>+</button>
+              <p className='add-text' onClick={this.handleClick}>Add Book</p> */}
             </div>
             <div className='randomdiv'>
               {this.context.isAddActive && <BookForm history={this.props.history}/>}

@@ -41,8 +41,8 @@ componentDidMount() {
         <div className='activity-dash'>
           <div className='activity-add-div'>
             <h1>Movies</h1>
-            <button className='activity-add-button' onClick={this.handleClick}>+</button>
-            <p className='add-text' onClick={this.handleClick}>Add Movie</p>
+            {/* <button className='activity-add-button' onClick={this.handleClick}>+</button>
+            <p className='add-text' onClick={this.handleClick}>Add Movie</p> */}
           </div>
         <div className='randomdiv'>
           {this.context.isAddActive && <MovieForm history={this.props.history}/>}
