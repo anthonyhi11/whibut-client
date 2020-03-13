@@ -39,18 +39,18 @@ componentDidMount() {
         <Navbar history={this.props.history}/>
         <Footer history={this.props.history}/>
         <div className='activity-dash'>
-        <div className='activity-add-div'>
-          <h1>Movies</h1>
-          <button className='activity-add-button' onClick={this.handleClick}>+</button>
-          <p className='add-text' onClick={this.handleClick}>Add Movie</p>
+          <div className='activity-add-div'>
+            <h1>Movies</h1>
+            <button className='activity-add-button' onClick={this.handleClick}>+</button>
+            <p className='add-text' onClick={this.handleClick}>Add Movie</p>
           </div>
-          <div className='randomdiv'>
-            {this.context.isAddActive && <MovieForm history={this.props.history}/>}
-          </div>
-          <div className='activity-results'>
-            {results}
-          </div>
-          <div className='bottom-div'></div>
+        <div className='randomdiv'>
+          {this.context.isAddActive && <MovieForm history={this.props.history}/>}
+        </div>
+        <div className='activity-results'>
+          {results}
+        </div>
+        <div className='bottom-div'></div>
         </div>
       </div>
     )
