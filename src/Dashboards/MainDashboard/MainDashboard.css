@@ -115,6 +115,7 @@
     box-sizing: border-box;
     -moz-appearance: none;
     -webkit-appearance: none;
+    /* overflow-x: hidden; */
   }
   html {
     width: 100%;

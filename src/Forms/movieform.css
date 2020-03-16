@@ -39,9 +39,13 @@
     font-weight: 300;
     font-size: 13px;
     line-height: 15px;
-    color: #5C5D5E;
+    color: black;
     padding-left: 10px;
   }
+  .addMovie-form input::placeholder {
+    color: #5C5D5E;
+    opacity: .7;
+  } 
 
   .addMovie-form textarea {
     width: 375px;
@@ -53,10 +57,14 @@
     font-weight: 300;
     font-size: 13px;
     line-height: 15px;
-    color: #5C5D5E;
+    color: black;
     padding-left: 10px;
     padding-top: 8px;
   }
+  .addMovie-form textarea::placeholder {
+    color: #5C5D5E;
+    opacity: .7;
+  } 
 
   .addMovie-form label {
     font-weight: 600;
@@ -153,9 +161,14 @@
     font-weight: 300;
     font-size: 13px;
     line-height: 15px;
-    color: #5C5D5E;
+    color: black;
     padding-left: 10px;
   }
+
+  .addMovie-form input::placeholder {
+    color: #5C5D5E;
+    opacity: .7;
+  } 
 
   .addMovie-form textarea {
     width: 375px;
@@ -167,10 +180,15 @@
     font-weight: 300;
     font-size: 13px;
     line-height: 15px;
-    color: #5C5D5E;
+    color: black;
     padding-left: 10px;
     padding-top: 8px;
   }
+
+  .addMovie-form textarea::placeholder {
+    color: #5C5D5E;
+    opacity: .7;
+  } 
 
   .addMovie-form label {
     font-weight: 600;
@@ -267,9 +285,13 @@
     font-weight: 300;
     font-size: 13px;
     line-height: 15px;
-    color: #5C5D5E;
+    color: black;
     padding-left: 10px;
   }
+  .addMovie-form input::placeholder {
+    color: #5C5D5E;
+    opacity: .7;
+  } 
 
   .addMovie-form textarea {
     width: 285px;
@@ -281,10 +303,14 @@
     font-weight: 300;
     font-size: 13px;
     line-height: 15px;
-    color: #5C5D5E;
+    color: black;
     padding-left: 10px;
     padding-top: 8px;
   }
+  .addMovie-form textarea::placeholder {
+    color: #5C5D5E;
+    opacity: .7;
+  } 
 
   .addMovie-form label {
     font-weight: 600;
@@ -378,9 +404,13 @@
     font-weight: 300;
     font-size: 13px;
     line-height: 15px;
-    color: #5C5D5E;
+    color: black;
     padding-left: 10px;
   }
+  .addMovie-form input::placeholder {
+    color: #5C5D5E;
+    opacity: .7;
+  } 
 
   .addMovie-form textarea {
     width: 285px;
@@ -392,10 +422,14 @@
     font-weight: 300;
     font-size: 13px;
     line-height: 15px;
-    color: #5C5D5E;
+    color: black;
     padding-left: 10px;
     padding-top: 8px;
   }
+  .addMovie-form textarea::placeholder {
+    color: #5C5D5E;
+    opacity: .7;
+  } 
 
   .addMovie-form label {
     font-weight: 600;
