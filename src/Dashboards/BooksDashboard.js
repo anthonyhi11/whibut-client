@@ -45,8 +45,6 @@ export default class BooksDashboard extends React.Component {
           <div className='activity-dash'>
             <div className='activity-add-div'>
               <h1>Books</h1>
-              {/* <button className='activity-add-button' onClick={this.handleClick}>+</button>
-              <p className='add-text' onClick={this.handleClick}>Add Book</p> */}
             </div>
             <div className='randomdiv'>
               {this.context.isAddActive && <BookForm history={this.props.history}/>}

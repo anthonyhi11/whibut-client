@@ -38,8 +38,6 @@ export default class TvDashboard extends React.Component {
           <div className='activity-dash'>
             <div className='activity-add-div' onClick={this.handleClick}>
               <h1>TV Shows</h1>
-              {/* <button className='activity-add-button' onClick={this.handleClick}>+</button>
-              <p className='add-text' onClick={this.handleClick}>Add TV Show</p> */}
             </div>
             <div className='randomdiv'>
               {this.context.isAddActive && <TvForm history={this.props.history}/>}

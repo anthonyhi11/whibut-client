@@ -1,13 +1,8 @@
 import React from 'react';
-// import Iframe from './Iframe/Iframe';
 import LogIn from './LogIn/LogIn';
 import SignUp from './SignUp/SignUp'
 import './landingpage.css'
 import WhibutContext from '../WhibutContext';
-import Error from '../error';
-
-
-
 
 export default class LandingPage extends React.Component {
   
@@ -39,7 +34,6 @@ export default class LandingPage extends React.Component {
             <p onClick={this.context.handleLoginClick} className='login-button'>Log in</p>
               {this.context.loginActive && <LogIn handleSubmit={this.handleSubmit}/>}
           </div>
-          {this.state.errorActive && <Error />}
         </div>  
     )
   }

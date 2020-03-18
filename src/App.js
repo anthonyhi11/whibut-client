@@ -1,6 +1,6 @@
 import React from 'react';
 import LandingPage from './LandingPage/LandingPage';
-import {Route, Switch} from 'react-router-dom';
+import {BrowserRouter, Route, Switch} from 'react-router-dom';
 import MainDashboard from './Dashboards/MainDashboard/MainDashboard';
 import MoviesDashboard from './Dashboards/MoviesDashboard';
 import TvDashboard from './Dashboards/TvDashboard';
@@ -155,38 +155,39 @@ class App extends React.Component {
     }
     return (
       <WhibutContext.Provider value={value}>
-        {/*className={this.state.signupActive ? 'darken' : 'normal'} */}
         <main className='app'>
-          <Switch>
-            <Route 
-              exact path='/'
-              component={LandingPage}
-            />
-            <PrivateRoute
-              path='/main'
-              component={MainDashboard}
-            />
-            <PrivateRoute 
-              path='/dashboard/movies'
-              component={MoviesDashboard}
-              />
-              <PrivateRoute 
-              path='/dashboard/tv'
-              component={TvDashboard}
-              />
-              <PrivateRoute 
-              path='/dashboard/books'
-              component={BooksDashboard}
-              />
-              <PrivateRoute 
-              path='/dashboard/restaurants'
-              component={RestaurantsDashboard}
-              />
-              <PrivateRoute 
-                path='/settings'
-                component={Settings}
-              />
-          </Switch>
+            <BrowserRouter>
+              <Switch>
+                <Route 
+                  exact path='/'
+                  component={LandingPage}
+                />
+                <PrivateRoute
+                  path='/main'
+                  component={MainDashboard}
+                />
+                <PrivateRoute 
+                  path='/dashboard/movies'
+                  component={MoviesDashboard}
+                  />
+                  <PrivateRoute 
+                  path='/dashboard/tv'
+                  component={TvDashboard}
+                  />
+                  <PrivateRoute 
+                  path='/dashboard/books'
+                  component={BooksDashboard}
+                  />
+                  <PrivateRoute 
+                  path='/dashboard/restaurants'
+                  component={RestaurantsDashboard}
+                  />
+                  <PrivateRoute 
+                    path='/settings'
+                    component={Settings}
+                  />
+              </Switch>
+          </BrowserRouter>
         </main>
       </WhibutContext.Provider>
     );

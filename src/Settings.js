@@ -2,7 +2,6 @@ import React from 'react';
 import Navbar from './Navbar/Navbar'
 import UsersService from './services/user-api-service';
 import LogInSignUpService from './services/login-signup-service';
-import Error from './error';
 import './settings.css';
 import Footer from './Navbar/Footer';
 
@@ -49,7 +48,6 @@ export default class Settings extends React.Component {
             <input type="password" id="passwordConfirm" name='passwordConfirm' placeholder='Confirm Password' />
           </form>
           <button className='settings-submit-button' type='submit'>Update</button>
-          {this.state.errorActive && <Error />}
         </div>
       </div>
     )
