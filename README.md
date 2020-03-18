@@ -27,7 +27,7 @@ Don't fear the office happy hour. You'll feel like a cultural polymath.
 
 Create an account or sign in with the demo credentials provided in the log-in modal. Click the add button and select the activity you want to add. Fill out the form and VOILA. Check it out via the activity dashboard buttons!
 
-<iframe src="https://giphy.com/embed/XZh8bjiM0hBV7Car7F" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+![](https://media.giphy.com/media/XZh8bjiM0hBV7Car7F/giphy.gif)
 
 ## Tech used
 The client was developed with React, HTML, CSS
