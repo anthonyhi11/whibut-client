@@ -1,6 +1,11 @@
 # WHIBUT - What Have I Been Up To?
 
 LIVE: https://whibut-client.now.sh/
+API REPO: https://github.com/anthonyhi11/whibut-api
+
+### Demo credentials
+username: demouser
+password: AAaa11!!
 
 ## ABOUT
 Have you ever been at lunch with friends and been posed the question... "Anthony, what have you been up to?"
