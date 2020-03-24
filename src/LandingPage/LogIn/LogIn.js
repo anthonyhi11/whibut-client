@@ -8,7 +8,7 @@ export default class LogIn extends React.Component {
 
   state = { error: null }
   handleLogIn = (e) => {
-    e.preventDefault()
+    e.preventDefault();
     const loginAttempt = {
       username: e.target.name.value,
       password: e.target.password.value
@@ -24,6 +24,26 @@ export default class LogIn extends React.Component {
         this.setState({ error: res.error })
       })
   }
+
+  handleDemo = (e) => {
+    e.preventDefault();
+    const loginAttempt = {
+      username: 'demouser',
+      password: 'AAaa11!!'
+    }
+    LogInSignUpService.loginUser(loginAttempt)
+      .then(res => {
+
+        TokenService.saveAuthToken(res.authToken)
+        this.context.handleCancel();
+        this.props.handleSubmit(); //routes you to the main dashboard
+      })
+      .catch(res => {
+        this.setState({ error: res.error })
+      })
+  }
+
+
   static contextType = WhibutContext;
   render() {
     const { error } = this.state
@@ -33,8 +53,9 @@ export default class LogIn extends React.Component {
             {error && <p className='login-error'>{error}</p>}
           </div>
           <div className='demo-creds-div'>
-              <p className={error ? 'error-creds': 'demo-creds'}>demo username: demouser</p>
-              <p className={error ? 'error-creds': 'demo-creds'}>demo password: AAaa11!!</p>
+            <button className='login-button-small' type='submit' onClick={e => this.handleDemo(e)}>DEMO USER</button>
+              {/* <p className={error ? 'error-creds': 'demo-creds'}>demo username: demouser</p>
+              <p className={error ? 'error-creds': 'demo-creds'}>demo password: AAaa11!!</p> */}
             </div>
         <form className={error ? 'error-form': 'login-form'}onSubmit={e => this.handleLogIn(e)}>
           <label htmlFor='name'>Username</label>

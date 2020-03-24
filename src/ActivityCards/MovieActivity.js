@@ -7,7 +7,6 @@ export default class MovieActivity extends React.Component {
 
   handleDelete = (e) => {
     const movieId = this.props.id;
-    console.log('clicked');
     MoviesApiService.deleteMovie(movieId)
     this.context.deleteMovie(movieId)
   }

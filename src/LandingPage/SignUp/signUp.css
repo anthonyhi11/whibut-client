@@ -213,9 +213,9 @@
   .signup-modal #signup-form {
     display: flex;
     position: absolute;
-    top: 11%;
+    top: 14%;
     flex-direction: column;
-    align-items: space-evenly;
+    align-items: center;
     justify-content: space-evenly;
     height: 500px;
     width: 450px;
@@ -225,12 +225,6 @@
   .signup-modal #signup-form input {
     width: 375px;
     height: 45px;
-    margin-top: -15px;
-    margin-bottom: -15px;
-    position: relative;
-    left: 50%;
-    right: 50%;
-    transform: translate(-50%, 0%);
     padding: 2px;
     border: 1px solid #E5E5E5;
     border-radius: 6px;
@@ -247,33 +241,24 @@
     line-height: 18px;
     width: 150px;
     height: 18px;
-    position: relative;
-    left: 50px;
-    margin-bottom: -50px;
-    margin-top: -30px;
+    text-align: center;
   }
 
   .signup-modal #signup-form .signup-button {
-    position: relative;
-    top: 0px;
-    margin-top: -25px;
+    margin-top: 30px;
   }
 
   .cancel {
     z-index: -1;
-    position: absolute;
     width: 50px;
     height: 20px;
-    left: 50%;
-    right: 50%;
-    transform: translate(-50%, 0%);
-    bottom: 6%;
     font-size: 14px;
     font-weight: 600;
     line-height: 21px;
     text-align: center;
     text-decoration: none;
     color: #69C7BF;
+    margin-bottom: 30px;
   }
 
   .cancel:hover {
@@ -311,9 +296,9 @@
   .error-signup-modal #signup-form {
     display: flex;
     position: absolute;
-    top: 11%;
+    top: 14%;
     flex-direction: column;
-    align-items: space-evenly;
+    align-items: center;
     justify-content: space-evenly;
     height: 500px;
     width: 450px;
@@ -323,20 +308,15 @@
   .error-signup-modal #signup-form input {
     width: 375px;
     height: 45px;
-    margin-top: -15px;
-    margin-bottom: -15px;
-    position: relative;
-    left: 50%;
-    right: 50%;
-    transform: translate(-50%, 0%);
     padding: 2px;
-    border: 1px solid red;
+    border: 1px solid #E5E5E5;
     border-radius: 6px;
     font-weight: 300;
     font-size: 13px;
     line-height: 15px;
     color: #5C5D5E;
     padding-left: 10px;
+    border: 1px solid red;
   }
 
   .error-signup-modal #signup-form label {
@@ -345,15 +325,7 @@
     line-height: 18px;
     width: 150px;
     height: 18px;
-    position: relative;
-    left: 50px;
-    margin-bottom: -50px;
-    margin-top: -30px;
+    text-align: center;
   }
 
-  .error-signup-modal #signup-form .signup-button {
-    position: relative;
-    top: 0px;
-    margin-top: -25px;
-  }
 }

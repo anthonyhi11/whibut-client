@@ -26,9 +26,6 @@ export default class SignUp extends React.Component {
     
     LogInSignUpService.signUpUser(newUser)
       .then(() => {
-        alert('Sign Up successful!')
-      })
-      .then(() => {
         LogInSignUpService.loginUser(loginAttempt)
         .then(res => {
           TokenService.saveAuthToken(res.authToken)

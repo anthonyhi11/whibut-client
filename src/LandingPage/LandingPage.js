@@ -3,6 +3,7 @@ import LogIn from './LogIn/LogIn';
 import SignUp from './SignUp/SignUp'
 import './landingpage.css'
 import WhibutContext from '../WhibutContext';
+import HowToUse from './HowToUse/HowToUse';
 
 export default class LandingPage extends React.Component {
   
@@ -10,12 +11,25 @@ export default class LandingPage extends React.Component {
     super(props)
     this.state = {
       errorActive: false,
-      error: null
+      error: null,
+      modalShown: false,
     }
   }
 
   handleSubmit = () => {
     this.props.history.push('/main')
+  }
+
+  handleHow = () => {
+    this.setState({
+      modalShown: true,
+    })
+  }
+
+  handleCancel = () => {
+    this.setState({
+      modalShown: false,
+    })
   }
 
  static contextType = WhibutContext;
@@ -28,6 +42,8 @@ export default class LandingPage extends React.Component {
           <video  height='300px' width='450px' controls className='video' >
             <source src='./images/whibut.mp4' type='video/mp4'/>
           </video>
+          <button className='howtouse-button' onClick={this.handleHow}>How to use?</button>
+         {this.state.modalShown && <HowToUse handleCancel={this.handleCancel}/>}
           <div className='signinbuttons'>
             <button onClick={this.context.handleSignupClick} className='signup-button'>Sign Up</button>
               {this.context.signupActive && <SignUp handleSubmit={this.handleSubmit}/>}

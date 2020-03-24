@@ -36,7 +36,7 @@ export default class TvDashboard extends React.Component {
           <Navbar history={this.props.history}/>
           <Footer history={this.props.history}/>
           <div className='activity-dash'>
-            <div className='activity-add-div' onClick={this.handleClick}>
+            <div className='activity-add-div'>
               <h1>TV Shows</h1>
             </div>
             <div className='randomdiv'>
