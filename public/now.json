@@ -1,8 +1,5 @@
 {
   "version": 2,
   "name": "whibut-client",
-  "routes": [
-      { "handle": "filesystem" },
-      { "src": "/.*", "dest": "/index.html" }
-  ]
+  "routes": [{ "handle": "filesystem" }, { "src": "/.*", "dest": "/index.html" }]
 }

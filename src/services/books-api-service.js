@@ -5,30 +5,24 @@ const BooksApiService = {
   getBooks() {
     return fetch(`${config.API_ENDPOINT}/books`, {
       headers: {
-        'Authorization': `bearer ${TokenService.getAuthToken()}`
+        Authorization: `bearer ${TokenService.getAuthToken()}`,
       },
-    })
-    .then(res => 
-     (!res.ok)
-      ? res.json().then(e => Promise.reject(e))
-      : res.json()
-    )
+    }).then((res) => (!res.ok ? res.json().then((e) => Promise.reject(e)) : res.json()));
   },
 
   addBook(newBook) {
     return fetch(`${config.API_ENDPOINT}/books`, {
-      method: "POST",
+      method: 'POST',
       headers: {
         'content-type': 'application/json',
-        'Authorization': `bearer ${TokenService.getAuthToken()}`
+        Authorization: `bearer ${TokenService.getAuthToken()}`,
       },
-      body: JSON.stringify(newBook)
-    })
-      .then(res => {
-       if (!res.ok) {
-        return res.json().then(e => Promise.reject(e))
-      } else return res.json(); 
-    })
+      body: JSON.stringify(newBook),
+    }).then((res) => {
+      if (!res.ok) {
+        return res.json().then((e) => Promise.reject(e));
+      } else return res.json();
+    });
   },
 
   deleteBook(bookId) {
@@ -36,17 +30,14 @@ const BooksApiService = {
       method: 'DELETE',
       headers: {
         'content-type': 'application/json',
-        'Authorization': `bearer ${TokenService.getAuthToken()}`
+        Authorization: `bearer ${TokenService.getAuthToken()}`,
       },
-    })
-    .then(res => {
-     if (!res.ok) {
-      return res.json().then(e => Promise.reject(e))
+    }).then((res) => {
+      if (!res.ok) {
+        return res.json().then((e) => Promise.reject(e));
       }
-    })
-  }
+    });
+  },
+};
 
-
-}
-
-export default BooksApiService
+export default BooksApiService;

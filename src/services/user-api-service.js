@@ -7,17 +7,17 @@ const UsersService = {
       method: 'PATCH',
       headers: {
         'content-type': 'application/json',
-        'Authorization': `bearer ${TokenService.getAuthToken()}`
+        Authorization: `bearer ${TokenService.getAuthToken()}`,
       },
-      body: JSON.stringify(updatedUser)
+      body: JSON.stringify(updatedUser),
     })
-    .then(res => {
-      if (!res.ok) {
-      return res.json().then(e => Promise.reject(e))
-      }
-    })
-    .then(TokenService.clearAuthToken())
-  }
-}
+      .then((res) => {
+        if (!res.ok) {
+          return res.json().then((e) => Promise.reject(e));
+        }
+      })
+      .then(TokenService.clearAuthToken());
+  },
+};
 
-export default UsersService
+export default UsersService;

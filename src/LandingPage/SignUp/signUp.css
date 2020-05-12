@@ -1,4 +1,3 @@
-
 @media only screen and (max-width: 599px) {
   .signup-modal {
     position: absolute;
@@ -8,9 +7,8 @@
     transform: translate(-50%, 0%);
     top: 8%;
     z-index: 100;
-    background: #FFFFFF;
-    box-shadow: 0px 0px 50px 
-      rgba(0,0,0,0.2);
+    background: #ffffff;
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.2);
     border-radius: 7px;
   }
 
@@ -21,7 +19,7 @@
     font-weight: 300;
     font-size: 13px;
     line-height: 15px;
-    color: #5C5D5E;
+    color: #5c5d5e;
     transform: translate(-50%, 0%);
     left: 50%;
     top: 6%;
@@ -44,12 +42,12 @@
     margin-bottom: 10px;
     margin-left: 35px;
     padding: 2px;
-    border: 1px solid #E5E5E5;
+    border: 1px solid #e5e5e5;
     border-radius: 6px;
     font-weight: 300;
     font-size: 13px;
     line-height: 15px;
-    color: #5C5D5E;
+    color: #5c5d5e;
     padding-left: 10px;
   }
 
@@ -71,10 +69,9 @@
     transform: translate(-50%);
     width: 200px;
     height: 50px;
-    
-    background: #69C7BF;
-    box-shadow: 0px 4px 20px
-      rgba(26, 26, 26, 0.2);
+
+    background: #69c7bf;
+    box-shadow: 0px 4px 20px rgba(26, 26, 26, 0.2);
     border-radius: 50px;
     font-family: 'Work Sans', sans-serif;
     font-style: normal;
@@ -82,12 +79,12 @@
     font-size: 18px;
     line-height: 21px;
     text-align: center;
-    color: #FFFFFF;
-    transition: .5s;
+    color: #ffffff;
+    transition: 0.5s;
   }
 
   .cancel {
-    z-index:1;
+    z-index: 1;
     position: absolute;
     width: 50px;
     height: 20px;
@@ -99,7 +96,7 @@
     line-height: 21px;
     text-align: center;
     text-decoration: none;
-    color: #69C7BF;
+    color: #69c7bf;
   }
 
   .cancel:hover {
@@ -116,9 +113,8 @@
     transform: translate(-50%, 0%);
     top: 20%;
     z-index: 100;
-    background: #FFFFFF;
-    box-shadow: 0px 0px 50px 
-      rgba(0,0,0,0.2);
+    background: #ffffff;
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.2);
     border-radius: 7px;
   }
 
@@ -150,12 +146,12 @@
     margin-bottom: 10px;
     margin-left: 35px;
     padding: 2px;
-    border: 1px solid #E5E5E5;
+    border: 1px solid #e5e5e5;
     border-radius: 6px;
     font-weight: 300;
     font-size: 13px;
     line-height: 15px;
-    color: #5C5D5E;
+    color: #5c5d5e;
     padding-left: 10px;
     border: 1px solid red;
   }
@@ -175,12 +171,11 @@
     position: absolute;
     top: 61%;
     left: 50%;
-    transform: translate(-50%)
+    transform: translate(-50%);
   }
 }
 
 @media only screen and (min-width: 600px) {
-  
   .signup-modal {
     position: absolute;
     width: 450px;
@@ -190,9 +185,8 @@
     transform: translate(-50%, 0%);
     top: 20%;
     z-index: 100;
-    background: #FFFFFF;
-    box-shadow: 0px 0px 50px 
-      rgba(0,0,0,0.2);
+    background: #ffffff;
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.2);
     border-radius: 7px;
   }
 
@@ -203,7 +197,7 @@
     font-weight: 300;
     font-size: 13px;
     line-height: 15px;
-    color: #5C5D5E;
+    color: #5c5d5e;
     transform: translate(-50%, 0%);
     left: 50%;
     right: 50%;
@@ -226,12 +220,12 @@
     width: 375px;
     height: 45px;
     padding: 2px;
-    border: 1px solid #E5E5E5;
+    border: 1px solid #e5e5e5;
     border-radius: 6px;
     font-weight: 300;
     font-size: 13px;
     line-height: 15px;
-    color: #5C5D5E;
+    color: #5c5d5e;
     padding-left: 10px;
   }
 
@@ -257,7 +251,7 @@
     line-height: 21px;
     text-align: center;
     text-decoration: none;
-    color: #69C7BF;
+    color: #69c7bf;
     margin-bottom: 30px;
   }
 
@@ -276,9 +270,8 @@
     transform: translate(-50%, 0%);
     top: 24%;
     z-index: 100;
-    background: #FFFFFF;
-    box-shadow: 0px 0px 50px 
-      rgba(0,0,0,0.2);
+    background: #ffffff;
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.2);
     border-radius: 7px;
   }
 
@@ -309,12 +302,12 @@
     width: 375px;
     height: 45px;
     padding: 2px;
-    border: 1px solid #E5E5E5;
+    border: 1px solid #e5e5e5;
     border-radius: 6px;
     font-weight: 300;
     font-size: 13px;
     line-height: 15px;
-    color: #5C5D5E;
+    color: #5c5d5e;
     padding-left: 10px;
     border: 1px solid red;
   }
@@ -327,5 +320,4 @@
     height: 18px;
     text-align: center;
   }
-
 }

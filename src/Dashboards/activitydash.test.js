@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import BooksDashboard from './BooksDashboard'
+import BooksDashboard from './BooksDashboard';
 import MoviesDashboard from './MoviesDashboard';
 import TvDashboard from './TvDashboard';
 import RestaurantsDashboard from './RestaurantsDashboard';

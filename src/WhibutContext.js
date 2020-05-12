@@ -28,6 +28,6 @@ const WhibutContext = React.createContext({
   getTv: () => {},
   getRestaurants: () => {},
   handleSubmit: () => {},
-})
+});
 
-export default WhibutContext
+export default WhibutContext;

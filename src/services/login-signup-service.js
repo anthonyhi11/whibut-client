@@ -1,6 +1,5 @@
 import config from '../config';
 
-
 const LogInSignUpService = {
   loginUser(credentials) {
     return fetch(`${config.API_ENDPOINT}/login`, {
@@ -9,12 +8,7 @@ const LogInSignUpService = {
         'content-type': 'application/json',
       },
       body: JSON.stringify(credentials),
-    })
-      .then(res => 
-        (!res.ok)
-          ? res.json().then(e => Promise.reject(e))
-          : res.json()
-      )
+    }).then((res) => (!res.ok ? res.json().then((e) => Promise.reject(e)) : res.json()));
   },
 
   signUpUser(user) {
@@ -24,13 +18,8 @@ const LogInSignUpService = {
         'content-type': 'application/json',
       },
       body: JSON.stringify(user),
-    })
-      .then(res =>
-        (!res.ok)
-          ? res.json().then(e => Promise.reject(e))
-          : res.json()
-      )
-  }
-}
+    }).then((res) => (!res.ok ? res.json().then((e) => Promise.reject(e)) : res.json()));
+  },
+};
 
-export default LogInSignUpService
+export default LogInSignUpService;

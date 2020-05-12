@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import MainDashboard from './MainDashboard'
+import MainDashboard from './MainDashboard';
 
 it('renders without crashing', () => {
   const div = document.createElement('div');

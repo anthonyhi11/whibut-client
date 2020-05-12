@@ -1,21 +1,19 @@
 import React from 'react';
 import LandingPage from './LandingPage/LandingPage';
-import {BrowserRouter, Route, Switch} from 'react-router-dom';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import MainDashboard from './Dashboards/MainDashboard/MainDashboard';
 import MoviesDashboard from './Dashboards/MoviesDashboard';
 import TvDashboard from './Dashboards/TvDashboard';
 import RestaurantsDashboard from './Dashboards/RestaurantsDashboard';
-import BooksDashboard from './Dashboards/BooksDashboard'
+import BooksDashboard from './Dashboards/BooksDashboard';
 import WhibutContext from './WhibutContext';
 import Settings from './Settings';
-import PrivateRoute from './services/private-route'
-import './app.css'
-
+import PrivateRoute from './services/private-route';
+import './app.css';
 
 class App extends React.Component {
-
   constructor(props) {
-    super(props) 
+    super(props);
     this.state = {
       movies: [],
       books: [],
@@ -24,106 +22,106 @@ class App extends React.Component {
       isAddActive: false,
       loginActive: false,
       signupActive: false,
-    }
+    };
   }
 
   getMovies = (movies) => {
     this.setState({
-     movies: movies,
-    })
-  }
+      movies: movies,
+    });
+  };
 
   getBooks = (books) => {
     this.setState({
-      books: books
-    })
-  }
+      books: books,
+    });
+  };
 
   getTv = (shows) => {
     this.setState({
-      tv: shows
-    })
-  }
+      tv: shows,
+    });
+  };
   getRestaurants = (restaurants) => {
     this.setState({
-      restaurants: restaurants
-    })
-  }
+      restaurants: restaurants,
+    });
+  };
 
   handleAddClick = () => {
     this.setState({
-      isAddActive: true
-    })
-  }
+      isAddActive: true,
+    });
+  };
   handleLoginClick = () => {
     this.setState({
-      loginActive: true
-    })
-  }
+      loginActive: true,
+    });
+  };
   handleSignupClick = () => {
     this.setState({
-      signupActive: true
-    })
-  }
+      signupActive: true,
+    });
+  };
 
   handleCancel = () => {
     this.setState({
       isAddActive: false,
       loginActive: false,
       signupActive: false,
-    })
-  }
+    });
+  };
 
   addBook = (newBook) => {
     this.setState({
-      books: [...this.state.books, newBook]
-    })
-  }
+      books: [...this.state.books, newBook],
+    });
+  };
 
   addMovie = (newMovie) => {
     this.setState({
-      movies: [...this.state.movies, newMovie]
-    })
-  }
+      movies: [...this.state.movies, newMovie],
+    });
+  };
 
   addTv = (newTv) => {
     this.setState({
-      tv: [...this.state.tv, newTv]
-    })
-  }
+      tv: [...this.state.tv, newTv],
+    });
+  };
 
   addRest = (newRest) => {
     this.setState({
-      restaurants: [...this.state.restaurants, newRest]
-    })
-  }
+      restaurants: [...this.state.restaurants, newRest],
+    });
+  };
 
   deleteMovie = (movieId) => {
     this.setState({
-      movies: this.state.movies.filter(movie => movie.id !== movieId)
-    })
-  }
+      movies: this.state.movies.filter((movie) => movie.id !== movieId),
+    });
+  };
 
   deleteTv = (tvId) => {
     this.setState({
-      tv: this.state.tv.filter(show => show.id !== tvId)
-    })
-  }
+      tv: this.state.tv.filter((show) => show.id !== tvId),
+    });
+  };
 
   deleteBook = (bookId) => {
     this.setState({
-      books: this.state.books.filter(book => book.id !== bookId)
-    })
-  }
+      books: this.state.books.filter((book) => book.id !== bookId),
+    });
+  };
 
   deleteRest = (restId) => {
     this.setState({
-      restaurants: this.state.restaurants.filter(rest => rest.id !== restId)
-    })
-  }
+      restaurants: this.state.restaurants.filter((rest) => rest.id !== restId),
+    });
+  };
   handleSubmit = () => {
-    this.props.history.push('/main')
-  }
+    this.props.history.push('/main');
+  };
 
   static contextType = WhibutContext;
   render() {
@@ -151,42 +149,21 @@ class App extends React.Component {
       getRestaurants: this.getRestaurants,
       getBooks: this.getBooks,
       getTv: this.getTv,
-      handleSubmit: this.handleSubmit
-    }
+      handleSubmit: this.handleSubmit,
+    };
     return (
       <WhibutContext.Provider value={value}>
-        <main className='app'>
-            <BrowserRouter>
-              <Switch>
-                <Route 
-                  exact path='/'
-                  component={LandingPage}
-                />
-                <PrivateRoute
-                  path='/main'
-                  component={MainDashboard}
-                />
-                <PrivateRoute 
-                  path='/dashboard/movies'
-                  component={MoviesDashboard}
-                  />
-                  <PrivateRoute 
-                  path='/dashboard/tv'
-                  component={TvDashboard}
-                  />
-                  <PrivateRoute 
-                  path='/dashboard/books'
-                  component={BooksDashboard}
-                  />
-                  <PrivateRoute 
-                  path='/dashboard/restaurants'
-                  component={RestaurantsDashboard}
-                  />
-                  <PrivateRoute 
-                    path='/settings'
-                    component={Settings}
-                  />
-              </Switch>
+        <main className="app">
+          <BrowserRouter>
+            <Switch>
+              <Route exact path="/" component={LandingPage} />
+              <PrivateRoute path="/main" component={MainDashboard} />
+              <PrivateRoute path="/dashboard/movies" component={MoviesDashboard} />
+              <PrivateRoute path="/dashboard/tv" component={TvDashboard} />
+              <PrivateRoute path="/dashboard/books" component={BooksDashboard} />
+              <PrivateRoute path="/dashboard/restaurants" component={RestaurantsDashboard} />
+              <PrivateRoute path="/settings" component={Settings} />
+            </Switch>
           </BrowserRouter>
         </main>
       </WhibutContext.Provider>

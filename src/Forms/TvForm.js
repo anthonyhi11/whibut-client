@@ -1,9 +1,8 @@
 import React from 'react';
-import WhibutContext from '../WhibutContext'
+import WhibutContext from '../WhibutContext';
 import TvApiService from '../services/tv-api-service';
 
 export default class TvForm extends React.Component {
-
   handleAddTv = (e) => {
     e.preventDefault();
     const title = e.target.title.value;
@@ -12,43 +11,44 @@ export default class TvForm extends React.Component {
     const rating = e.target.rating.value;
     const comments = e.target.comments.value;
 
-
     const newTv = {
-    'activity': 'tv',
-    'title': title,
-    'network': network,
-    'genre': genre,
-    'rating': rating,
-    'comments': comments
-    }
-    TvApiService.addTv(newTv)
-      .then(tv => {
-        this.context.addTv(newTv);
-        this.context.handleCancel();
-        this.props.history.push(`/dashboard/${newTv.activity}`)
-
-      })
-  }
+      activity: 'tv',
+      title: title,
+      network: network,
+      genre: genre,
+      rating: rating,
+      comments: comments,
+    };
+    TvApiService.addTv(newTv).then((tv) => {
+      this.context.addTv(newTv);
+      this.context.handleCancel();
+      this.props.history.push(`/dashboard/${newTv.activity}`);
+    });
+  };
 
   static contextType = WhibutContext;
   render() {
     return (
-      <div className='add-form-modal'>
-        <form onSubmit={this.handleAddTv} className='add-form-form'>
-          <label htmlFor='title'>Title</label>
-          <input type='text' id='title' name='title' placeholder='Ex. Friends' required />
-          <label htmlFor='genre'>Genre</label>
-          <input type='text' id='genre' name='genre' placeholder='Sitcom' required/>
-          <label htmlFor='network'>Network</label>
-          <input type='text' id='network' name='network' placeholder='NBC'/>
-          <label htmlFor='rating'>Your Rating (1-10)</label>
-          <input type='number' id='rating' name='rating' min='1' max='10' placeholder='1' required />
-          <label htmlFor='comments'>Comments</label>
-          <textarea id='comments' name='comments' placeholder="What do you want to remember"></textarea>
-          <button className='add-form-button' type='submit'>Add</button>
-          <p className='cancel-add-form' onClick={this.context.handleCancel}>Cancel</p>
+      <div className="add-form-modal">
+        <form onSubmit={this.handleAddTv} className="add-form-form">
+          <label htmlFor="title">Title</label>
+          <input type="text" id="title" name="title" placeholder="Ex. Friends" required />
+          <label htmlFor="genre">Genre</label>
+          <input type="text" id="genre" name="genre" placeholder="Sitcom" required />
+          <label htmlFor="network">Network</label>
+          <input type="text" id="network" name="network" placeholder="NBC" />
+          <label htmlFor="rating">Your Rating (1-10)</label>
+          <input type="number" id="rating" name="rating" min="1" max="10" placeholder="1" required />
+          <label htmlFor="comments">Comments</label>
+          <textarea id="comments" name="comments" placeholder="What do you want to remember"></textarea>
+          <button className="add-form-button" type="submit">
+            Add
+          </button>
+          <p className="cancel-add-form" onClick={this.context.handleCancel}>
+            Cancel
+          </p>
         </form>
       </div>
-    )
+    );
   }
 }

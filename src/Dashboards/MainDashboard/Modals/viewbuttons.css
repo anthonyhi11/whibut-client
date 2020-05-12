@@ -1,4 +1,3 @@
-
 @media only screen and (min-width: 1000px) {
   .buttons-container {
     display: flex;
@@ -16,20 +15,20 @@
   .view {
     width: 195px;
     height: 63px;
-    background-color: #69C7BF;
+    background-color: #69c7bf;
     border-radius: 9px;
     font-weight: 800;
     color: #ffffff;
     font-size: 18px;
     line-height: 21px;
     margin: 9px;
-    transition: .5s;
+    transition: 0.5s;
   }
 
   .view:hover {
     cursor: pointer;
-    background-color:rgb(82, 156, 150);
-    transition: .8s;
+    background-color: rgb(82, 156, 150);
+    transition: 0.8s;
   }
 }
 
@@ -50,20 +49,20 @@
   .view {
     width: 195px;
     height: 63px;
-    background-color: #69C7BF;
+    background-color: #69c7bf;
     border-radius: 9px;
     font-weight: 800;
     color: #ffffff;
     font-size: 18px;
     line-height: 21px;
     margin: 9px;
-    transition: .5s;
+    transition: 0.5s;
   }
 
   .view:hover {
     cursor: pointer;
-    background-color:rgb(82, 156, 150);
-    transition: .8s;
+    background-color: rgb(82, 156, 150);
+    transition: 0.8s;
   }
 }
 
@@ -78,20 +77,20 @@
   .view {
     width: 160px;
     height: 60px;
-    background-color: #69C7BF;
+    background-color: #69c7bf;
     border-radius: 9px;
     font-weight: 800;
     color: #ffffff;
     font-size: 15px;
     line-height: 21px;
     margin: 9px;
-    transition: .5s;
+    transition: 0.5s;
   }
 
   .view:hover {
     cursor: pointer;
-    background-color:rgb(82, 156, 150);
-    transition: .8s;
+    background-color: rgb(82, 156, 150);
+    transition: 0.8s;
   }
 
   .viewbuttons {
@@ -112,20 +111,20 @@
   .view {
     width: 120px;
     height: 53px;
-    background-color: #69C7BF;
+    background-color: #69c7bf;
     border-radius: 9px;
     font-weight: 800;
     color: #ffffff;
     font-size: 15px;
     line-height: 21px;
     margin: 7px;
-    transition: .5s;
+    transition: 0.5s;
   }
 
   .view:hover {
     cursor: pointer;
-    background-color:rgb(82, 156, 150);
-    transition: .8s;
+    background-color: rgb(82, 156, 150);
+    transition: 0.8s;
   }
 
   .viewbuttons {

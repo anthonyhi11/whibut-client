@@ -7,9 +7,8 @@
     transform: translate(-50%, 0%);
     top: 25%;
     z-index: 3;
-    background: #FFFFFF;
-    box-shadow: 0px 0px 50px 
-      rgba(0,0,0,0.2);
+    background: #ffffff;
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.2);
     border-radius: 7px;
   }
 
@@ -34,7 +33,7 @@
     margin-left: 50%;
     transform: translate(-50%);
     padding: 2px;
-    border: 1px solid #E5E5E5;
+    border: 1px solid #e5e5e5;
     border-radius: 6px;
     font-weight: 300;
     font-size: 13px;
@@ -43,14 +42,14 @@
     padding-left: 10px;
   }
   .addMovie-form input::placeholder {
-    color: #5C5D5E;
-    opacity: .7;
-  } 
+    color: #5c5d5e;
+    opacity: 0.7;
+  }
 
   .addMovie-form textarea {
     width: 375px;
     height: 80px;
-    border: 1px solid #E5E5E5;
+    border: 1px solid #e5e5e5;
     border-radius: 6px;
     margin-left: 50%;
     transform: translate(-50%);
@@ -62,9 +61,9 @@
     padding-top: 8px;
   }
   .addMovie-form textarea::placeholder {
-    color: #5C5D5E;
-    opacity: .7;
-  } 
+    color: #5c5d5e;
+    opacity: 0.7;
+  }
 
   .addMovie-form label {
     font-weight: 600;
@@ -78,45 +77,43 @@
     margin-top: 3px;
   }
 
-
-
   .submitmovie-button {
-  width: 200px;
-  height: 50px;
-  background: #69C7BF;
-  box-shadow: 0px 4px 20px rgba(26, 26, 26, 0.2);
-  border-radius: 50px;
-  margin-left: 50%;
-  transform: translate(-50%);
-  text-align: center;
-  font-size: 18px;
-  font-weight: 600;
-  line-height: 21px;
-  color: #FFFFFF;
-  margin-top: 10px;
-  transition: .5s;
+    width: 200px;
+    height: 50px;
+    background: #69c7bf;
+    box-shadow: 0px 4px 20px rgba(26, 26, 26, 0.2);
+    border-radius: 50px;
+    margin-left: 50%;
+    transform: translate(-50%);
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 21px;
+    color: #ffffff;
+    margin-top: 10px;
+    transition: 0.5s;
   }
 
   .submitmovie-button:hover {
     cursor: pointer;
-    background-color:rgb(82, 156, 150);
+    background-color: rgb(82, 156, 150);
     transition: 1s;
   }
 
   .cancel-movie {
-    color: #69C7BF;
+    color: #69c7bf;
     text-align: center;
     margin-left: 50%;
     transform: translate(-50%);
     margin-top: 10px;
-    transition: .3s;
+    transition: 0.3s;
     margin-bottom: 0px;
   }
 
   .cancel-movie:hover {
     cursor: pointer;
     color: black;
-    transition: .5s;
+    transition: 0.5s;
   }
 }
 
@@ -129,9 +126,8 @@
     transform: translate(-50%, 0%);
     top: 26%;
     z-index: 3;
-    background: #FFFFFF;
-    box-shadow: 0px 0px 50px 
-      rgba(0,0,0,0.2);
+    background: #ffffff;
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.2);
     border-radius: 7px;
   }
 
@@ -156,7 +152,7 @@
     margin-left: 50%;
     transform: translate(-50%);
     padding: 2px;
-    border: 1px solid #E5E5E5;
+    border: 1px solid #e5e5e5;
     border-radius: 6px;
     font-weight: 300;
     font-size: 13px;
@@ -166,14 +162,14 @@
   }
 
   .addMovie-form input::placeholder {
-    color: #5C5D5E;
-    opacity: .7;
-  } 
+    color: #5c5d5e;
+    opacity: 0.7;
+  }
 
   .addMovie-form textarea {
     width: 375px;
     height: 80px;
-    border: 1px solid #E5E5E5;
+    border: 1px solid #e5e5e5;
     border-radius: 6px;
     margin-left: 50%;
     transform: translate(-50%);
@@ -186,9 +182,9 @@
   }
 
   .addMovie-form textarea::placeholder {
-    color: #5C5D5E;
-    opacity: .7;
-  } 
+    color: #5c5d5e;
+    opacity: 0.7;
+  }
 
   .addMovie-form label {
     font-weight: 600;
@@ -202,45 +198,43 @@
     margin-top: 3px;
   }
 
-
-
   .submitmovie-button {
-  width: 200px;
-  height: 50px;
-  background: #69C7BF;
-  box-shadow: 0px 4px 20px rgba(26, 26, 26, 0.2);
-  border-radius: 50px;
-  margin-left: 50%;
-  transform: translate(-50%);
-  text-align: center;
-  font-size: 18px;
-  font-weight: 600;
-  line-height: 21px;
-  color: #FFFFFF;
-  margin-top: 10px;
-  transition: .5s;
+    width: 200px;
+    height: 50px;
+    background: #69c7bf;
+    box-shadow: 0px 4px 20px rgba(26, 26, 26, 0.2);
+    border-radius: 50px;
+    margin-left: 50%;
+    transform: translate(-50%);
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 21px;
+    color: #ffffff;
+    margin-top: 10px;
+    transition: 0.5s;
   }
 
   .submitmovie-button:hover {
     cursor: pointer;
-    background-color:rgb(82, 156, 150);
+    background-color: rgb(82, 156, 150);
     transition: 1s;
   }
 
   .cancel-movie {
-    color: #69C7BF;
+    color: #69c7bf;
     text-align: center;
     margin-left: 50%;
     transform: translate(-50%);
     margin-top: 5px;
-    transition: .3s;
+    transition: 0.3s;
     margin-bottom: 15px;
   }
 
   .cancel-movie:hover {
     cursor: pointer;
     color: black;
-    transition: .5s;
+    transition: 0.5s;
   }
 }
 
@@ -253,9 +247,8 @@
     transform: translate(-50%, 0%);
     top: 25%;
     z-index: 5;
-    background: #FFFFFF;
-    box-shadow: 0px 0px 50px 
-      rgba(0,0,0,0.2);
+    background: #ffffff;
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.2);
     border-radius: 7px;
   }
 
@@ -280,7 +273,7 @@
     margin-left: 50%;
     transform: translate(-50%);
     padding: 2px;
-    border: 1px solid #E5E5E5;
+    border: 1px solid #e5e5e5;
     border-radius: 6px;
     font-weight: 300;
     font-size: 13px;
@@ -289,14 +282,14 @@
     padding-left: 10px;
   }
   .addMovie-form input::placeholder {
-    color: #5C5D5E;
-    opacity: .7;
-  } 
+    color: #5c5d5e;
+    opacity: 0.7;
+  }
 
   .addMovie-form textarea {
     width: 285px;
     height: 40px;
-    border: 1px solid #E5E5E5;
+    border: 1px solid #e5e5e5;
     border-radius: 6px;
     margin-left: 50%;
     transform: translate(-50%);
@@ -308,9 +301,9 @@
     padding-top: 8px;
   }
   .addMovie-form textarea::placeholder {
-    color: #5C5D5E;
-    opacity: .7;
-  } 
+    color: #5c5d5e;
+    opacity: 0.7;
+  }
 
   .addMovie-form label {
     font-weight: 600;
@@ -325,42 +318,42 @@
   }
 
   .submitmovie-button {
-  width: 100px;
-  height: 30px;
-  background: #69C7BF;
-  box-shadow: 0px 4px 20px rgba(26, 26, 26, 0.2);
-  border-radius: 50px;
-  margin-left: 50%;
-  transform: translate(-50%);
-  text-align: center;
-  font-size: 16px;
-  font-weight: 600;
-  line-height: 21px;
-  color: #FFFFFF;
-  margin-top: 10px;
-  transition: .5s;
+    width: 100px;
+    height: 30px;
+    background: #69c7bf;
+    box-shadow: 0px 4px 20px rgba(26, 26, 26, 0.2);
+    border-radius: 50px;
+    margin-left: 50%;
+    transform: translate(-50%);
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 21px;
+    color: #ffffff;
+    margin-top: 10px;
+    transition: 0.5s;
   }
 
   .submitmovie-button:hover {
     cursor: pointer;
-    background-color:rgb(82, 156, 150);
+    background-color: rgb(82, 156, 150);
     transition: 1s;
   }
 
   .cancel-movie {
-    color: #69C7BF;
+    color: #69c7bf;
     text-align: center;
     margin-left: 50%;
     transform: translate(-50%);
     margin-top: 0px;
-    transition: .3s;
+    transition: 0.3s;
     margin-bottom: 0px;
   }
 
   .cancel-movie:hover {
     cursor: pointer;
     color: black;
-    transition: .5s;
+    transition: 0.5s;
   }
 }
 @media only screen and (max-width: 599px) {
@@ -372,9 +365,8 @@
     transform: translate(-50%, 0%);
     top: 25%;
     z-index: 5;
-    background: #FFFFFF;
-    box-shadow: 0px 0px 50px 
-      rgba(0,0,0,0.2);
+    background: #ffffff;
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.2);
     border-radius: 7px;
   }
 
@@ -399,7 +391,7 @@
     margin-left: 50%;
     transform: translate(-50%);
     padding: 2px;
-    border: 1px solid #E5E5E5;
+    border: 1px solid #e5e5e5;
     border-radius: 6px;
     font-weight: 300;
     font-size: 13px;
@@ -408,14 +400,14 @@
     padding-left: 10px;
   }
   .addMovie-form input::placeholder {
-    color: #5C5D5E;
-    opacity: .7;
-  } 
+    color: #5c5d5e;
+    opacity: 0.7;
+  }
 
   .addMovie-form textarea {
     width: 285px;
     height: 40px;
-    border: 1px solid #E5E5E5;
+    border: 1px solid #e5e5e5;
     border-radius: 6px;
     margin-left: 50%;
     transform: translate(-50%);
@@ -427,9 +419,9 @@
     padding-top: 8px;
   }
   .addMovie-form textarea::placeholder {
-    color: #5C5D5E;
-    opacity: .7;
-  } 
+    color: #5c5d5e;
+    opacity: 0.7;
+  }
 
   .addMovie-form label {
     font-weight: 600;
@@ -444,41 +436,41 @@
   }
 
   .submitmovie-button {
-  width: 100px;
-  height: 30px;
-  background: #69C7BF;
-  box-shadow: 0px 4px 20px rgba(26, 26, 26, 0.2);
-  border-radius: 50px;
-  margin-left: 50%;
-  transform: translate(-50%);
-  text-align: center;
-  font-size: 16px;
-  font-weight: 600;
-  line-height: 21px;
-  color: #FFFFFF;
-  margin-top: 10px;
-  transition: .5s;
+    width: 100px;
+    height: 30px;
+    background: #69c7bf;
+    box-shadow: 0px 4px 20px rgba(26, 26, 26, 0.2);
+    border-radius: 50px;
+    margin-left: 50%;
+    transform: translate(-50%);
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 21px;
+    color: #ffffff;
+    margin-top: 10px;
+    transition: 0.5s;
   }
 
   .submitmovie-button:hover {
     cursor: pointer;
-    background-color:rgb(82, 156, 150);
+    background-color: rgb(82, 156, 150);
     transition: 1s;
   }
 
   .cancel-movie {
-    color: #69C7BF;
+    color: #69c7bf;
     text-align: center;
     margin-left: 50%;
     transform: translate(-50%);
     margin-top: 0px;
-    transition: .3s;
+    transition: 0.3s;
     margin-bottom: 0px;
   }
 
   .cancel-movie:hover {
     cursor: pointer;
     color: black;
-    transition: .5s;
+    transition: 0.5s;
   }
 }

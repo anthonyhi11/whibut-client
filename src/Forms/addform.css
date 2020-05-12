@@ -1,4 +1,3 @@
-
 @media only screen and (min-width: 1000px) {
   .add-form-modal {
     position: absolute;
@@ -8,9 +7,8 @@
     transform: translate(-50%);
     top: 25%;
     z-index: 5;
-    background: #FFFFFF;
-    box-shadow: 0px 0px 50px 
-      rgba(0,0,0,0.2);
+    background: #ffffff;
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.2);
     border-radius: 7px;
   }
 
@@ -36,28 +34,28 @@
     margin-left: 50%;
     transform: translate(-50%);
     padding: 2px;
-    border: 1px solid #E5E5E5;
+    border: 1px solid #e5e5e5;
     border-radius: 6px;
     font-weight: 300;
     font-size: 13px;
     line-height: 15px;
-    color: #5C5D5E;
+    color: #5c5d5e;
     padding-left: 10px;
     margin-top: -15px;
     margin-bottom: -15px;
   }
 
-  .add-form-form textarea{
+  .add-form-form textarea {
     width: 375px;
     height: 80px;
-    border: 1px solid #E5E5E5;
+    border: 1px solid #e5e5e5;
     border-radius: 6px;
     margin-left: 50%;
     transform: translate(-50%);
     font-weight: 300;
     font-size: 13px;
     line-height: 15px;
-    color: #5C5D5E;
+    color: #5c5d5e;
     padding-left: 10px;
     padding-top: 8px;
     margin-top: -15px;
@@ -77,11 +75,11 @@
   }
 
   .cancel-add-form {
-    color: #69C7BF;
+    color: #69c7bf;
     text-align: center;
     margin-left: 50%;
     transform: translate(-50%);
-    transition: .3s;
+    transition: 0.3s;
     margin-bottom: -10px;
     margin-top: -10px;
   }
@@ -89,13 +87,13 @@
   .cancel-add-form:hover {
     cursor: pointer;
     color: black;
-    transition: .5s;
+    transition: 0.5s;
   }
 
   .add-form-button {
     width: 200px;
     height: 50px;
-    background: #69C7BF;
+    background: #69c7bf;
     box-shadow: 0px 4px 20px rgba(26, 26, 26, 0.2);
     border-radius: 50px;
     margin-left: 50%;
@@ -104,14 +102,14 @@
     font-size: 18px;
     font-weight: 600;
     line-height: 21px;
-    color: #FFFFFF;
-    transition: .5s;
+    color: #ffffff;
+    transition: 0.5s;
     margin-bottom: -10px;
   }
 
   .add-form-button:hover {
     cursor: pointer;
-    background-color:rgb(82, 156, 150);
+    background-color: rgb(82, 156, 150);
     transition: 1s;
   }
 }
@@ -125,9 +123,8 @@
     transform: translate(-50%);
     top: 25%;
     z-index: 5;
-    background: #FFFFFF;
-    box-shadow: 0px 0px 50px 
-      rgba(0,0,0,0.2);
+    background: #ffffff;
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.2);
     border-radius: 7px;
   }
 
@@ -153,28 +150,28 @@
     margin-left: 50%;
     transform: translate(-50%);
     padding: 2px;
-    border: 1px solid #E5E5E5;
+    border: 1px solid #e5e5e5;
     border-radius: 6px;
     font-weight: 300;
     font-size: 13px;
     line-height: 15px;
-    color: #5C5D5E;
+    color: #5c5d5e;
     padding-left: 10px;
     margin-top: -15px;
     margin-bottom: -15px;
   }
 
-  .add-form-form textarea{
+  .add-form-form textarea {
     width: 375px;
     height: 80px;
-    border: 1px solid #E5E5E5;
+    border: 1px solid #e5e5e5;
     border-radius: 6px;
     margin-left: 50%;
     transform: translate(-50%);
     font-weight: 300;
     font-size: 13px;
     line-height: 15px;
-    color: #5C5D5E;
+    color: #5c5d5e;
     padding-left: 10px;
     padding-top: 8px;
     margin-top: -15px;
@@ -194,11 +191,11 @@
   }
 
   .cancel-add-form {
-    color: #69C7BF;
+    color: #69c7bf;
     text-align: center;
     margin-left: 50%;
     transform: translate(-50%);
-    transition: .3s;
+    transition: 0.3s;
     margin-bottom: -10px;
     margin-top: -10px;
   }
@@ -206,13 +203,13 @@
   .cancel-add-form:hover {
     cursor: pointer;
     color: black;
-    transition: .5s;
+    transition: 0.5s;
   }
 
   .add-form-button {
     width: 200px;
     height: 50px;
-    background: #69C7BF;
+    background: #69c7bf;
     box-shadow: 0px 4px 20px rgba(26, 26, 26, 0.2);
     border-radius: 50px;
     margin-left: 50%;
@@ -221,21 +218,20 @@
     font-size: 18px;
     font-weight: 600;
     line-height: 21px;
-    color: #FFFFFF;
-    transition: .5s;
+    color: #ffffff;
+    transition: 0.5s;
     margin-bottom: -15px;
   }
 
   .add-form-button:hover {
     cursor: pointer;
-    background-color:rgb(82, 156, 150);
+    background-color: rgb(82, 156, 150);
     transition: 1s;
   }
 }
 
-
 @media only screen and (max-width: 768px) {
-  * { 
+  * {
     margin: 0px;
   }
   .add-form-modal {
@@ -246,9 +242,8 @@
     transform: translate(-50%);
     top: 25%;
     z-index: 5;
-    background: #FFFFFF;
-    box-shadow: 0px 0px 50px 
-      rgba(0,0,0,0.2);
+    background: #ffffff;
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.2);
     border-radius: 7px;
   }
 
@@ -273,28 +268,28 @@
     margin-left: 50%;
     transform: translate(-50%);
     padding: 2px;
-    border: 1px solid #E5E5E5;
+    border: 1px solid #e5e5e5;
     border-radius: 6px;
     font-weight: 300;
     font-size: 13px;
     line-height: 15px;
-    color: #5C5D5E;
+    color: #5c5d5e;
     padding-left: 10px;
     margin-top: -15px;
     margin-bottom: -15px;
   }
 
-  .add-form-form textarea{
+  .add-form-form textarea {
     width: 285px;
     height: 40px;
-    border: 1px solid #E5E5E5;
+    border: 1px solid #e5e5e5;
     border-radius: 6px;
     margin-left: 50%;
     transform: translate(-50%);
     font-weight: 300;
     font-size: 13px;
     line-height: 15px;
-    color: #5C5D5E;
+    color: #5c5d5e;
     padding-left: 10px;
     padding-top: 8px;
     margin-top: -15px;
@@ -312,24 +307,24 @@
   }
 
   .cancel-add-form {
-    color: #69C7BF;
+    color: #69c7bf;
     text-align: center;
     margin-left: 50%;
     transform: translate(-50%);
-    transition: .3s;
+    transition: 0.3s;
     margin-bottom: -10px;
   }
 
   .cancel-add-form:hover {
     cursor: pointer;
     color: black;
-    transition: .5s;
+    transition: 0.5s;
   }
 
   .add-form-button {
     width: 100px;
     height: 30px;
-    background: #69C7BF;
+    background: #69c7bf;
     box-shadow: 0px 4px 20px rgba(26, 26, 26, 0.2);
     border-radius: 50px;
     margin-left: 50%;
@@ -338,20 +333,20 @@
     font-size: 16px;
     font-weight: 600;
     line-height: 21px;
-    color: #FFFFFF;
-    transition: .5s;
+    color: #ffffff;
+    transition: 0.5s;
     margin-bottom: -20px;
   }
 
   .add-form-button:hover {
     cursor: pointer;
-    background-color:rgb(82, 156, 150);
+    background-color: rgb(82, 156, 150);
     transition: 1s;
   }
 }
 
 @media only screen and (max-width: 599px) {
-  * { 
+  * {
     margin: 0px;
   }
   .add-form-modal {
@@ -362,9 +357,8 @@
     transform: translate(-50%);
     top: 25%;
     z-index: 5;
-    background: #FFFFFF;
-    box-shadow: 0px 0px 50px 
-      rgba(0,0,0,0.2);
+    background: #ffffff;
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.2);
     border-radius: 7px;
   }
 
@@ -389,28 +383,28 @@
     margin-left: 50%;
     transform: translate(-50%);
     padding: 2px;
-    border: 1px solid #E5E5E5;
+    border: 1px solid #e5e5e5;
     border-radius: 6px;
     font-weight: 300;
     font-size: 13px;
     line-height: 15px;
-    color: #5C5D5E;
+    color: #5c5d5e;
     padding-left: 10px;
     margin-top: -15px;
     margin-bottom: -15px;
   }
 
-  .add-form-form textarea{
+  .add-form-form textarea {
     width: 285px;
     height: 40px;
-    border: 1px solid #E5E5E5;
+    border: 1px solid #e5e5e5;
     border-radius: 6px;
     margin-left: 50%;
     transform: translate(-50%);
     font-weight: 300;
     font-size: 13px;
     line-height: 15px;
-    color: #5C5D5E;
+    color: #5c5d5e;
     padding-left: 10px;
     padding-top: 8px;
     margin-top: -15px;
@@ -428,11 +422,11 @@
   }
 
   .cancel-add-form {
-    color: #69C7BF;
+    color: #69c7bf;
     text-align: center;
     margin-left: 50%;
     transform: translate(-50%);
-    transition: .3s;
+    transition: 0.3s;
     margin-top: 1px;
     margin-bottom: -20px;
   }
@@ -440,13 +434,13 @@
   .cancel-add-form:hover {
     cursor: pointer;
     color: black;
-    transition: .5s;
+    transition: 0.5s;
   }
 
   .add-form-button {
     width: 100px;
     height: 30px;
-    background: #69C7BF;
+    background: #69c7bf;
     box-shadow: 0px 4px 20px rgba(26, 26, 26, 0.2);
     border-radius: 50px;
     margin-left: 50%;
@@ -455,14 +449,14 @@
     font-size: 16px;
     font-weight: 600;
     line-height: 21px;
-    color: #FFFFFF;
-    transition: .5s;
+    color: #ffffff;
+    transition: 0.5s;
     margin-bottom: -25px;
   }
 
   .add-form-button:hover {
     cursor: pointer;
-    background-color:rgb(82, 156, 150);
+    background-color: rgb(82, 156, 150);
     transition: 1s;
   }
 }

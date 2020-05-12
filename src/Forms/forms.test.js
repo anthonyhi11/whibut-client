@@ -5,7 +5,6 @@ import BooksForm from './BookForm';
 import TvForm from './TvForm';
 import RestaurantForm from './RestaurantForm';
 
-
 it('renders without crashing', () => {
   const div = document.createElement('div');
   ReactDOM.render(<MovieForm />, div);
