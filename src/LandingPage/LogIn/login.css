@@ -14,6 +14,24 @@
     flex-direction: column;
   }
 
+  .success-screen {
+    width: 50%;
+    height: 15%;
+    border: solid 3px #69c7bf;
+    margin-left: 50%;
+    transform: translate(-50%);
+    position: relative;
+    margin-top: 20px;
+    z-index: 500;
+    background-color: white;
+    text-align: center;
+    transform: translate(-50%);
+  }
+  .success-screen p {
+    font-size: 30px;
+    margin-top: 5%;
+  }
+
   .demo-creds-div {
     margin-bottom: 50px;
     margin-top: 35px;
@@ -199,6 +217,24 @@
     text-align: center;
     font-size: 13px;
     margin: 10px;
+  }
+
+  .success-screen {
+    width: 50%;
+    height: 15%;
+    border: solid 3px #69c7bf;
+    margin-left: 50%;
+    transform: translate(-50%);
+    position: relative;
+    margin-top: 20px;
+    z-index: 500;
+    background-color: white;
+    text-align: center;
+    transform: translate(-50%);
+  }
+  .success-screen p {
+    font-size: 30px;
+    margin-top: 5%;
   }
 
   .login-form {

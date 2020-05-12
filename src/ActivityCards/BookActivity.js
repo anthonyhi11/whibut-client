@@ -15,15 +15,15 @@ export default class BookActivity extends React.Component {
   render() {
     return (
       <div className="activity-div">
-        <div className="activity-flex-container">
-          <h3 className="activity-title">{this.props.title}</h3>
-          <p className="activity-author">by {this.props.author}</p>
-          <p className="activity-genre">{this.props.genre}</p>
-          <p className="activity-comments">{this.props.comments}</p>
-          <button className="activity-deletebutton" onClick={this.handleDelete}>
-            Delete
-          </button>
-        </div>
+        {/* <div className="activity-flex-container"> */}
+        <h3 className="activity-title">{this.props.title}</h3>
+        <p className="activity-author">by {this.props.author}</p>
+        <p className="activity-genre">{this.props.genre}</p>
+        <p className="activity-comments">{this.props.comments}</p>
+        <button className="activity-deletebutton" onClick={this.handleDelete}>
+          Delete
+        </button>
+        {/* </div> */}
         <p
           className={
             this.props.rating > 7

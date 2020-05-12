@@ -25,7 +25,7 @@
     display: flex;
     width: 300px;
     position: static;
-    margin-top: 200px; /* change to 200px */
+    margin-top:-20px; /* change to 200px */
     align-items: center;
     justify-content: flex-start;
   }

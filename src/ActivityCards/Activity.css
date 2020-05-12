@@ -6,6 +6,9 @@
     padding: 20px;
     width: 340px;
     height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
     min-height: 202px;
     position: relative;
     z-index: 1;
@@ -109,6 +112,9 @@
     padding: 20px;
     width: 340px;
     height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
     position: relative;
     min-height: 202px;
     z-index: 1;

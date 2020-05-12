@@ -5,7 +5,10 @@ import TokenService from '../../services/token-service';
 import './login.css';
 
 export default class LogIn extends React.Component {
-  state = { error: null };
+  state = {
+    error: null,
+    successShown: false,
+  };
   handleLogIn = (e) => {
     e.preventDefault();
     const loginAttempt = {
@@ -25,6 +28,8 @@ export default class LogIn extends React.Component {
 
   handleDemo = (e) => {
     e.preventDefault();
+    this.setState({ successShown: true });
+
     const loginAttempt = {
       username: 'demouser',
       password: 'AAaa11!!',
@@ -43,8 +48,14 @@ export default class LogIn extends React.Component {
   static contextType = WhibutContext;
   render() {
     const { error } = this.state;
+    const { successShown } = this.state;
     return (
       <div className="login-modal">
+        {successShown && (
+          <div className="success-screen">
+            <p>Success!</p>
+          </div>
+        )}
         <div role="alert">{error && <p className="login-error">{error}</p>}</div>
         <div className="demo-creds-div">
           <button className="login-button-small" type="submit" onClick={(e) => this.handleDemo(e)}>
