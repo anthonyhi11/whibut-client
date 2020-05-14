@@ -52,12 +52,14 @@ export default class SignUp extends React.Component {
           <input type="password" id="password" name="password" placeholder="New Password" />
           <label htmlFor="password-confirm">Confirm Password</label>
           <input type="password" id="passwordConfirm" name="passwordConfirm" placeholder="Confirm Password" />
-          <button type="submit" className="signup-button">
-            Sign Up
-          </button>{' '}
-          <p className="cancel" onClick={this.context.handleCancel}>
-            Cancel
-          </p>
+          <div className="sign-up-buttons">
+            <button type="submit" className="signup-button">
+              Sign Up
+            </button>{' '}
+            <p className="cancel" onClick={this.context.handleCancel}>
+              Cancel
+            </p>
+          </div>
         </form>
       </div>
     );

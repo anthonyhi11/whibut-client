@@ -25,7 +25,6 @@ export default class HowToUse extends React.Component {
         <div>
           <h2>What else can I do?</h2>
           <p>You can change your username or password on the settings page</p>
-          <p>Rest easy knowing you'll never forget all the things you've done.</p>
           <p onClick={this.handleCancel} id="close-button">
             close
           </p>
