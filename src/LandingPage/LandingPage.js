@@ -60,7 +60,7 @@ export default class LandingPage extends React.Component {
       <div className="landing-page-main">
         {successShown && (
           <div className="success-screen">
-            <h3>Loading</h3>
+            <h3>Success!</h3>
             <p>This application is hosted on Heroku with a free plan. It may take a few seconds to spin up.</p>
           </div>
         )}
